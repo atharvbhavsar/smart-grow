@@ -62,10 +62,10 @@ export async function addSubscriber(email: string): Promise<AddSubscriberRespons
         };
       }
       
-      console.error("Brevo API error response:", responseData);
+      console.error("Brevo API error. Status:", response.status, "Response:", JSON.stringify(responseData));
       return {
         success: false,
-        message: "Something went wrong. Please try again later.",
+        message: responseData.message || "Something went wrong. Please try again later.",
       };
     }
 
