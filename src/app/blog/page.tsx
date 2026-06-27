@@ -6,6 +6,7 @@ import { blogPosts } from "@/data/siteData";
 import { Button } from "@/components/ui/button";
 import { Search, Clock, ArrowRight, User } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Newsletter } from "../../components/Newsletter";
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -176,16 +177,7 @@ export default function Blog() {
           <p className="text-slate-400 mt-3 text-sm sm:text-base max-w-xl mx-auto mb-8">
             Join 3,200+ founders and CTOs receiving our private automation outlines and SEO checklists. Zero spam.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto justify-center">
-            <input
-              type="email"
-              placeholder="Enter your work email..."
-              className="bg-slate-800 border border-slate-700 focus:bg-slate-950 focus:border-blue-600 rounded-xl px-4 py-3 text-sm outline-none text-white w-full"
-            />
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl px-6 py-3 cursor-pointer shrink-0">
-              Subscribe Free
-            </Button>
-          </div>
+          <Newsletter variant="dark" />
         </div>
       </section>
 

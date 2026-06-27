@@ -1,19 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
+import { Newsletter } from "../Newsletter";
 
 export function Footer() {
-  const [email, setEmail] = useState("");
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      alert("Thank you for subscribing!");
-      setEmail("");
-    }
-  };
-
   return (
     <footer className="bg-white border-t border-slate-150/80 mt-auto pt-12 sm:pt-20 pb-8 font-sans overflow-hidden relative">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -22,7 +13,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-16 border-b border-slate-100">
           
           {/* Left: Contact info & Subscription */}
-          <div className="md:col-span-6 flex flex-col items-start justify-between gap-8">
+          <div className="md:col-span-6 flex flex-col items-start justify-between gap-8 w-full">
             <div>
               <p className="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-2">
                 Contact us at
@@ -35,28 +26,8 @@ export function Footer() {
               </a>
             </div>
 
-            {/* Newsletter form */}
-            <form onSubmit={handleSubscribe} className="w-full max-w-md">
-              <p className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-3">
-                Subscribe to our newsletter
-              </p>
-              <div className="bg-slate-50 border border-slate-200/80 p-1.5 rounded-full flex items-center justify-between shadow-2xs">
-                <input 
-                  type="email" 
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address" 
-                  className="bg-transparent text-slate-800 text-sm px-4 focus:outline-hidden w-full placeholder:text-slate-400 font-medium"
-                  required
-                />
-                <button 
-                  type="submit" 
-                  className="bg-slate-950 text-white hover:bg-slate-900 px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all duration-300 cursor-pointer flex-shrink-0"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
+            {/* Production Newsletter component */}
+            <Newsletter variant="minimal" />
           </div>
 
           {/* Right: Link grids */}
