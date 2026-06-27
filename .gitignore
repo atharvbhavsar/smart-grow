@@ -47,10 +47,5 @@ next-env.d.ts
 .windsurfrules
 .mcp.json
 AGENT.md
-components.json
-photo/
-video/
-/public/photo/
-/public/video/
 
 .vercel
