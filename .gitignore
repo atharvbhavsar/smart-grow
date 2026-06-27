@@ -39,3 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI Agents & IDE Workspace Configs
+.jetro/
+.agents/
+.cursor/
+.windsurfrules
+.mcp.json
+AGENT.md
+components.json
+main-pic.png
+main=pic.png
+photo/
+video/
+/public/photo/
+/public/video/
