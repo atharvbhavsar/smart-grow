@@ -48,9 +48,9 @@ next-env.d.ts
 .mcp.json
 AGENT.md
 components.json
-main-pic.png
-main=pic.png
 photo/
 video/
 /public/photo/
 /public/video/
+
+.vercel
