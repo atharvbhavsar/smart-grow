@@ -1,6 +1,6 @@
 "use client";
 
-// Trigger automatic build with fresh Vercel environment variables
+// Trigger automatic build with correct Vercel environment variables
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
