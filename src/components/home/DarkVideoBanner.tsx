@@ -45,7 +45,7 @@ export function DarkVideoBanner() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" 
-            alt="SmartyGrow Operations Dashboard" 
+            alt="SmartlyGrow Operations Dashboard" 
             className="w-full h-full object-cover opacity-60 group-hover:scale-102 transition-transform duration-500"
           />
 
@@ -97,7 +97,7 @@ export function DarkVideoBanner() {
               {/* YouTube Embed Player */}
               <iframe
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                title="SmartyGrow Product Video Tour"
+                title="SmartlyGrow Product Video Tour"
                 className="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

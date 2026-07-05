@@ -120,7 +120,7 @@
 
 @utility bg-grid-pattern {
   background-size: 30px 30px;
-  background-image: 
+  background-image:
     linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
 }
@@ -131,8 +131,13 @@
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
@@ -149,14 +154,29 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
     font-size: 17.5px;
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-outfit), sans-serif;
   }
+}
+
+.bg-tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
 }

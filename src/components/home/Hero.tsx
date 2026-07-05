@@ -7,20 +7,20 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[92vh] flex flex-col justify-center items-center text-center pt-28 sm:pt-36 pb-16 sm:pb-20 bg-white bg-grid-pattern overflow-hidden font-sans px-4">
+    <section className="relative min-h-[92vh] flex flex-col justify-center items-center text-center pt-28 sm:pt-36 pb-6 sm:pb-8 bg-white bg-grid-pattern overflow-hidden font-sans px-4">
       
       {/* Centered Founders / Team Image */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative w-[320px] sm:w-[440px] md:w-[520px] lg:w-[600px] aspect-[4/3] flex items-center justify-center z-10 mb-2 select-none"
+        className="relative w-[280px] sm:w-[380px] md:w-[440px] lg:w-[480px] aspect-[1.07] flex items-center justify-center z-10 mb-2 select-none"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img 
           src="/main-pic.png" 
-          alt="SmartyGrow Founders" 
-          className="object-contain w-full h-full max-h-[320px] sm:max-h-[440px]"
+          alt="SmartlyGrow Founders" 
+          className="object-contain w-full h-full"
         />
       </motion.div>
 
@@ -32,7 +32,7 @@ export function Hero() {
         className="text-[2.15rem] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter text-slate-950 leading-[1.08] max-w-4xl select-none z-10 px-2"
       >
         Scale your Business <br />
-        with <span className="text-blue-600">SmartyGrow</span>
+        with <span className="text-blue-600">SmartlyGrow</span>
       </motion.h1>
 
       {/* Subtext description */}
@@ -52,7 +52,7 @@ export function Hero() {
         transition={{ duration: 0.6, delay: 0.4 }}
         className="flex flex-col xs:flex-row gap-3 mt-8 z-10 w-full max-w-xs sm:max-w-none sm:w-auto justify-center"
       >
-        <Link href="/services" className="w-full sm:w-auto">
+        <Link href="/portfolio" className="w-full sm:w-auto">
           <Button className="bg-slate-950 text-white hover:bg-slate-900 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-6 rounded-full text-[13px] font-bold tracking-widest uppercase transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer min-h-[44px]">
             Let&apos;s Explore
           </Button>
@@ -64,35 +64,35 @@ export function Hero() {
         </Link>
       </motion.div>
  
-      {/* Overlapping Small Trust Badge */}
+      {/* Overlapping Trust Badge (Matching Reference Screenshot 1) */}
       <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="flex items-center gap-2.5 mt-8 z-10 bg-slate-50/80 border border-slate-100/60 p-2 pr-4 rounded-full shadow-2xs"
+        className="flex items-center gap-3.5 mt-9 z-10 py-2 px-3 rounded-full select-none"
       >
-        <div className="flex -space-x-2 pl-1">
+        <div className="flex -space-x-3.5 items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&auto=format&fit=crop" 
-            alt="Indian startup founder" 
-            className="h-7 w-7 rounded-full border-2 border-white object-cover shadow-2xs"
+            src="/trust-1.jpg" 
+            alt="Client founder 1" 
+            className="h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-slate-950 object-cover shadow-sm bg-slate-900"
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&auto=format&fit=crop" 
-            alt="Indian tech founder" 
-            className="h-7 w-7 rounded-full border-2 border-white object-cover shadow-2xs"
+            src="/trust-2.jpg" 
+            alt="Client founder 2" 
+            className="h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-slate-950 object-cover shadow-sm bg-slate-900"
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
-            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=120&auto=format&fit=crop" 
-            alt="Indian business lead" 
-            className="h-7 w-7 rounded-full border-2 border-white object-cover shadow-2xs"
+            src="/trust-3.jpg" 
+            alt="Client founder 3" 
+            className="h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-slate-950 object-cover shadow-sm bg-slate-900"
           />
         </div>
-        <p className="text-[11px] font-extrabold uppercase tracking-widest text-slate-500">
-          Trusted by <span className="text-blue-600">100+</span> Businesses
+        <p className="text-base sm:text-lg font-medium text-slate-800 tracking-tight">
+          Trusted by <span className="font-extrabold text-blue-600">100+</span> Businesses
         </p>
       </motion.div>
 

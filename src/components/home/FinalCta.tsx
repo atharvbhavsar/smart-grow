@@ -6,12 +6,12 @@ import { ArrowRight, MessageCircle, Instagram } from "lucide-react";
 export function FinalCta() {
   return (
     <section className="py-12 lg:py-16 bg-slate-900 text-white relative overflow-hidden font-sans">
-      
+
       {/* Background radial shapes */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-3xl -z-10" />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        
+
         {/* Sub title */}
         <span className="text-blue-400 text-xs font-bold uppercase tracking-widest bg-blue-500/10 px-3.5 py-2 rounded-full border border-blue-500/20">
           Ready To Scale Operations?
@@ -35,9 +35,9 @@ export function FinalCta() {
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </Button>
           </Link>
-          
-          <a 
-            href="https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20a%20project%20with%20SmartyGrow!"
+
+          <a
+            href="https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20a%20project%20with%20SmartlyGrow!"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -58,7 +58,7 @@ export function FloatingInstagram() {
   return (
     <div className="fixed bottom-6 left-6 z-50">
       <a
-        href="https://www.instagram.com/smartygrow.official"
+        href="https://www.instagram.com/smartlygrow.in?utm_source=qr&igsh=MXh0Mm50OWc2Nms3aA=="
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white h-12 w-12 rounded-[12px] shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-110 cursor-pointer group"
@@ -86,7 +86,7 @@ export function FloatingWhatsApp() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <a
-        href="https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20a%20project%20with%20SmartyGrow!"
+        href="https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20a%20project%20with%20SmartlyGrow!"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center bg-[#25D366] text-white h-12 w-12 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.35)] hover:shadow-[0_8px_30px_rgba(37,211,102,0.55)] transition-all duration-300 hover:scale-110 cursor-pointer group"

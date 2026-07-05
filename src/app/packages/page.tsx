@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Check, X, Sparkles, HelpCircle, PhoneCall } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Packages & Pricing | SmartyGrow",
+  title: "Packages & Pricing | SmartlyGrow",
   description: "Review our transparent pricing packages for website development, Custom SaaS development, and AI workflow automation integrations.",
 };
 

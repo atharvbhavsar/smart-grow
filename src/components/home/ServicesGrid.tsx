@@ -10,21 +10,24 @@ import {
   Cpu, 
   ArrowRight,
   Sparkles,
-  X
+  X,
+  ChevronRight
 } from "lucide-react";
 
 // Types
 interface ServiceCategory {
   title: string;
+  slug: string;
   description: string;
   icon: React.ComponentType<{ className?: string }>;
   services: string[];
 }
 
-// 4-Category Data Structure matching PRD
+// 3-Category Data Structure matching PRD
 const categoriesData: ServiceCategory[] = [
   {
     title: "Business Growth",
+    slug: "business-growth",
     description: "Accelerate your market reach and build a powerful online audience that drives consistent, high-value customer inquiries.",
     icon: TrendingUp,
     services: [
@@ -38,6 +41,7 @@ const categoriesData: ServiceCategory[] = [
   },
   {
     title: "Creative Services",
+    slug: "creative-services",
     description: "Capture attention with high-retention visual assets and storytelling that elevates your brand premium.",
     icon: Palette,
     services: [
@@ -47,17 +51,8 @@ const categoriesData: ServiceCategory[] = [
     ]
   },
   {
-    title: "Startup Solutions",
-    description: "Transform raw ideas into production-ready software systems with modern architecture and seamless integrations.",
-    icon: Rocket,
-    services: [
-      "Business Websites",
-      "Custom Web Applications",
-      "AI Integration"
-    ]
-  },
-  {
     title: "AI Solutions",
+    slug: "ai-solutions",
     description: "Streamline operations, automate customer support, and extract intelligence with autonomous intelligence agents.",
     icon: Cpu,
     services: [
@@ -125,23 +120,6 @@ const categoryDetails: {
       features: ["Pitch deck visual styling", "Visual guidelines", "Infographics & SVG shapes"]
     }
   ],
-  "Startup Solutions": [
-    {
-      title: "Business Websites",
-      description: "Credible, responsive, and polished corporate pages built to display credentials, explain solutions, and gather early leads.",
-      features: ["Landing page designs", "Fast contact integrations", "Interactive grids"]
-    },
-    {
-      title: "Custom Web Applications",
-      description: "Scalable SaaS dashboards, multi-tenant portals, and internal tools built to solve complex operations and capture transactions.",
-      features: ["Supabase database flows", "Custom UI dashboards", "Payment integrations"]
-    },
-    {
-      title: "AI Integration",
-      description: "Supercharge your software with custom-trained LLM pipelines, external API integrations, and smart functional triggers.",
-      features: ["OpenAI & Claude APIs", "Prompt engineering rails", "Intelligent data parsing"]
-    }
-  ],
   "AI Solutions": [
     {
       title: "AI Automation",
@@ -174,15 +152,12 @@ export function ServicesGrid() {
       document.body.style.overflow = "";
     };
   }, [activeCategory]);
-
-  // Motion settings for staggered entry and scroll reveal
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.05
+        staggerChildren: 0.1
       }
     }
   };
@@ -205,76 +180,97 @@ export function ServicesGrid() {
     <section className="py-14 lg:py-20 bg-white font-sans overflow-hidden" id="services">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-[10px] font-extrabold uppercase tracking-widest text-blue-600">
-            <Sparkles className="h-3 w-3 shrink-0" />
-            Complete Scale Agency
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 mt-4 tracking-tighter leading-[1.1]">
-            Streamline Business with our{" "}
-            <span className="text-blue-600">Flexible Options</span>
-          </h2>
-          <p className="text-slate-500 mt-4 text-[15px] sm:text-base tracking-wide leading-relaxed max-w-xl mx-auto">
-            SmartyGrow is not just a website development company. We offer complete business growth, custom AI systems, and content generation.
-          </p>
+        {/* Section Heading: Strictly ONLY "Our Services" with rich visual design accents */}
+        <div className="relative text-center max-w-4xl mx-auto mb-14 sm:mb-16 px-4">
+          {/* Ambient Background Glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 sm:w-96 h-28 bg-blue-500/10 blur-3xl rounded-full pointer-events-none -z-10" />
+
+          {/* Main Title - Strictly ONLY "Our Services" */}
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 tracking-tight"
+          >
+            Our <span className="text-blue-600">Services</span>
+          </motion.h2>
+
+          {/* Glowing Animated Divider */}
+          <div className="flex items-center justify-center gap-2 mt-4">
+            <div className="h-1 w-12 bg-gradient-to-r from-transparent via-blue-500 to-indigo-600 rounded-full" />
+            <div className="h-2 w-2 bg-blue-600 rounded-full animate-ping" />
+            <div className="h-1 w-12 bg-gradient-to-r from-indigo-600 via-blue-500 to-transparent rounded-full" />
+          </div>
         </div>
 
-        {/* 2x2 Category Grid */}
+        {/* 3-Column Category Grid */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
         >
           {categoriesData.map((category, idx) => {
             const IconComponent = category.icon;
             return (
-              <motion.div
-                key={idx}
-                variants={cardVariants}
-                onClick={() => setActiveCategory(category)}
-                className="group relative bg-white border border-slate-200/80 rounded-2xl p-8 hover:-translate-y-1.5 hover:shadow-lg hover:border-blue-500/60 transition-all duration-300 ease-out flex flex-col justify-between cursor-pointer"
-              >
-                <div>
-                  {/* Category Header */}
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="p-3 bg-blue-50 text-blue-600 rounded-xl group-hover:scale-105 transition-transform duration-300 ease-out">
-                      <IconComponent className="h-6 w-6" />
+              <Link href={`/services/${category.slug}`} key={idx} className="flex flex-col">
+                <motion.div
+                  variants={cardVariants}
+                  className="group relative bg-gradient-to-b from-white to-slate-50/40 border border-slate-200/80 rounded-3xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 hover:border-blue-500/35 transition-all duration-300 ease-out flex flex-col justify-between cursor-pointer overflow-hidden h-full"
+                >
+                  {/* Top accent glow line on hover */}
+                  <div className="absolute top-0 left-0 right-0 h-[5px] bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                  <div>
+                    {/* Category Header */}
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="p-3.5 bg-blue-50/80 text-blue-600 rounded-2xl border border-blue-100/50 shadow-sm group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 group-hover:shadow-lg group-hover:shadow-blue-500/20 transition-all duration-300">
+                        <IconComponent className="h-6 w-6" />
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-extrabold text-slate-950 group-hover:text-blue-600 transition-colors duration-200">
+                        {category.title}
+                      </h3>
                     </div>
-                    <h3 className="text-xl font-bold text-slate-950 group-hover:text-blue-600 transition-colors duration-200">
-                      {category.title}
-                    </h3>
+
+                    {/* Description */}
+                    <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
+                      {category.description}
+                    </p>
                   </div>
 
-                  {/* Description */}
-                  <p className="text-slate-500 text-sm sm:text-[14.5px] leading-relaxed mb-6">
-                    {category.description}
-                  </p>
-                </div>
-
-                {/* Service Badges/Chips */}
-                <div>
-                  <div className="flex flex-wrap gap-2">
-                    {category.services.map((service, sidx) => (
-                      <span 
-                        key={sidx} 
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-100 text-xs font-semibold text-slate-700 hover:bg-blue-50/50 hover:border-blue-200/50 transition-colors duration-200"
-                      >
-                        <span className="h-1.5 w-1.5 rounded-full bg-blue-500 shrink-0" />
-                        {service}
+                  {/* Service Capabilities Checklist */}
+                  <div className="flex-1 flex flex-col justify-between mt-2">
+                    <div>
+                      <span className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 block mb-4">
+                        Capabilities Include:
                       </span>
-                    ))}
-                  </div>
+                      <ul className="space-y-3.5 mb-8">
+                        {category.services.map((service, sidx) => (
+                          <li 
+                            key={sidx} 
+                            className="flex items-start gap-3.5 text-xs font-semibold text-slate-700 group-hover:text-slate-900 transition-colors"
+                          >
+                            <div className="h-5 w-5 rounded-full bg-blue-50 border border-blue-100/40 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300 shrink-0 mt-0.5">
+                              <ChevronRight className="h-3.5 w-3.5 stroke-[3]" />
+                            </div>
+                            <span className="leading-normal">{service}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-                  {/* Explore Indicator */}
-                  <div className="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-bold text-blue-600 group-hover:text-blue-700 transition-colors">
-                    <span>Explore Category Details</span>
-                    <ArrowRight className="ml-1.5 h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                    {/* Explore Indicator */}
+                    <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-extrabold text-blue-600 group-hover:text-blue-700 transition-colors">
+                      <span>View Projects</span>
+                      <div className="p-2 rounded-xl bg-blue-50 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </Link>
             );
           })}
         </motion.div>
@@ -328,21 +324,34 @@ export function ServicesGrid() {
                     {activeCategory.description}
                   </p>
 
-                  {/* Detailed Services List */}
-                  <div className="space-y-6">
+                  {/* Detailed Services List with Direct Project Links */}
+                  <div className="space-y-4">
                     {categoryDetails[activeCategory.title]?.map((service, idx) => (
-                      <div key={idx} className="border-b border-slate-100 last:border-b-0 pb-6 last:pb-0">
-                        <h4 className="text-base font-bold text-slate-950 flex items-center gap-2">
-                          <span className="h-2 w-2 rounded-full bg-blue-600" />
-                          {service.title}
-                        </h4>
-                        <p className="text-slate-500 text-sm mt-2 leading-relaxed pl-4">
+                      <div 
+                        key={idx} 
+                        className="group/item p-5 rounded-2xl bg-slate-50/70 border border-slate-200/80 hover:border-blue-400 hover:bg-blue-50/30 transition-all duration-200"
+                      >
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
+                          <h4 className="text-base font-bold text-slate-950 flex items-center gap-2 group-hover/item:text-blue-600 transition-colors">
+                            <span className="h-2 w-2 rounded-full bg-blue-600 shrink-0" />
+                            {service.title}
+                          </h4>
+                          <Link 
+                            href={`/services/${activeCategory.slug}?filter=${encodeURIComponent(service.title)}`}
+                            onClick={() => setActiveCategory(null)}
+                            className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-xs font-extrabold text-blue-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 shadow-2xs transition-all duration-200 shrink-0 self-start sm:self-auto cursor-pointer"
+                          >
+                            <span>View Projects</span>
+                            <ArrowRight className="h-3.5 w-3.5" />
+                          </Link>
+                        </div>
+                        <p className="text-slate-500 text-xs sm:text-sm leading-relaxed pl-4">
                           {service.description}
                         </p>
                         {/* Features */}
                         <div className="flex flex-wrap gap-1.5 mt-3 pl-4">
                           {service.features.map((feat, fidx) => (
-                            <span key={fidx} className="inline-flex items-center text-[11px] font-semibold text-slate-600 bg-slate-50 border border-slate-100/60 px-2.5 py-0.5 rounded-md">
+                            <span key={fidx} className="inline-flex items-center text-[11px] font-semibold text-slate-600 bg-white border border-slate-200/60 px-2.5 py-0.5 rounded-md">
                               {feat}
                             </span>
                           ))}
@@ -357,16 +366,20 @@ export function ServicesGrid() {
 
                 {/* Sticky Footer */}
                 <div className="sticky bottom-0 bg-white z-20 px-6 sm:px-8 py-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <p className="text-xs text-slate-500 text-center sm:text-left">
-                    Interested in starting a project in this category?
-                  </p>
+                  <Link
+                    href={`/services/${activeCategory.slug}`}
+                    onClick={() => setActiveCategory(null)}
+                    className="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 rounded-full bg-slate-950 hover:bg-slate-800 text-white font-extrabold text-xs transition-colors cursor-pointer text-center gap-1.5"
+                  >
+                    <span>View All {activeCategory.title} Projects</span>
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
                   <a
                     href={`https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20your%20${encodeURIComponent(activeCategory.title)}%20services!`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors shadow-xs cursor-pointer text-center"
+                    className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs transition-colors shadow-xs cursor-pointer text-center"
                   >
-                    Enquire via WhatsApp
                   </a>
                 </div>
               </motion.div>
@@ -382,7 +395,7 @@ export function ServicesGrid() {
           <p className="text-slate-500 mt-3 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
             Let&apos;s discuss your goals and build the right digital solution for your business.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
+          <div className="flex justify-center mt-8">
             <a
               href="https://wa.me/917020951401?text=Hello,%20I%20want%20to%20book%20a%20free%20growth%20consultation!"
               target="_blank"
@@ -391,13 +404,6 @@ export function ServicesGrid() {
             >
               Book a Free Consultation
             </a>
-            <Link
-              href="/packages"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-950 font-bold text-sm border border-slate-200/80 transition-all cursor-pointer text-center gap-1.5 group"
-            >
-              View All Services
-              <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
-            </Link>
           </div>
         </div>
 

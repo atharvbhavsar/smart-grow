@@ -9,16 +9,15 @@ import { TestimonialsCarousel } from "@/components/home/TestimonialsCarousel";
 import { TeamGrid } from "@/components/home/TeamGrid";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { SocialPresence } from "@/components/home/SocialPresence";
-import { FinalCta } from "@/components/home/FinalCta";
 
 export const metadata: Metadata = {
-  title: "SmartyGrow | AI Powered Business Growth Agency",
-  description: "SmartyGrow helps startups, SMEs, and creators scale operations and command digital authority through premium websites, AI workflow automations, and custom AI agents.",
+  title: "SmartlyGrow | AI Powered Business Growth Agency",
+  description: "SmartlyGrow helps startups, SMEs, and creators scale operations and command digital authority through premium websites, AI workflow automations, and custom AI agents.",
   openGraph: {
-    title: "SmartyGrow | AI Powered Business Growth Agency",
+    title: "SmartlyGrow | AI Powered Business Growth Agency",
     description: "Scale operations and attract customers using custom Next.js systems and intelligent AI agents.",
-    url: "https://smartygrow.com",
-    siteName: "SmartyGrow",
+    url: "https://smartlygrow.com",
+    siteName: "SmartlyGrow",
     images: [
       {
         url: "/next.svg",
@@ -43,7 +42,6 @@ export default function Home() {
       <TestimonialsCarousel />
       <TeamGrid />
       <FaqAccordion />
-      <FinalCta />
     </main>
   );
 }

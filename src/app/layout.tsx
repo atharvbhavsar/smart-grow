@@ -3,6 +3,7 @@ import { Outfit, Instrument_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MarqueeTicker } from "@/components/layout/MarqueeTicker";
 import SmoothScrollProvider from "@/components/SmoothScroll";
 import { FloatingInstagram, FloatingWhatsApp } from "@/components/home/FinalCta";
 
@@ -26,10 +27,10 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "SmartyGrow - AI Powered Business Growth Agency",
-    template: "%s | SmartyGrow"
+    default: "SmartlyGrow - AI Powered Business Growth Agency",
+    template: "%s | SmartlyGrow"
   },
-  description: "SmartyGrow is an AI-powered growth agency building high-performance Next.js systems, custom SaaS applications, and context-aware AI agents for modern companies.",
+  description: "SmartlyGrow is an AI-powered growth agency building high-performance Next.js systems, custom SaaS applications, and context-aware AI agents for modern companies.",
   icons: {
     icon: "/icon.svg",
   }
@@ -48,9 +49,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white text-slate-900 font-sans selection:bg-blue-600/10 selection:text-blue-600">
         <SmoothScrollProvider>
           <Header />
-          <div className="flex-1 flex flex-col w-full">
+          <div className="flex-1 flex flex-col w-full bg-tech-grid pt-16">
             {children}
           </div>
+          <MarqueeTicker />
           <Footer />
           <FloatingInstagram />
           <FloatingWhatsApp />

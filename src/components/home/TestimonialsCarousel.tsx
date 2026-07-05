@@ -9,7 +9,7 @@ const TESTIMONIAL_VIDEOS = [
     name: "Muktesh Narula",
     role: "CEO",
     company: "DOVESOFT",
-    content: "SmartyGrow built our entire operational automation stack. Their expertise in custom Next.js configurations and AI-driven workflow engines decreased lead response time to seconds and directly grew our sales pipeline.",
+    content: "SmartlyGrow built our entire operational automation stack. Their expertise in custom Next.js configurations and AI-driven workflow engines decreased lead response time to seconds and directly grew our sales pipeline.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
   },
   {
@@ -23,7 +23,7 @@ const TESTIMONIAL_VIDEOS = [
     name: "Yash Goswami",
     role: "Founder",
     company: "BITEBEE",
-    content: "We launched our customized SaaS platform 3 weeks ahead of schedule. The code quality, communication, and visual assets designed by SmartyGrow exceed anything you can find from typical agencies.",
+    content: "We launched our customized SaaS platform 3 weeks ahead of schedule. The code quality, communication, and visual assets designed by SmartlyGrow exceed anything you can find from typical agencies.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop"
   },
   {

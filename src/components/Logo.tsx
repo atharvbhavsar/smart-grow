@@ -3,9 +3,11 @@ import React from "react";
 interface LogoProps {
   className?: string;
   showText?: boolean;
+  textColorClass?: string;
+  textSizeClass?: string;
 }
 
-export function Logo({ className = "h-8", showText = true }: LogoProps) {
+export function Logo({ className = "h-8", showText = true, textColorClass, textSizeClass }: LogoProps) {
   return (
     <div className="flex items-center gap-3 select-none group cursor-pointer">
       {/* SVG Icon matching the logo style in the PRD image */}
@@ -39,8 +41,8 @@ export function Logo({ className = "h-8", showText = true }: LogoProps) {
       </svg>
 
       {showText && (
-        <span className="text-2xl font-extrabold tracking-tight text-slate-900 font-sans">
-          Smarty<span className="text-blue-600">Grow</span>
+        <span className={`font-extrabold tracking-tight font-sans ${textSizeClass || "text-2xl"} ${textColorClass || "text-slate-900"}`}>
+          Smartly<span className="text-blue-600">Grow</span>
         </span>
       )}
     </div>

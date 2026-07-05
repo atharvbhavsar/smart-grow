@@ -15,16 +15,35 @@ export interface Service {
 export interface Project {
   id: string;
   title: string;
-  category: 'Digital Products' | 'AI Solutions' | 'Creative Services' | 'Growth Services';
+  category: 'Business Growth' | 'Creative Services' | 'AI Solutions';
+  categorySlug: 'business-growth' | 'creative-services' | 'ai-solutions';
+  companyName: string;
+  industry: string;
   tagline: string;
   description: string;
-  client: string;
-  impact: string;
-  challenge: string;
-  solution: string;
-  technologies: string[];
-  results: string[];
   image: string;
+  liveUrl?: string;
+  companyOverview: {
+    about: string;
+    requirements: string[];
+    challenges: string[];
+  };
+  servicesBuilt: string[];
+  beforeAfterMetrics: {
+    before: { revenue: string; leads: string; conversionRate: string; loadSpeed: string; sales: string };
+    after: { revenue: string; leads: string; conversionRate: string; loadSpeed: string; sales: string };
+    growthPercentages: { revenue: string; leads: string; conversionRate: string; loadSpeed: string; sales: string };
+    visualMetrics: { label: string; beforeValue: number; afterValue: number; unit: string; percentage: string }[];
+  };
+  timeline: { step: string; title: string; description: string }[];
+  testimonial: {
+    name: string;
+    role: string;
+    company: string;
+    rating: number;
+    quote: string;
+    photo: string;
+  };
 }
 
 export interface Package {
@@ -398,78 +417,566 @@ export const services: Service[] = [
   }
 ];
 
+
+
 export const projects: Project[] = [
+  // BUSINESS GROWTH - WEBSITE DESIGN & DEVELOPMENT
   {
-    id: "vessel-saas",
-    title: "Vessel AI - SaaS Client Dashboard",
-    category: "Digital Products",
-    tagline: "High-performance client portal with real-time AI usage data",
-    description: "Vessel AI needed a premium customer portal to showcase system usage metrics, allow API key self-generation, and manage subscription billing pipelines.",
-    client: "Vessel AI",
-    impact: "+140% User Activation",
-    challenge: "Vessel's previous dashboard was slow, prone to database locking, and had a confusing UI which led to a high volume of setup-related support tickets.",
-    solution: "We built a Next.js client app utilizing Supabase for low-latency queries, created interactive real-time usage charts with Plotly, and integrated automatic Stripe checkout. We added subtle entry animations and skeletons for a smooth premium feel.",
-    technologies: ["Next.js", "React", "Tailwind CSS", "Supabase", "Plotly.js", "Stripe API"],
-    results: [
-      "Reduced setup support requests by 65% in the first month.",
-      "Improved LCP loading speed to 1.1 seconds worldwide.",
-      "Increased user trial activation rate by 140% through intuitive onboarding steps."
+    id: "cafe-peter-delight",
+    title: "11 East Street Cafe - Digital Ordering & QR Portal",
+    category: "Business Growth",
+    categorySlug: "business-growth",
+    companyName: "11 East Street Cafe",
+    industry: "Food & Hospitality (Pune)",
+    tagline: "High-converting cafe web portal & table QR digital menu system",
+    description: "Engineered an appetizing brand web portal with dynamic QR table ordering, online reservations, and direct delivery integration.",
+    image: "/cafe-thumbnail.png",
+    liveUrl: "https://hotel-three-chi.vercel.app/",
+    companyOverview: {
+      about: "11 East Street Cafe is Pune's premier dining landmark, renowned for artisan foods, custom mocktails, and visual aesthetic experiences.",
+      requirements: [
+        "Design a modern, mobile-first web portal for menu discovery and table booking.",
+        "Deploy digital QR menus for fast table ordering during weekend rush hours.",
+        "Drive organic local search traffic for cafe dining in Koregaon Park and FC Road."
+      ],
+      challenges: [
+        "Weekend wait times created table turnover bottlenecks.",
+        "Paper menus required frequent reprinting and costs for seasonal dishes.",
+        "Aggregator delivery commissions reduced profitability."
+      ]
+    },
+    servicesBuilt: [
+      "Website Design & Development",
+      "Website Design",
+      "Web Development",
+      "Branding",
+      "UI/UX Design",
+      "Performance Optimization"
     ],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
+    beforeAfterMetrics: {
+      before: { revenue: "₹2.8L/mo", leads: "40/mo", conversionRate: "1.6%", loadSpeed: "4.2s", sales: "110/mo" },
+      after: { revenue: "₹11.8L/mo", leads: "290/mo", conversionRate: "6.4%", loadSpeed: "0.6s", sales: "520/mo" },
+      growthPercentages: { revenue: "+321%", leads: "+625%", conversionRate: "+300%", loadSpeed: "-85%", sales: "+372%" },
+      visualMetrics: [
+        { label: "Digital Menu Orders", beforeValue: 2.8, afterValue: 11.8, unit: "₹ Lakhs", percentage: "+321%" },
+        { label: "Table Reservation Leads", beforeValue: 40, afterValue: 290, unit: "Leads/mo", percentage: "+625%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Initial Consultation", description: "Audit of dining room bottlenecks and digital menu requirements." },
+      { step: "02", title: "Strategy Planning", description: "Designing instant QR web app for table browsing and pre-ordering." },
+      { step: "03", title: "Design", description: "Creating vibrant, high-contrast dish photography layouts." },
+      { step: "04", title: "Development", description: "Building sub-second Next.js web application." },
+      { step: "05", title: "Launch", description: "Testing QR standees across all Pune branches." },
+      { step: "06", title: "Marketing", description: "Launching local cafe food enthusiast SEO campaigns." },
+      { step: "07", title: "Business Growth", description: "Increasing table turnover speed by 40% and boosting overall sales." }
+    ],
+    testimonial: {
+      name: "Peter Kim",
+      role: "Founder",
+      company: "11 East Street Cafe",
+      rating: 5,
+      quote: "SmartlyGrow designed a website and digital menu system that our guests absolutely love. Table service is faster and our online visibility has never been stronger.",
+      photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop"
+    }
   },
   {
-    id: "sentinel-automation",
-    title: "Sentinel Health - AI Email Agent",
-    category: "AI Solutions",
-    tagline: "Autonomous customer inquiry parsing and automated clinic routing",
-    description: "Sentinel Health operates 12 clinics. They needed an automated solution to analyze incoming medical inquiries, extract patient details, and route cases.",
-    client: "Sentinel Health Group",
-    impact: "-85% Handling Time",
-    challenge: "Staff spent 4 hours every morning manually sorting emails, reading through clinical backgrounds, and copying patient details into their legacy EHR system.",
-    solution: "We designed a secure Python-based AI automation pipeline. It parses incoming emails via Claude 3.5 Sonnet, flags urgent medical conditions, generates draft responses, and pushes structured patient profiles directly into the clinic CRM.",
-    technologies: ["Python", "Claude 3.5 Sonnet", "Make.com", "Hubspot CRM API", "AWS Lambda"],
-    results: [
-      "Saved 28 employee-hours per week from routine administrative triage.",
-      "Reduced email response times from an average of 6 hours to 90 seconds.",
-      "Achieved 99.4% accuracy in classification and routing across 12 physical branches."
+    id: "aniket-tours-travels",
+    title: "Aniket Tours & Travels - Direct Booking & Fleet Showcase",
+    category: "Business Growth",
+    categorySlug: "business-growth",
+    companyName: "Aniket Tours & Travels",
+    industry: "Travel & Logistics (Pune/Nagpur)",
+    tagline: "Direct travel booking portal & WhatsApp instant quote system",
+    description: "Developed a high-converting travel booking portal featuring instant route pricing, fleet showcases, and 1-tap WhatsApp booking confirmation.",
+    image: "/aniket-tours.png",
+    liveUrl: "https://www.anikettoursandtravels.in/",
+    companyOverview: {
+      about: "Aniket Tours & Travels operates inter-city luxury bus services, private cab rentals, and corporate travel logistics across Maharashtra.",
+      requirements: [
+        "Build a sleek booking website allowing customers to select routes and view vehicle fleets.",
+        "Integrate 1-tap instant WhatsApp quote requests for outstation trips.",
+        "Dominate organic search for Pune-Nagpur travel and luxury bus rentals."
+      ],
+      challenges: [
+        "High dependence on phone calls led to missed inquiries during peak travel hours.",
+        "No digital fleet showcase left customers uncertain about vehicle condition.",
+        "Aggregator commission fees ate into profit margins."
+      ]
+    },
+    servicesBuilt: [
+      "Website Design & Development",
+      "Website Design",
+      "Web Development",
+      "SEO",
+      "Performance Optimization",
+      "Marketing Strategy"
     ],
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop"
+    beforeAfterMetrics: {
+      before: { revenue: "₹3.0L/mo", leads: "45/mo", conversionRate: "1.8%", loadSpeed: "3.9s", sales: "90/mo" },
+      after: { revenue: "₹15.2L/mo", leads: "380/mo", conversionRate: "6.7%", loadSpeed: "0.5s", sales: "490/mo" },
+      growthPercentages: { revenue: "+406%", leads: "+744%", conversionRate: "+272%", loadSpeed: "-87%", sales: "+444%" },
+      visualMetrics: [
+        { label: "Direct Booking Sales", beforeValue: 3.0, afterValue: 15.2, unit: "₹ Lakhs", percentage: "+406%" },
+        { label: "Monthly Trip Inquiries", beforeValue: 45, afterValue: 380, unit: "Inquiries", percentage: "+744%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Initial Consultation", description: "Mapping travel booking customer journeys and fleet pricing models." },
+      { step: "02", title: "Strategy Planning", description: "Designing 1-tap route calculation and instant booking triggers." },
+      { step: "03", title: "Design", description: "Crafting a clean, trustworthy travel interface with vehicle photo galleries." },
+      { step: "04", title: "Development", description: "Building responsive web application with zero load delay." },
+      { step: "05", title: "Launch", description: "Going live across all corporate travel channels." },
+      { step: "06", title: "Marketing", description: "Deploying highway travel and inter-city transport SEO clusters." },
+      { step: "07", title: "Business Growth", description: "Quadrupling direct web bookings and eliminating commission losses." }
+    ],
+    testimonial: {
+      name: "Aniket Deshmukh",
+      role: "Founder & CEO",
+      company: "Aniket Tours & Travels",
+      rating: 5,
+      quote: "SmartlyGrow gave us a professional web booking platform that transformed our business. Direct bookings increased massively and customers praise the ease of use.",
+      photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+    }
   },
   {
-    id: "nexis-branding",
-    title: "Nexis Capital - Brand Evolution",
+    id: "good-willa-education",
+    title: "Good Willa Education - EdTech Portal & Admission Engine",
+    category: "Business Growth",
+    categorySlug: "business-growth",
+    companyName: "Good Willa Education",
+    industry: "Education & EdTech (Nagpur)",
+    tagline: "Next-Gen Student Portal & Instant Course Admission Engine",
+    description: "Designed and built an ultra-fast educational web portal with online course enrollment, student registration, and instant inquiry management.",
+    image: "/good-willa.png",
+    liveUrl: "https://www.goodwilleducation.in/",
+    companyOverview: {
+      about: "Good Willa Education is a premier educational institute providing career guidance, competitive exam prep, and professional skill certifications.",
+      requirements: [
+        "Construct a high-speed website to showcase educational courses and certifications.",
+        "Integrate automated student inquiry lead capture and WhatsApp counseling routing.",
+        "Establish local Google search dominance for Nagpur skill development queries."
+      ],
+      challenges: [
+        "Outdated static site led to student inquiry drop-offs and high bounce rates.",
+        "Manual inquiry logging created counselor delays and lost enrollments.",
+        "Low mobile responsiveness on smartphones used by students."
+      ]
+    },
+    servicesBuilt: [
+      "Website Design & Development",
+      "Website Design",
+      "Web Development",
+      "SEO",
+      "Performance Optimization",
+      "UI/UX Design"
+    ],
+    beforeAfterMetrics: {
+      before: { revenue: "₹1.5L/mo", leads: "30/mo", conversionRate: "1.2%", loadSpeed: "4.5s", sales: "25/mo" },
+      after: { revenue: "₹8.5L/mo", leads: "240/mo", conversionRate: "5.8%", loadSpeed: "0.6s", sales: "140/mo" },
+      growthPercentages: { revenue: "+466%", leads: "+700%", conversionRate: "+383%", loadSpeed: "-86%", sales: "+460%" },
+      visualMetrics: [
+        { label: "Course Enrollment Revenue", beforeValue: 1.5, afterValue: 8.5, unit: "₹ Lakhs", percentage: "+466%" },
+        { label: "Monthly Student Leads", beforeValue: 30, afterValue: 240, unit: "Leads/mo", percentage: "+700%" },
+        { label: "Enrollment Conversion Rate", beforeValue: 1.2, afterValue: 5.8, unit: "%", percentage: "+383%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Initial Consultation", description: "Audit of course enrollment flows and student counselor handoffs." },
+      { step: "02", title: "Strategy Planning", description: "Architecting Next.js student portal with instant WhatsApp inquiry triggers." },
+      { step: "03", title: "Design", description: "Designing an inspiring, modern academic interface with clear course badges." },
+      { step: "04", title: "Development", description: "Building lightweight, responsive frontend deployed on edge servers." },
+      { step: "05", title: "Launch", description: "Deploying production site with real-time counselor analytics." },
+      { step: "06", title: "Marketing", description: "Launching regional Nagpur education SEO keyword campaigns." },
+      { step: "07", title: "Business Growth", description: "Scaling monthly student admissions by 700%." }
+    ],
+    testimonial: {
+      name: "Prashant Wankhede",
+      role: "Director",
+      company: "Good Willa Education",
+      rating: 5,
+      quote: "SmartlyGrow built an outstanding portal for Good Willa Education. Student inquiries skyrocketed and our admission counseling process became seamless.",
+      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+    }
+  },
+  {
+    id: "shree-ganesha-enterprises",
+    title: "Shree Ganesha Enterprises - B2B Industrial Catalog & RFQ Engine",
+    category: "Business Growth",
+    categorySlug: "business-growth",
+    companyName: "Shree Ganesha Enterprises",
+    industry: "Industrial Supply (Nagpur)",
+    tagline: "High-performance B2B equipment catalog & RFQ inquiry engine",
+    description: "Constructed a comprehensive B2B industrial catalog website that streamlines product inquiries, specification downloads, and RFQ generation.",
+    image: "/shree-ganesha.png",
+    liveUrl: "https://shree-ganesha-enterprises.vercel.app/",
+    companyOverview: {
+      about: "Shree Ganesha Enterprises is a leading supplier of industrial machinery, electrical components, and heavy engineering tools in Central India.",
+      requirements: [
+        "Develop a multi-category B2B product catalog with downloadable spec sheets.",
+        "Integrate automated Request-for-Quote (RFQ) forms connected to sales CRM.",
+        "Achieve top SEO rankings for industrial machinery distribution queries."
+      ],
+      challenges: [
+        "B2B buyers struggled to locate technical spec sheets on the old website.",
+        "Sales reps spent hours emailing PDF quotes manually.",
+        "Low organic visibility compared to national B2B portals."
+      ]
+    },
+    servicesBuilt: [
+      "Website Design & Development",
+      "Website Design",
+      "Web Development",
+      "SEO",
+      "Performance Optimization",
+      "CRM Integration"
+    ],
+    beforeAfterMetrics: {
+      before: { revenue: "₹4.2L/mo", leads: "25/mo", conversionRate: "1.4%", loadSpeed: "5.1s", sales: "12/mo" },
+      after: { revenue: "₹22.5L/mo", leads: "180/mo", conversionRate: "5.9%", loadSpeed: "0.7s", sales: "65/mo" },
+      growthPercentages: { revenue: "+435%", leads: "+620%", conversionRate: "+321%", loadSpeed: "-86%", sales: "+441%" },
+      visualMetrics: [
+        { label: "B2B Contract Pipeline", beforeValue: 4.2, afterValue: 22.5, unit: "₹ Lakhs", percentage: "+435%" },
+        { label: "Monthly Industrial RFQs", beforeValue: 25, afterValue: 180, unit: "RFQs/mo", percentage: "+620%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Initial Consultation", description: "Mapping B2B industrial buying personas and catalog structure." },
+      { step: "02", title: "Strategy Planning", description: "Architecting searchable product database with instant RFQ forms." },
+      { step: "03", title: "Design", description: "Designing clean, authoritative industrial UI with spec tables." },
+      { step: "04", title: "Development", description: "Building performant Next.js catalog site with dynamic filters." },
+      { step: "05", title: "Launch", description: "Deploying site with automated sales rep CRM notifications." },
+      { step: "06", title: "Marketing", description: "Deploying B2B industrial equipment SEO campaigns." },
+      { step: "07", title: "Business Growth", description: "Scaling monthly B2B RFQs by over 600%." }
+    ],
+    testimonial: {
+      name: "Ganesh Sharma",
+      role: "Managing Director",
+      company: "Shree Ganesha Enterprises",
+      rating: 5,
+      quote: "SmartlyGrow built an outstanding B2B industrial website for us. The automated quote inquiries flow directly into our sales CRM and our sales have grown dramatically.",
+      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+    }
+  },
+
+  // CREATIVE SERVICES - VIDEO EDITING
+  {
+    id: "video-editing-showcase",
+    title: "Commercial Video & Reel Production",
     category: "Creative Services",
-    tagline: "Rebranding a venture capital firm with clean design assets",
-    description: "Nexis Capital wanted to shed their traditional corporate look and reposition themselves as an elite, tech-forward venture fund supporting modern tech founders.",
-    client: "Nexis Capital",
-    impact: "$80M Capital Raised",
-    challenge: "Their visual materials felt outdated and did not appeal to modern, hyper-growth startup founders raising Seed and Series A financing rounds.",
-    solution: "We overhauled their brand guidelines, designed a crisp geometric logo, created a cohesive dark/light slate color palette, and built a custom interactive marketing site with digital pitch deck resources.",
-    technologies: ["Brand System", "Figma", "Next.js", "Tailwind CSS", "Motion Graphics"],
-    results: [
-      "Delivered a complete, scalable design token system utilized across all marketing pages.",
-      "Supported the visual marketing materials for their new $80M Series III tech fund.",
-      "Increased digital pitch deck downloads by 210% in the first two weeks."
+    categorySlug: "creative-services",
+    companyName: "Commercial Video & Reel Production",
+    industry: "Video Editing & Content Creation",
+    tagline: "High-retention reel edits, commercial color grading & motion graphics",
+    description: "Professional short-form video editing, hook animations, sound design, and color grading built to maximize social reach and viewer retention.",
+    image: "/video-editing-showcase.mp4",
+    companyOverview: {
+      about: "SmartlyGrow Creative Studio delivers high-converting commercial videos, short-form reels, and brand storytelling edits.",
+      requirements: [
+        "High-retention short-form video & reel editing with dynamic captions.",
+        "Professional color grading, audio leveling, and cinematic sound design.",
+        "Custom motion graphic overlays, lower thirds, and call-to-action popups.",
+        "Optimized 9:16 and 16:9 multi-platform export for Instagram, YouTube & TikTok."
+      ],
+      challenges: [
+        "Low audience retention on raw unedited brand video clips.",
+        "Inconsistent audio quality and lack of dynamic visual hooks.",
+        "Slow turnaround time from raw shoot to social publishing."
+      ]
+    },
+    servicesBuilt: [
+      "Video Editing"
     ],
-    image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=800&auto=format&fit=crop"
+    beforeAfterMetrics: {
+      before: { revenue: "₹2.0L/mo", leads: "50/mo", conversionRate: "1.4%", loadSpeed: "3.5s", sales: "80/mo" },
+      after: { revenue: "₹14.5L/mo", leads: "420/mo", conversionRate: "6.8%", loadSpeed: "0.5s", sales: "620/mo" },
+      growthPercentages: { revenue: "+625%", leads: "+740%", conversionRate: "+385%", loadSpeed: "-85%", sales: "+675%" },
+      visualMetrics: [
+        { label: "Social Video Views", beforeValue: 10, afterValue: 180, unit: "k Views/mo", percentage: "+1700%" },
+        { label: "Average Retention Rate", beforeValue: 14, afterValue: 68, unit: "% Retention", percentage: "+385%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Raw Footage Audit", description: "Analyzing video scripts, audio tracks, and key story hooks." },
+      { step: "02", title: "Pacing & Cut", description: "Editing fast-paced A-roll and B-roll cuts with 3-second hook triggers." },
+      { step: "03", title: "Graphics & Subtitles", description: "Adding custom animated subtitles, icons, and kinetic typography." },
+      { step: "04", title: "Sound & Color", description: "Applying commercial LUT color grading and multi-track audio leveling." },
+      { step: "05", title: "Multi-Platform Export", description: "Delivering high-bitrate 4K 9:16 and 16:9 master files." }
+    ],
+    testimonial: {
+      name: "Rohit Verma",
+      role: "Creative Director",
+      company: "Apex Media",
+      rating: 5,
+      quote: "SmartlyGrow's video editing team is top tier. Their reel cuts increased our organic reach by over 10x and watch times spiked instantly.",
+      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+    }
   },
+  // CREATIVE SERVICES - THUMBNAIL DESIGN
   {
-    id: "apex-seo",
-    title: "Apex Logistics - Search Authority",
-    category: "Growth Services",
-    tagline: "Dominating supply-chain search terms to drive B2B inquiries",
-    description: "Apex wanted to rank #1 for nationwide freight shipping queries, moving away from expensive paid advertising to secure long-term organic leads.",
-    client: "Apex Logistics LLC",
-    impact: "+400% Organic Leads",
-    challenge: "Apex paid $12+ per click on Google Search Ads, leading to high client acquisition costs and low relative margins.",
-    solution: "We carried out a technical SEO audit, resolved site speed bottlenecks, mapped keyword intent targets, and deployed 32 high-value keyword clusters, securing backlinks from authoritative industry journals.",
-    technologies: ["SEO Architecture", "Technical Audit", "Content Strategy", "Ahrefs", "Beehiiv"],
-    results: [
-      "Attained #1 organic position for 'enterprise freight logistics' and 18 related terms.",
-      "Increased organic B2B lead generation by 400% in 90 days.",
-      "Decreased client acquisition costs by 70% by replacing paid ad budgets with organic traffic."
+    id: "thumbnail-design-showcase",
+    title: "High-CTR YouTube & Campaign Thumbnail Design",
+    category: "Creative Services",
+    categorySlug: "creative-services",
+    companyName: "Thumbnail Design Studio",
+    industry: "Graphic Art & Thumbnail Design",
+    tagline: "High-converting visual hooks & viral thumbnail art",
+    description: "Custom high-CTR thumbnail graphics engineered with psychology-backed color contrast, expressive portrait cutouts, and bold typography.",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
+    companyOverview: {
+      about: "SmartlyGrow Design Studio crafts high-performing YouTube and campaign thumbnails designed to maximize click-through rate (CTR).",
+      requirements: [
+        "High-contrast visual composition optimized for mobile feeds.",
+        "Expressive portrait cutout isolation and rim lighting effects.",
+        "Bold, readable typography with 3-word focal hierarchy.",
+        "A/B test thumbnail variants for maximum organic CTR."
+      ],
+      challenges: [
+        "Low click-through rates (under 3% CTR) on default video thumbnails.",
+        "Cluttered layouts that became unreadable on mobile screens.",
+        "Inconsistent visual style across YouTube series uploads."
+      ]
+    },
+    servicesBuilt: [
+      "Thumbnail Design"
     ],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop"
+    beforeAfterMetrics: {
+      before: { revenue: "₹1.5L/mo", leads: "40/mo", conversionRate: "2.1%", loadSpeed: "3.0s", sales: "60/mo" },
+      after: { revenue: "₹9.8L/mo", leads: "280/mo", conversionRate: "8.4%", loadSpeed: "0.5s", sales: "390/mo" },
+      growthPercentages: { revenue: "+553%", leads: "+600%", conversionRate: "+300%", loadSpeed: "-83%", sales: "+550%" },
+      visualMetrics: [
+        { label: "Thumbnail CTR Boost", beforeValue: 2.8, afterValue: 11.4, unit: "% CTR", percentage: "+307%" },
+        { label: "Organic Impressions", beforeValue: 50, afterValue: 420, unit: "k Impressions", percentage: "+740%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Topic Analysis", description: "Analyzing YouTube search intent and competitor thumbnail landscapes." },
+      { step: "02", title: "Concepting", description: "Creating 3 distinct visual angle concepts with high emotional hook." },
+      { step: "03", title: "Photoshop Compositing", description: "Cutouts, lighting effects, color grading, and focal typography." },
+      { step: "04", title: "Mobile Verification", description: "Testing legibility at 10% display scale on small smartphone screens." },
+      { step: "05", title: "Final Delivery", description: "Exporting crisp 1080p high-bitrate JPG/PNG variants." }
+    ],
+    testimonial: {
+      name: "Sneha Kapur",
+      role: "Channel Producer",
+      company: "TechPulse",
+      rating: 5,
+      quote: "SmartlyGrow's thumbnail designs doubled our YouTube CTR overnight. Their understanding of visual hooks and typography is outstanding.",
+      photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+    }
+  },
+  // CREATIVE SERVICES - GRAPHIC DESIGN
+  {
+    id: "graphic-design-showcase",
+    title: "Brand Visual Identity & Graphic Asset Systems",
+    category: "Creative Services",
+    categorySlug: "creative-services",
+    companyName: "Brand Visual Identity Studio",
+    industry: "Branding & Graphic Design",
+    tagline: "Custom graphic assets, social kits & marketing collateral",
+    description: "End-to-end graphic design systems including vector brand logos, social media templates, print collateral, and marketing asset suites.",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format&fit=crop",
+    companyOverview: {
+      about: "SmartlyGrow Graphic Studio creates modern, cohesive visual branding assets for high-growth digital companies.",
+      requirements: [
+        "Vector logo design with full brand color palette & typography hierarchy.",
+        "Social media template kits for Instagram, LinkedIn, and Twitter.",
+        "Print-ready marketing collateral (brochures, banners, business cards).",
+        "Comprehensive brand style guide documentation."
+      ],
+      challenges: [
+        "Outdated visual branding disconnected from modern audience expectations.",
+        "Inconsistent graphic assets across marketing channels.",
+        "Lack of reusable graphic templates for internal teams."
+      ]
+    },
+    servicesBuilt: [
+      "Graphic Design"
+    ],
+    beforeAfterMetrics: {
+      before: { revenue: "₹3.0L/mo", leads: "65/mo", conversionRate: "1.8%", loadSpeed: "3.2s", sales: "110/mo" },
+      after: { revenue: "₹16.0L/mo", leads: "380/mo", conversionRate: "6.9%", loadSpeed: "0.6s", sales: "580/mo" },
+      growthPercentages: { revenue: "+433%", leads: "+484%", conversionRate: "+283%", loadSpeed: "-81%", sales: "+427%" },
+      visualMetrics: [
+        { label: "Brand Equity Index", beforeValue: 32, afterValue: 94, unit: "/100 Score", percentage: "+193%" },
+        { label: "Social Engagement", beforeValue: 1.2, afterValue: 6.8, unit: "% Engagement", percentage: "+466%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Brand Audit", description: "Evaluating market positioning, color psychology, and audience personas." },
+      { step: "02", title: "Visual Direction", description: "Creating moodboards, typography pairs, and color palettes." },
+      { step: "03", title: "Asset Creation", description: "Designing vector logos, icons, social templates, and marketing decks." },
+      { step: "04", title: "Style Guide", description: "Documenting spacing rules, font scales, and logo usage guidelines." },
+      { step: "05", title: "Handoff", description: "Delivering organized Figma design files, SVGs, and vector packages." }
+    ],
+    testimonial: {
+      name: "Vikram Malhotra",
+      role: "Brand Director",
+      company: "Nova Digital",
+      rating: 5,
+      quote: "SmartlyGrow completely refreshed our brand identity. The graphic assets are versatile, modern, and make our company look world-class.",
+      photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+    }
+  },
+
+  // AI SOLUTIONS - AI AUTOMATION
+  {
+    id: "ai-automation-showcase",
+    title: "Autonomous Workflow & CRM Lead Automation Engine",
+    category: "AI Solutions",
+    categorySlug: "ai-solutions",
+    companyName: "Enterprise Workflow AI Automation",
+    industry: "AI Automation & Systems Integration",
+    tagline: "Autonomous CRM lead triage, email parsing & multi-app workflow sync",
+    description: "Built an autonomous AI workflow pipeline connecting CRMs, email inboxes, and webhooks to triage lead inquiries, parse documents, and automate follow-ups in seconds.",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
+    companyOverview: {
+      about: "SmartlyGrow AI Labs builds custom enterprise workflow automation pipelines connecting legacy CRMs with autonomous LLM agents.",
+      requirements: [
+        "Automated multi-lingual inquiry email parsing & lead classification.",
+        "Instant CRM webhook data enrichment & automated calendar scheduling.",
+        "Cross-platform notification triggers across Slack, WhatsApp & Email.",
+        "HIPAA & GDPR compliant encrypted data handling pipelines."
+      ],
+      challenges: [
+        "Inquiries took over 6 hours to triage manually across sales reps.",
+        "Manual data entry created CRM sync errors and lost leads.",
+        "High prospect drop-off waiting for initial email responses."
+      ]
+    },
+    servicesBuilt: [
+      "AI Automation"
+    ],
+    beforeAfterMetrics: {
+      before: { revenue: "₹8.0L/mo", leads: "80/mo", conversionRate: "2.4%", loadSpeed: "4.8s", sales: "15/mo" },
+      after: { revenue: "₹38.0L/mo", leads: "440/mo", conversionRate: "8.9%", loadSpeed: "0.6s", sales: "68/mo" },
+      growthPercentages: { revenue: "+375%", leads: "+450%", conversionRate: "+270%", loadSpeed: "-87%", sales: "+353%" },
+      visualMetrics: [
+        { label: "Pipeline Value", beforeValue: 8.0, afterValue: 38.0, unit: "₹ Lakhs", percentage: "+375%" },
+        { label: "Triage Resolution Speed", beforeValue: 360, afterValue: 0.6, unit: "Seconds", percentage: "-99.8%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Workflow Audit", description: "Mapping manual triage bottlenecks and CRM webhooks." },
+      { step: "02", title: "Architecture", description: "Designing Claude 3.5 & OpenAI pipeline with Zapier/Make webhooks." },
+      { step: "03", title: "Development", description: "Building Python FastAPI orchestration layer with automated retries." },
+      { step: "04", title: "Testing", description: "Stress testing edge-case multi-lingual inquiry prompts." },
+      { step: "05", title: "Deployment", description: "Pushing live with real-time error logging." }
+    ],
+    testimonial: {
+      name: "Ajit Patil",
+      role: "CEO & Co-Founder",
+      company: "DeepTek AI",
+      rating: 5,
+      quote: "SmartlyGrow's AI automation pipeline completely revolutionized our sales operations. Lead response times dropped from 6 hours to under 1 second.",
+      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+    }
+  },
+  // AI SOLUTIONS - AI AGENTS
+  {
+    id: "ai-agents-showcase",
+    title: "24/7 Context-Aware Customer & Sales AI Agent",
+    category: "AI Solutions",
+    categorySlug: "ai-solutions",
+    companyName: "Autonomous Customer AI Agent",
+    industry: "AI Agents & LLM RAG Systems",
+    tagline: "24/7 autonomous support, technical query resolution & instant scheduling",
+    description: "Deployed an intelligent AI agent trained on company documentation and databases that answers complex customer queries, resolves issues, and schedules meetings 24/7.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+    companyOverview: {
+      about: "SmartlyGrow AI Labs engineers context-aware AI agents utilizing Retrieval-Augmented Generation (RAG) for 24/7 customer support.",
+      requirements: [
+        "Custom vector database indexing company knowledge bases & docs.",
+        "Autonomous ticket resolution across web chat, WhatsApp, and Slack.",
+        "Human escalation fallback triggers for high-value priority accounts.",
+        "Live analytics dashboard tracking resolution accuracy and CSAT."
+      ],
+      challenges: [
+        "Support ticket backlogs reached 48 hours during peak periods.",
+        "High cost of maintaining 24/7 technical support teams.",
+        "Developer drop-off due to complex API troubleshooting delays."
+      ]
+    },
+    servicesBuilt: [
+      "AI Agents"
+    ],
+    beforeAfterMetrics: {
+      before: { revenue: "₹12.0L/mo", leads: "150/mo", conversionRate: "2.4%", loadSpeed: "3.6s", sales: "80/mo" },
+      after: { revenue: "₹52.0L/mo", leads: "780/mo", conversionRate: "8.2%", loadSpeed: "0.5s", sales: "390/mo" },
+      growthPercentages: { revenue: "+333%", leads: "+420%", conversionRate: "+241%", loadSpeed: "-86%", sales: "+387%" },
+      visualMetrics: [
+        { label: "Instant Ticket Resolutions", beforeValue: 12, afterValue: 78, unit: "% Autonomous", percentage: "+550%" },
+        { label: "Support Cost Reduction", beforeValue: 100, afterValue: 32, unit: "% Cost", percentage: "-68%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Knowledge Ingestion", description: "Extracting documentation, FAQs, and support ticket logs." },
+      { step: "02", title: "Vector DB Setup", description: "Indexing knowledge vectors using Pinecone & LangChain." },
+      { step: "03", title: "UI Integration", description: "Embedding responsive AI chat widget across web portals." },
+      { step: "04", title: "Guardrails", description: "Configuring safety guardrails and fallback escalation logic." },
+      { step: "05", title: "Launch", description: "Deploying AI agent to handle live customer traffic." }
+    ],
+    testimonial: {
+      name: "Amit Kumar",
+      role: "Head of Product",
+      company: "Easebuzz",
+      rating: 5,
+      quote: "The AI agent built by SmartlyGrow cut our support backlog by 78% and dramatically improved customer satisfaction.",
+      photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop"
+    }
+  },
+  // AI SOLUTIONS - DATA ANALYTICS
+  {
+    id: "data-analytics-showcase",
+    title: "Real-Time Predictive Growth & BI Analytics Dashboard",
+    category: "AI Solutions",
+    categorySlug: "ai-solutions",
+    companyName: "Predictive BI & Intelligence Dashboard",
+    industry: "Data Analytics & Business Intelligence",
+    tagline: "Live conversion funnels, revenue forecasting & anomaly detection",
+    description: "Engineered a unified business intelligence dashboard converting raw database logs and customer interactions into actionable, real-time growth analytics.",
+    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=800&auto=format&fit=crop",
+    companyOverview: {
+      about: "SmartlyGrow Data Studio builds custom BI dashboards and AI predictive analytics platforms for executive decision making.",
+      requirements: [
+        "Real-time visual dashboards tracking CAC, LTV, and conversion funnels.",
+        "Automated AI anomaly detection highlighting churn and drop-off risks.",
+        "Interactive filtering by region, customer cohort, and marketing channel.",
+        "Automated weekly PDF executive intelligence reports sent via email."
+      ],
+      challenges: [
+        "Executives relied on outdated manual Excel reports prepared weekly.",
+        "Data siloed across payment gateways, CRMs, and web analytics.",
+        "Inability to spot customer drop-off trends in real-time."
+      ]
+    },
+    servicesBuilt: [
+      "Data Analytics"
+    ],
+    beforeAfterMetrics: {
+      before: { revenue: "₹5.0L/mo", leads: "70/mo", conversionRate: "1.8%", loadSpeed: "4.0s", sales: "90/mo" },
+      after: { revenue: "₹24.0L/mo", leads: "360/mo", conversionRate: "7.5%", loadSpeed: "0.5s", sales: "480/mo" },
+      growthPercentages: { revenue: "+380%", leads: "+414%", conversionRate: "+316%", loadSpeed: "-87.5%", sales: "+433%" },
+      visualMetrics: [
+        { label: "Data Decision Speed", beforeValue: 7, afterValue: 0.1, unit: "Days to Instant", percentage: "-98.5%" },
+        { label: "Funnel Conversion Lift", beforeValue: 1.8, afterValue: 7.5, unit: "% Conversion", percentage: "+316%" }
+      ]
+    },
+    timeline: [
+      { step: "01", title: "Data Audit", description: "Mapping database schemas, API connectors, and reporting KPIs." },
+      { step: "02", title: "ETL Pipeline", description: "Building automated DuckDB & PostgreSQL sync pipelines." },
+      { step: "03", title: "Dashboard UI", description: "Designing high-contrast executive dashboards with Recharts." },
+      { step: "04", title: "Predictive Models", description: "Calibrating revenue forecasting and churn risk algorithms." },
+      { step: "05", title: "Deployment", description: "Configuring role-based access for executive teams." }
+    ],
+    testimonial: {
+      name: "Dr. Rajesh Uikey",
+      role: "Chief Executive Officer",
+      company: "VSPM Health",
+      rating: 5,
+      quote: "SmartlyGrow's analytics dashboard gives us total clarity over our growth metrics. We can track conversion funnels in real-time and make data-driven decisions instantly.",
+      photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+    }
   }
 ];
 
@@ -586,7 +1093,7 @@ export const testimonials: Testimonial[] = [
     name: "Vikram Malhotra",
     role: "Chief Operating Officer",
     company: "Lumina Labs",
-    content: "SmartyGrow did not just build a website; they reconstructed our entire lead ingestion pipeline. Integrating the AI email draft assistant cut our triage times by 80%. Our online conversion rates are up by 45%. Absolute professionals.",
+    content: "SmartlyGrow did not just build a website; they reconstructed our entire lead ingestion pipeline. Integrating the AI email draft assistant cut our triage times by 80%. Our online conversion rates are up by 45%. Absolute professionals.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&auto=format&fit=crop"
   },
@@ -604,7 +1111,7 @@ export const testimonials: Testimonial[] = [
     name: "David Chen",
     role: "VP of Product",
     company: "Apex Ledger",
-    content: "The autonomous customer agent built by SmartyGrow resolves 72% of our support chats instantly. We didn't believe AI agents were this stable, but the guardrails they engineered are foolproof. Highly recommended.",
+    content: "The autonomous customer agent built by SmartlyGrow resolves 72% of our support chats instantly. We didn't believe AI agents were this stable, but the guardrails they engineered are foolproof. Highly recommended.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=120&auto=format&fit=crop"
   }
@@ -628,7 +1135,7 @@ export const faqData = [
     answer: "Absolutely. We build marketing sites with options for structured headless CMS platforms (like Sanity, Strapi, or Contentful). This allows your copywriters and marketing teams to edit text, publish articles, and update images without touching code."
   },
   {
-    question: "How do we get started with SmartyGrow?",
+    question: "How do we get started with SmartlyGrow?",
     answer: "Click any of our 'Book a Free Consultation' buttons to fill out a short brief about your project. From there, you can choose a convenient slot on our calendar for a 30-minute discovery call where we map out a solution blueprint."
   }
 ];

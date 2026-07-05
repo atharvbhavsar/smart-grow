@@ -13,9 +13,9 @@ const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
   phone: z.string().min(8, "Invalid phone number format"),
-  company: z.string().optional(),
+  company: z.string().optional().or(z.literal("")),
   service: z.string().min(1, "Please select a service"),
-  message: z.string().min(10, "Message must be at least 10 characters long"),
+  message: z.string().min(2, "Please enter project details"),
 });
 
 type ContactFormValues = z.infer<typeof contactSchema>;
@@ -57,9 +57,21 @@ function ContactFormContent() {
   }, [defaultService, defaultFeatures, setValue]);
 
   const onSubmit = async (data: ContactFormValues) => {
-    // Simulate submission delay
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Contact form submitted data:", data);
+    // Format the consultation brief message
+    const formattedMessage = `Hello, I'm interested in a project with SmartlyGrow! Here is my brief:
+    
+👤 Name: ${data.name}
+✉️ Email: ${data.email}
+📞 Phone: ${data.phone}
+🏢 Company: ${data.company || "N/A"}
+🛠️ Target Service: ${data.service}
+📝 Objectives & Details: ${data.message}`;
+
+    const encodedText = encodeURIComponent(formattedMessage);
+    const whatsappUrl = `https://wa.me/917020951401?text=${encodedText}`;
+    
+    // Redirect to WhatsApp directly
+    window.open(whatsappUrl, "_blank");
     setSubmitted(true);
   };
 
@@ -73,7 +85,7 @@ function ContactFormContent() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight leading-tight">
           Let&apos;s Architect Your Growth
         </h1>
-        <p className="text-slate-500 mt-4 text-sm sm:text-base leading-relaxed">
+        <p className="text-slate-500 mt-4 text-sm sm:text-base leading-relaxed font-medium">
           Have an idea for a platform, custom automation, or a high-performance marketing site? Send us a message or jump directly to WhatsApp.
         </p>
 
@@ -85,8 +97,8 @@ function ContactFormContent() {
             </div>
             <div>
               <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Email Us</h4>
-              <a href="mailto:growth@smartygrow.com" className="text-slate-800 hover:text-blue-600 font-semibold transition-colors text-sm sm:text-base">
-                growth@smartygrow.com
+              <a href="mailto:smartlygrow.offical@gmail.com" className="text-slate-800 hover:text-blue-600 font-semibold transition-colors text-sm sm:text-base">
+                smartlygrow.offical@gmail.com
               </a>
             </div>
           </div>
@@ -146,9 +158,9 @@ function ContactFormContent() {
             <div className="h-16 w-16 rounded-full bg-emerald-50 text-emerald-500 flex items-center justify-center mb-6">
               <CheckCircle className="h-10 w-10" />
             </div>
-            <h2 className="text-2xl font-bold text-slate-900">Consultation Booked!</h2>
-            <p className="text-slate-500 mt-2 text-sm sm:text-base max-w-sm mx-auto">
-              Thank you for submitting your details. Aashish Jhumle will review your brief and email you a calendar booking invitation in under 4 hours.
+            <h2 className="text-2xl font-bold text-slate-900">Brief Sent to WhatsApp!</h2>
+            <p className="text-slate-500 mt-2 text-sm sm:text-base max-w-sm mx-auto font-medium">
+              We have compiled your brief and opened WhatsApp. Please press send in the WhatsApp window to finalize booking.
             </p>
             <Button 
               onClick={() => setSubmitted(false)}
@@ -165,7 +177,7 @@ function ContactFormContent() {
                 <label className="text-xs font-bold text-slate-700 uppercase tracking-wide">Your Name *</label>
                 <input
                   type="text"
-                  placeholder="e.g. John Doe"
+                  placeholder=""
                   {...register("name")}
                   className={`w-full border bg-slate-50/50 hover:bg-slate-50 focus:bg-white rounded-xl px-4 py-3 text-sm outline-none transition-all ${
                     errors.name ? "border-red-500 ring-2 ring-red-100" : "border-slate-200 focus:ring-2 focus:ring-blue-600/10 focus:border-blue-600 focus:shadow-xs"
@@ -179,7 +191,7 @@ function ContactFormContent() {
                 <label className="text-xs font-bold text-slate-700 uppercase tracking-wide">Work Email *</label>
                 <input
                   type="email"
-                  placeholder="e.g. john@company.com"
+                  placeholder=""
                   {...register("email")}
                   className={`w-full border bg-slate-50/50 hover:bg-slate-50 focus:bg-white rounded-xl px-4 py-3 text-sm outline-none transition-all ${
                     errors.email ? "border-red-500 ring-2 ring-red-100" : "border-slate-200 focus:ring-2 focus:ring-blue-600/10 focus:border-blue-600 focus:shadow-xs"
@@ -195,7 +207,7 @@ function ContactFormContent() {
                 <label className="text-xs font-bold text-slate-700 uppercase tracking-wide">Phone Number *</label>
                 <input
                   type="text"
-                  placeholder="e.g. +1 (555) 000-0000"
+                  placeholder=""
                   {...register("phone")}
                   className={`w-full border bg-slate-50/50 hover:bg-slate-50 focus:bg-white rounded-xl px-4 py-3 text-sm outline-none transition-all ${
                     errors.phone ? "border-red-500 ring-2 ring-red-100" : "border-slate-200 focus:ring-2 focus:ring-blue-600/10 focus:border-blue-600 focus:shadow-xs"
@@ -209,14 +221,14 @@ function ContactFormContent() {
                 <label className="text-xs font-bold text-slate-700 uppercase tracking-wide">Company Name</label>
                 <input
                   type="text"
-                  placeholder="e.g. Stripe Inc"
+                  placeholder=""
                   {...register("company")}
                   className="w-full border border-slate-200 bg-slate-50/50 hover:bg-slate-50 focus:bg-white rounded-xl px-4 py-3 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-600/10 focus:border-blue-600 focus:shadow-xs"
                 />
               </div>
             </div>
 
-            {/* Target Service (Full width since Budget is removed) */}
+            {/* Target Service displaying actual services map */}
             <div className="flex flex-col gap-1.5 items-start">
               <label className="text-xs font-bold text-slate-700 uppercase tracking-wide">Target Service *</label>
               <select
@@ -225,16 +237,25 @@ function ContactFormContent() {
                   errors.service ? "border-red-500 ring-2 ring-red-100" : "border-slate-200 focus:ring-2 focus:ring-blue-600/10 focus:border-blue-600 focus:shadow-xs"
                 }`}
               >
-                <option value="">Select an option...</option>
-                <option value="website-development">Website Development</option>
-                <option value="web-applications">Web Applications</option>
-                <option value="ai-automation">AI Automation</option>
-                <option value="ai-agents">AI Agents</option>
-                <option value="branding">Branding & System Tokens</option>
-                <option value="content-creation">Content Marketing</option>
-                <option value="social-media-management">Social Channels</option>
-                <option value="seo">SEO Dominance</option>
-                <option value="video-editing">Video Editing</option>
+                <option value="">Select a service...</option>
+                <optgroup label="Business Growth">
+                  <option value="Website Design & Development">Website Design & Development</option>
+                  <option value="Strong Online Presence">Strong Online Presence</option>
+                  <option value="Social Media Growth">Social Media Growth</option>
+                  <option value="Social Media Management">Social Media Management</option>
+                  <option value="Content Creation">Content Creation</option>
+                  <option value="UGC Videos">UGC Videos</option>
+                </optgroup>
+                <optgroup label="Creative Services">
+                  <option value="Video Editing">Video Editing</option>
+                  <option value="Thumbnail Design">Thumbnail Design</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                </optgroup>
+                <optgroup label="AI Solutions">
+                  <option value="AI Automation">AI Automation</option>
+                  <option value="AI Agents">AI Agents</option>
+                  <option value="Data Analytics">Data Analytics</option>
+                </optgroup>
               </select>
               {errors.service && <span className="text-[11px] text-red-500 font-semibold">{errors.service.message}</span>}
             </div>
@@ -244,7 +265,7 @@ function ContactFormContent() {
               <label className="text-xs font-bold text-slate-700 uppercase tracking-wide">Project Details & Objectives *</label>
               <textarea
                 rows={5}
-                placeholder="Describe what you want to build and your business targets..."
+                placeholder=""
                 {...register("message")}
                 className={`w-full border bg-slate-50/50 hover:bg-slate-50 focus:bg-white rounded-xl px-4 py-3 text-sm outline-none transition-all ${
                   errors.message ? "border-red-500 ring-2 ring-red-100" : "border-slate-200 focus:ring-2 focus:ring-blue-600/10 focus:border-blue-600 focus:shadow-xs"
@@ -259,7 +280,7 @@ function ContactFormContent() {
               disabled={isSubmitting}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-xl py-4 font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-md shadow-blue-100 cursor-pointer"
             >
-              {isSubmitting ? "Validating & Submitting..." : "Send Consultation Brief"}
+              {isSubmitting ? "Redirecting..." : "Send Consultation Brief"}
               <ArrowRight className="h-4 w-4" />
             </Button>
           </form>

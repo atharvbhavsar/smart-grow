@@ -108,7 +108,7 @@ export async function sendWelcomeEmail(email: string) {
       subject: "Welcome to SmartlyGrow! 🚀",
       sender: { 
         name: "SmartlyGrow Partnerships", 
-        email: "partnerships@smartygrow.com" 
+        email: "smartlygrow.offical@gmail.com" 
       },
       to: [{ email: email }],
       htmlContent: `

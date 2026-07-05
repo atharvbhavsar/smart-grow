@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Case Studies & Portfolio | SmartyGrow",
+  title: "Case Studies & Portfolio | SmartlyGrow",
   description: "Explore our software engineering and AI workflow projects, outlining actual bottom-line growth achievements and conversion statistics.",
 };
 

@@ -19,10 +19,10 @@ export function Footer() {
                 Contact us at
               </p>
               <a 
-                href="mailto:partnerships@smartygrow.com" 
+                href="mailto:smartlygrow.offical@gmail.com" 
                 className="text-lg sm:text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors break-all"
               >
-                partnerships@smartygrow.com
+                smartlygrow.offical@gmail.com
               </a>
             </div>
 
@@ -41,8 +41,8 @@ export function Footer() {
               <ul className="space-y-2.5">
                 {[
                   { label: "Home", href: "/" },
-                  { label: "Prebuilt", href: "/packages" },
-                  { label: "Customized", href: "/services" },
+                  { label: "Portfolio", href: "/portfolio" },
+                  { label: "Services", href: "/services" },
                   { label: "About Us", href: "/about" },
                   { label: "Contact Us", href: "/contact" }
                 ].map((link) => (
@@ -105,7 +105,7 @@ export function Footer() {
             ].join(", "),
           }}
         >
-          Smartygrow
+          Smartlygrow
         </div>
       </div>
     </footer>

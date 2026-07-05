@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Book a Free Consultation | SmartyGrow",
+  title: "Book a Free Consultation | SmartlyGrow",
   description: "Schedule a discovery scope call to audit your website speed, custom SaaS layout design, or AI agent routing systems.",
 };
 

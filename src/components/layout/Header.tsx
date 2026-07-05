@@ -20,12 +20,12 @@ export function Header() {
           {/* Desktop Left Nav Links */}
           <div className="hidden md:flex items-center gap-16 flex-1 justify-end pr-14">
             <Link
-              href="/packages"
+              href="/portfolio"
               className={`text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
-                pathname === "/packages" ? "text-blue-600" : "text-slate-900"
+                pathname === "/portfolio" ? "text-blue-600" : "text-slate-900"
               }`}
             >
-              Prebuilt
+              Portfolio
             </Link>
             <Link
               href="/services"
@@ -33,10 +33,10 @@ export function Header() {
                 pathname.startsWith("/services") ? "text-blue-600" : "text-slate-900"
               }`}
             >
-              Customized
+              Services
             </Link>
           </div>
-
+          
           {/* Centered Logo */}
           <Link href="/" className="flex-shrink-0 mx-2">
             <Logo showText={true} />
@@ -85,8 +85,8 @@ export function Header() {
                   {/* Nav links */}
                   <nav className="flex flex-col gap-1">
                     {[
-                      { href: "/packages", label: "Prebuilt Packages" },
-                      { href: "/services", label: "Customized Services" },
+                      { href: "/portfolio", label: "Portfolio" },
+                      { href: "/services", label: "Services" },
                       { href: "/about", label: "About Us" },
                       { href: "/contact", label: "Contact Us" },
                     ].map(({ href, label }) => {

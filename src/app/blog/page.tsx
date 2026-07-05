@@ -35,7 +35,7 @@ export default function Blog() {
             Our Insights
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 mt-6 tracking-tight leading-tight max-w-3xl mx-auto">
-            The SmartyGrow Operations Journal
+            The SmartlyGrow Operations Journal
           </h1>
           <p className="text-slate-500 mt-4 text-base sm:text-lg max-w-2xl mx-auto">
             Deep dives, tutorials, and strategic advice on software engineering, vector search agent training, and B2B organic traffic.

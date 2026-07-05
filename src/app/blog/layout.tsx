@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog & Insights | SmartyGrow",
+  title: "Blog & Insights | SmartlyGrow",
   description: "Read technical guides on Next.js frontend performance, vector search engine designs, and SEO traffic blueprints.",
 };
 

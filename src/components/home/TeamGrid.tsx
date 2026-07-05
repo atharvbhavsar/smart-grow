@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const TEAM = [
@@ -9,6 +10,8 @@ const TEAM = [
   { name: "Sajan Bhoyar", role: "App Lead", image: "/photo/app lead.png" },
   { name: "Atharv Bhavsar", role: "Web Lead", image: "/photo/website lead.jpeg" },
   { name: "Hemant Bhoyar", role: "AI Lead", image: "/photo/ai  lead.png" },
+  { name: "Aryan Deshmukh", role: "Video Editor", image: "/photo/video.png" },
+  { name: "Sudhir Swami", role: "Choreographer", image: "/photo/image.png" },
 ];
 
 export function TeamGrid() {
@@ -57,30 +60,35 @@ export function TeamGrid() {
           className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {TEAM.map((member) => (
-            <div
-              key={member.name}
-              className="flex-none w-[72vw] sm:w-[260px] lg:w-[calc(20%-14px)] snap-start"
-            >
-              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all group bg-slate-100 border border-slate-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-                {/* Bottom name panel */}
-                <div className="absolute bottom-3 left-3 right-3 bg-white/90 backdrop-blur-md px-4 py-3 rounded-2xl border border-slate-100/50 shadow-sm">
-                  <h4 className="text-sm font-extrabold text-slate-950 uppercase tracking-wide truncate">
-                    {member.name}
-                  </h4>
-                  <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mt-0.5">
-                    {member.role}
-                  </p>
-                </div>
+          {TEAM.map((member) => {
+            const slug = member.name.toLowerCase().replace(/\s+/g, "-");
+            return (
+              <div
+                key={member.name}
+                className="flex-none w-[72vw] sm:w-[260px] lg:w-[calc(20%-14px)] snap-start"
+              >
+                <Link href={`/team/${slug}`}>
+                  <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all group bg-slate-100 border border-slate-100 cursor-pointer">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    />
+                    {/* Bottom name panel */}
+                    <div className="absolute bottom-3 left-3 right-3 bg-white/90 backdrop-blur-md px-4 py-3 rounded-2xl border border-slate-100/50 shadow-sm">
+                      <h4 className="text-sm font-extrabold text-slate-950 uppercase tracking-wide truncate group-hover:text-blue-600 transition-colors">
+                        {member.name}
+                      </h4>
+                      <p className="text-xs font-bold text-blue-600 uppercase tracking-widest mt-0.5">
+                        {member.role}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Mobile arrow row */}

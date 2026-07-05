@@ -2,8 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | SmartyGrow",
-  description: "Read the Terms & Conditions of SmartyGrow to understand our project delivery pipelines, SLA commitments, and terms of service.",
+  title: "Terms & Conditions | SmartlyGrow",
+  description: "Read the Terms & Conditions of SmartlyGrow to understand our project delivery pipelines, SLA commitments, and terms of service.",
 };
 
 export default function TermsPage() {
@@ -14,7 +14,7 @@ export default function TermsPage() {
         <div className="prose prose-slate space-y-6 text-sm text-slate-600 leading-relaxed">
           <p className="font-semibold text-slate-800">Effective Date: June 28, 2026</p>
           <p>
-            Welcome to SmartyGrow. These Terms & Conditions outline the rules and regulations governing your use of our website, estimation calculators, and professional service offerings.
+            Welcome to SmartlyGrow. These Terms & Conditions outline the rules and regulations governing your use of our website, estimation calculators, and professional service offerings.
           </p>
           <h2 className="text-lg font-bold text-slate-900 pt-4">1. Acceptance of Terms</h2>
           <p>
@@ -22,7 +22,7 @@ export default function TermsPage() {
           </p>
           <h2 className="text-lg font-bold text-slate-900 pt-4">2. Intellectual Property Rights</h2>
           <p>
-            Once a project contract is completed and paid in full, our clients receive 100% ownership and intellectual property rights over all customized Next.js code, design layouts, Figma tokens, and vector assets. SmartyGrow retains ownership of our proprietary baseline boilerplates and templates.
+            Once a project contract is completed and paid in full, our clients receive 100% ownership and intellectual property rights over all customized Next.js code, design layouts, Figma tokens, and vector assets. SmartlyGrow retains ownership of our proprietary baseline boilerplates and templates.
           </p>
           <h2 className="text-lg font-bold text-slate-900 pt-4">3. Limitation of Liability</h2>
           <p>

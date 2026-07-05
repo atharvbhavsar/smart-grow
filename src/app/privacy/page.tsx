@@ -2,8 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | SmartyGrow",
-  description: "Read the Privacy Policy of SmartyGrow to understand how we protect and manage your data.",
+  title: "Privacy Policy | SmartlyGrow",
+  description: "Read the Privacy Policy of SmartlyGrow to understand how we protect and manage your data.",
 };
 
 export default function PrivacyPage() {
@@ -14,7 +14,7 @@ export default function PrivacyPage() {
         <div className="prose prose-slate space-y-6 text-sm text-slate-600 leading-relaxed">
           <p className="font-semibold text-slate-800">Effective Date: June 28, 2026</p>
           <p>
-            At SmartyGrow, protecting your privacy and security is central to our business strategy. This Privacy Policy outlines how we collect, process, and secure user information when visiting our website, filling out our discovery forms, or utilizing our interactive estimation tools.
+            At SmartlyGrow, protecting your privacy and security is central to our business strategy. This Privacy Policy outlines how we collect, process, and secure user information when visiting our website, filling out our discovery forms, or utilizing our interactive estimation tools.
           </p>
           <h2 className="text-lg font-bold text-slate-900 pt-4">1. Information We Collect</h2>
           <p>
