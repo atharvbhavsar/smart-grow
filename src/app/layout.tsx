@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { MarqueeTicker } from "@/components/layout/MarqueeTicker";
 import SmoothScrollProvider from "@/components/SmoothScroll";
 import { FloatingInstagram, FloatingWhatsApp } from "@/components/home/FinalCta";
+import { Analytics } from "@vercel/analytics/react";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -56,6 +57,7 @@ export default function RootLayout({
           <Footer />
           <FloatingInstagram />
           <FloatingWhatsApp />
+          <Analytics />
         </SmoothScrollProvider>
       </body>
     </html>
