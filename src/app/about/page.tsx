@@ -135,88 +135,19 @@ export default function About() {
               </ul>
             </div>
 
-            {/* Right Graphic Mockup */}
-            <div className="lg:col-span-6 relative flex justify-center">
-              {/* Outer container with ambient glow */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-3xl opacity-10 blur-xl pointer-events-none" />
-              
-              <div className="relative bg-slate-900 border border-slate-800 rounded-3xl p-5 shadow-2xl w-full max-w-[480px] aspect-[4/3] flex flex-col justify-between overflow-hidden text-left font-mono">
-                {/* Browser Header Bar */}
-                <div className="flex items-center justify-between border-b border-slate-850 pb-3 mb-4 shrink-0">
-                  <div className="flex gap-2">
-                    <span className="w-3 h-3 rounded-full bg-rose-500/80 inline-block" />
-                    <span className="w-3 h-3 rounded-full bg-amber-500/80 inline-block" />
-                    <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
-                  </div>
-                  <div className="bg-slate-950/80 text-[10px] text-slate-500 px-4 py-1 rounded-md border border-slate-800/40 select-none">
-                    smartlygrow.com/system-dashboard
-                  </div>
-                  <div className="w-4" />
+            {/* Right Logo Column */}
+            <div className="lg:col-span-6 flex justify-center items-center">
+              <div className="relative group max-w-[400px] w-full aspect-square flex items-center justify-center">
+                {/* Glow wrap */}
+                <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-3xl opacity-10 blur-xl group-hover:opacity-15 transition-opacity duration-500 pointer-events-none" />
+                <div className="relative w-full h-full rounded-3xl overflow-hidden bg-slate-50 border border-slate-100 flex items-center justify-center p-8 hover:shadow-md hover:border-slate-200 transition-all duration-300">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img 
+                    src="/logo-about.png" 
+                    alt="SmartlyGrow Logo" 
+                    className="w-full h-auto object-contain max-h-[280px]" 
+                  />
                 </div>
-
-                {/* Dashboard Grid */}
-                <div className="flex-1 grid grid-cols-2 gap-3 mb-3">
-                  {/* Left Column: Metrics */}
-                  <div className="bg-slate-950/60 border border-slate-800/50 rounded-xl p-3.5 flex flex-col justify-between">
-                    <div>
-                      <span className="text-[9px] text-blue-400 font-bold uppercase tracking-wider">System Velocity</span>
-                      <div className="text-xl font-extrabold text-white mt-1">99.8%</div>
-                    </div>
-                    <div className="h-10 flex items-end gap-1 mt-2">
-                      <div className="w-full bg-blue-500/20 h-1/3 rounded-xs" />
-                      <div className="w-full bg-blue-500/30 h-1/2 rounded-xs" />
-                      <div className="w-full bg-blue-500/40 h-2/3 rounded-xs" />
-                      <div className="w-full bg-blue-500 h-full rounded-xs shadow-md shadow-blue-500/20" />
-                    </div>
-                  </div>
-
-                  {/* Right Column: AI Agent status */}
-                  <div className="bg-slate-950/60 border border-slate-800/50 rounded-xl p-3.5 flex flex-col justify-between">
-                    <div>
-                      <span className="text-[9px] text-emerald-400 font-bold uppercase tracking-wider">AI Automation</span>
-                      <div className="text-[10px] text-slate-300 font-bold mt-1.5 flex items-center gap-1.5">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                        Active Agent Loop
-                      </div>
-                    </div>
-                    <div className="text-[9px] text-slate-500 leading-snug space-y-1 mt-2">
-                      <div>&gt; Syncing CRM database...</div>
-                      <div className="text-emerald-400">&gt; Loop success (0.4ms)</div>
-                    </div>
-                  </div>
-
-                  {/* Bottom Wide Column: Interactive Brand Certification */}
-                  <div className="col-span-2 bg-gradient-to-br from-slate-950/80 to-slate-900/45 border border-slate-800/50 rounded-xl p-4 flex items-center justify-between gap-4">
-                    <div className="flex items-center gap-3">
-                      {/* Logo container inside dashboard */}
-                      <div className="bg-white p-2 rounded-xl shadow-md flex items-center justify-center shrink-0">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img 
-                          src="/logo-new.png" 
-                          alt="SmartlyGrow Logo" 
-                          className="h-7 w-auto object-contain" 
-                        />
-                      </div>
-                      <div>
-                        <div className="text-xs font-bold text-white tracking-tight">SmartlyGrow System</div>
-                        <div className="text-[9px] text-slate-500">Autonomous Deployment Core</div>
-                      </div>
-                    </div>
-                    <span className="text-[9px] font-extrabold uppercase text-blue-500 bg-blue-950/50 border border-blue-900/50 px-2 py-1 rounded-md tracking-wider">
-                      Verified v1.4
-                    </span>
-                  </div>
-                </div>
-
-                {/* Dashboard Footer/Status */}
-                <div className="flex items-center justify-between text-[9px] text-slate-500 border-t border-slate-850 pt-2.5 shrink-0">
-                  <span className="flex items-center gap-1">
-                    <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-                    All nodes operational
-                  </span>
-                  <span>SSL SECURED</span>
-                </div>
-
               </div>
             </div>
 
