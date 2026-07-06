@@ -51,3 +51,10 @@ AGENT.md
 .vercel
 .env*
 
+# raw assets in root
+/*.png
+/*.mp4
+/photo/
+/photot/
+/thumbnail/
+/video/

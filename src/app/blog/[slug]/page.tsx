@@ -5,6 +5,7 @@ import { blogPosts } from "@/data/siteData";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, Calendar, Share2, MessageSquare, ArrowRight } from "lucide-react";
+import JsonLd from "@/components/seo/JsonLd";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -25,8 +26,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${post.title} | Blog`,
+    title: `${post.title} | SmartlyGrow Blog`,
     description: post.summary,
+    alternates: {
+      canonical: `https://smartlygrow.in/blog/${slug}`,
+    },
+    openGraph: {
+      title: `${post.title} | SmartlyGrow Blog`,
+      description: post.summary,
+      url: `https://smartlygrow.in/blog/${slug}`,
+      type: "article",
+      publishedTime: post.date,
+      images: [
+        {
+          url: "/logo-new.png",
+          alt: post.title,
+        }
+      ]
+    }
   };
 }
 
@@ -41,8 +58,60 @@ export default async function BlogDetailPage({ params }: Props) {
   // Find related posts (exclude current)
   const relatedPosts = blogPosts.filter((p) => p.id !== post.id).slice(0, 2);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.summary,
+    "image": "https://smartlygrow.in/logo-new.png",
+    "datePublished": post.date,
+    "author": {
+      "@type": "Person",
+      "name": "SmartlyGrow Editorial"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SmartlyGrow",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://smartlygrow.in/logo-new.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://smartlygrow.in/blog/${post.id}`
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://smartlygrow.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://smartlygrow.in/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://smartlygrow.in/blog/${post.id}`
+      }
+    ]
+  };
+
   return (
     <main className="flex-1 bg-white font-sans text-left">
+      <JsonLd schema={articleSchema} />
+      <JsonLd schema={breadcrumbSchema} />
       
       {/* Top Breadcrumb Nav */}
       <div className="border-b border-slate-100 bg-slate-50/30 py-4">

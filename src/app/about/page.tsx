@@ -4,10 +4,14 @@ import { Check, Target, Compass, Award, Brain } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/Logo";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "About Us | SmartlyGrow",
-  description: "We are an AI-first business growth partner. We design high-performance Next.js websites, configure CRM and email automations, and build context-aware AI agents.",
+  title: "About Us | SmartlyGrow AI & Web Agency",
+  description: "Learn more about SmartlyGrow. We are a lean technology studio in Pune, India building high-performance Next.js websites, workflow automations, and custom AI agents.",
+  alternates: {
+    canonical: "https://smartlygrow.in/about",
+  },
 };
 
 const TEAM = [
@@ -83,8 +87,35 @@ const VALUES = [
 ];
 
 export default function About() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://smartlygrow.in/about/#webpage",
+    "url": "https://smartlygrow.in/about",
+    "name": "About Us | SmartlyGrow AI & Web Agency",
+    "description": "Learn more about SmartlyGrow. We are a lean technology studio in Pune, India building high-performance Next.js websites, workflow automations, and custom AI agents.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://smartlygrow.in"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://smartlygrow.in/about"
+        }
+      ]
+    }
+  };
+
   return (
     <main className="flex-1 bg-white font-sans pt-20">
+      <JsonLd schema={aboutSchema} />
       
       {/* Hero Section */}
       <section className="py-20 lg:py-24 bg-slate-50/50 border-b border-slate-100 relative overflow-hidden">
