@@ -88,6 +88,11 @@ export const metadata: Metadata = {
     icon: "/icon.svg",
     apple: "/logo-about.png",
   },
+  verification: {
+    other: {
+      "msvalidate.01": "A38C2CA8C178B879F9BFB2AF9AFDC3A2",
+    },
+  },
 };
 
 export default function RootLayout({
