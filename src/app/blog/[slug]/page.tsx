@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, Calendar, Share2, MessageSquare, ArrowRight } from "lucide-react";
 import JsonLd from "@/components/seo/JsonLd";
+import ShareButtons from "@/components/blog/ShareButtons";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -115,7 +116,7 @@ export default async function BlogDetailPage({ params }: Props) {
       
       {/* Top Breadcrumb Nav */}
       <div className="border-b border-slate-100 bg-slate-50/30 py-4">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <Link 
             href="/blog" 
             className="inline-flex items-center gap-2 text-xs font-semibold text-slate-500 hover:text-blue-600 transition-colors"
@@ -126,11 +127,12 @@ export default async function BlogDetailPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Article Header */}
+      {/* Article Container */}
       <article className="py-16 sm:py-20 border-b border-slate-100">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           
-          <div className="flex flex-col items-start gap-4 mb-6">
+          {/* Header */}
+          <div className="flex flex-col items-start gap-4 mb-10 max-w-4xl">
             <span className="text-blue-600 text-xs font-bold uppercase tracking-widest bg-blue-50 px-3 py-1.5 rounded-full">
               {post.category}
             </span>
@@ -151,54 +153,143 @@ export default async function BlogDetailPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Author Block */}
-          <div className="flex items-center gap-3 border-t border-b border-slate-100 py-4 my-8">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={post.author.avatar}
-              alt={post.author.name}
-              className="h-10 w-10 rounded-full object-cover border border-slate-100 shadow-2xs"
-              loading="lazy"
-            />
-            <div>
-              <p className="text-xs font-bold text-slate-900 leading-none">{post.author.name}</p>
-              <p className="text-[10px] text-slate-500 font-medium mt-1">{post.author.role}</p>
+          {/* Grid Layout: Sidebar & Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            {/* Sidebar (Table of Contents & Share Buttons) */}
+            <aside className="hidden lg:block lg:col-span-3 space-y-8 sticky top-32 h-fit">
+              <div className="border-l-2 border-slate-100 pl-4 py-1">
+                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">
+                  Table of Contents
+                </h3>
+                <nav className="space-y-3">
+                  <a 
+                    href="#overview" 
+                    className="block text-xs font-bold text-slate-500 hover:text-blue-600 transition-colors"
+                  >
+                    1. Overview
+                  </a>
+                  <a 
+                    href="#technical-deep-dive" 
+                    className="block text-xs font-bold text-slate-500 hover:text-blue-600 transition-colors"
+                  >
+                    2. Technical Deep Dive
+                  </a>
+                  <a 
+                    href="#strategic-impact" 
+                    className="block text-xs font-bold text-slate-500 hover:text-blue-600 transition-colors"
+                  >
+                    3. Strategic Impact
+                  </a>
+                  <a 
+                    href="#faqs" 
+                    className="block text-xs font-bold text-slate-500 hover:text-blue-600 transition-colors"
+                  >
+                    4. Related FAQs
+                  </a>
+                </nav>
+              </div>
+
+              <div>
+                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+                  Share Article
+                </h3>
+                <ShareButtons postTitle={post.title} />
+              </div>
+            </aside>
+
+            {/* Main Article Content */}
+            <div className="col-span-12 lg:col-span-9 space-y-8">
+              
+              {/* Banner Image */}
+              <div className="aspect-video w-full rounded-3xl overflow-hidden bg-slate-50 border border-slate-100 mb-6">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+
+              {/* Author Block */}
+              <div className="flex items-center gap-3 border-t border-b border-slate-100 py-4">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={post.author.avatar}
+                  alt={post.author.name}
+                  className="h-10 w-10 rounded-full object-cover border border-slate-100 shadow-2xs"
+                  loading="lazy"
+                />
+                <div>
+                  <p className="text-xs font-bold text-slate-900 leading-none">{post.author.name}</p>
+                  <p className="text-[10px] text-slate-500 font-medium mt-1">{post.author.role}</p>
+                </div>
+              </div>
+
+              {/* Main Prose Text content */}
+              <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed text-sm sm:text-base space-y-6">
+                
+                <div id="overview" className="scroll-mt-32">
+                  <p className="font-semibold text-slate-800 text-base sm:text-lg">
+                    {post.summary}
+                  </p>
+                  <p className="mt-4">
+                    {post.content}
+                  </p>
+                </div>
+
+                <div id="technical-deep-dive" className="scroll-mt-32 pt-6">
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-3">
+                    Technical Deep Dive
+                  </h2>
+                  <p>
+                    When implementing these operational workflows, it is crucial to think about custom guardrails. Standard models can drift or misinterpret structured instructions if templates are not engineered with type constraints. We recommend building direct validation layers that audit parsed outputs against predefined schemas before executing downstream tasks (such as writing database records or routing CRM logs).
+                  </p>
+                </div>
+
+                <div id="strategic-impact" className="scroll-mt-32 pt-6">
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-3">
+                    Strategic Impact & Core Web Vitals
+                  </h2>
+                  <p>
+                    Additionally, migrating frontends from standard CMS platforms to React server-side rendering guarantees that landing pages render immediately, reducing bounce rates and directly compounding organic ranking authority. With sitemaps automatically generated and structural semantic markups configured, search engine bots can easily parse page nodes and categorize transactional search intents.
+                  </p>
+                </div>
+              </div>
+
+              {/* FAQ Accordion Section */}
+              <div id="faqs" className="scroll-mt-32 border-t border-slate-100 pt-10">
+                <h3 className="text-lg font-bold text-slate-900 mb-6">
+                  Frequently Asked Questions
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-slate-50/50 border border-slate-100 rounded-2xl p-5">
+                    <h4 className="text-xs sm:text-sm font-extrabold text-slate-900 mb-2">
+                      Does this layout help organic ranking?
+                    </h4>
+                    <p className="text-xs sm:text-sm text-slate-500 leading-relaxed font-medium">
+                      Yes! Adding clear navigation headings (H2/H3), linking related internal projects, injecting dynamic breadcrumbs, and mapping local FAQ schema targets all signal search engines that your page contains clean and crawlable context.
+                    </p>
+                  </div>
+                  <div className="bg-slate-50/50 border border-slate-100 rounded-2xl p-5">
+                    <h4 className="text-xs sm:text-sm font-extrabold text-slate-900 mb-2">
+                      How long does it take for index updates to rank on Google?
+                    </h4>
+                    <p className="text-xs sm:text-sm text-slate-500 leading-relaxed font-medium">
+                      Typically, fresh pages rank for commercial intents in 1 to 7 days, depending on authority, crawl frequencies, and internal link depth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-
-          {/* Article Banner Image */}
-          <div className="aspect-video w-full rounded-3xl overflow-hidden bg-slate-50 border border-slate-100 mb-10">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={post.image}
-              alt={post.title}
-              className="object-cover w-full h-full"
-            />
-          </div>
-
-          {/* Main Prose Text content */}
-          <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed text-sm sm:text-base space-y-6">
-            <p className="font-semibold text-slate-800 text-base sm:text-lg">
-              {post.summary}
-            </p>
-            <p>
-              {post.content}
-            </p>
-            <p>
-              When implementing these workflows, it is crucial to think about custom guardrails. Standard models can drift or misinterpret structured instructions if templates are not engineered with type constraints. We recommend building direct validation layers that audit parsed outputs against predefined schemas before executing downstream tasks (such as writing database records or routing CRM logs).
-            </p>
-            <h3 className="text-lg font-bold text-slate-900 pt-4">Engineering for Core Web Vitals</h3>
-            <p>
-              Additionally, migrating frontends from standard CMS platforms to React server-side rendering guarantees that landing pages render immediately, reducing bounce rates and directly compounding organic ranking authority. With sitemaps automatically generated and structural semantic markups configured, search engine bots can easily parse page nodes and categorize transactional search intents.
-            </p>
-          </div>
-
         </div>
       </article>
 
       {/* Recommended Related Posts */}
       <section className="py-16 sm:py-20 bg-slate-50/30">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h3 className="text-lg font-bold text-slate-900 mb-8">Related Operational Insights</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {relatedPosts.map((rPost) => (
