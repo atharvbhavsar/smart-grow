@@ -473,12 +473,12 @@ export const teamProfiles: Record<string, TeamMemberProfile> = {
       }
     ],
     contact: {
-      email: "atharv@smartlygrow.com",
+      email: "atharvbhavsar99@gmail.com",
       location: "Pune, India"
     },
     socials: {
-      linkedin: "https://linkedin.com/in/atharv-bhavsar",
-      github: "https://github.com/atharv-bhavsar"
+      linkedin: "https://www.linkedin.com/in/atharv-bhavsar-53995a323/",
+      github: "https://github.com/atharvbhavsar"
     }
   },
   "hemant-bhoyar": {
