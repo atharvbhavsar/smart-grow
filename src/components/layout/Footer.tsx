@@ -86,6 +86,22 @@ export function Footer() {
 
         </div>
 
+        {/* Bottom Bar: Copyright & Credits */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-semibold text-slate-400">
+          <p>© {new Date().getFullYear()} SmartlyGrow. All rights reserved.</p>
+          <p>
+            Prepared by{" "}
+            <a 
+              href="https://www.linkedin.com/in/atharv-bhavsar-53995a323/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-slate-600 hover:text-blue-600 transition-colors underline decoration-slate-300 hover:decoration-blue-500 underline-offset-4"
+            >
+              Atharv Bhavsar
+            </a>
+          </p>
+        </div>
+
       </div>
 
       {/* Giant Watermarked background logo at the bottom */}
