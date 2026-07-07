@@ -19,10 +19,10 @@ export function Footer() {
                 Contact us at
               </p>
               <a 
-                href="mailto:smartlygrow.offical@gmail.com" 
+                href="mailto:smartlygrow.in@gmail.com" 
                 className="text-lg sm:text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors break-all"
               >
-                smartlygrow.offical@gmail.com
+                smartlygrow.in@gmail.com
               </a>
             </div>
 

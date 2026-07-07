@@ -97,8 +97,8 @@ function ContactFormContent() {
             </div>
             <div>
               <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Email Us</h4>
-              <a href="mailto:smartlygrow.offical@gmail.com" className="text-slate-800 hover:text-blue-600 font-semibold transition-colors text-sm sm:text-base">
-                smartlygrow.offical@gmail.com
+              <a href="mailto:smartlygrow.in@gmail.com" className="text-slate-800 hover:text-blue-600 font-semibold transition-colors text-sm sm:text-base">
+                smartlygrow.in@gmail.com
               </a>
             </div>
           </div>
