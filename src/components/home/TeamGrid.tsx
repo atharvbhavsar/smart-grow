@@ -11,7 +11,7 @@ const TEAM = [
   { name: "Atharv Bhavsar", role: "Web Lead", image: "/photo/website lead.jpeg" },
   { name: "Hemant Bhoyar", role: "AI Lead", image: "/photo/ai  lead.png" },
   { name: "Aryan Deshmukh", role: "Video Editor", image: "/photo/video.png" },
-  { name: "Sudhir Swami", role: "Choreographer", image: "/photo/image.png" },
+  { name: "Sudhir Swami", role: "Videographer", image: "/photo/image.png" },
 ];
 
 export function TeamGrid() {

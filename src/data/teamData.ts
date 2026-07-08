@@ -680,17 +680,17 @@ export const teamProfiles: Record<string, TeamMemberProfile> = {
   "sudhir-swami": {
     slug: "sudhir-swami",
     name: "Sudhir Swami",
-    role: "Choreographer",
-    introduce: "Sudhir is our Choreographer, bringing motion aesthetics, artistic direction, physical blocking, and creative energy to video campaigns and brand productions.",
-    introText: "Choreographing dynamic motion aesthetics and directing performance visuals.",
+    role: "Videographer",
+    introduce: "Sudhir is our Videographer, bringing motion aesthetics, artistic direction, camera blocking, and creative energy to video campaigns and brand productions.",
+    introText: "Capturing dynamic motion aesthetics and directing performance visuals.",
     experienceYears: 4,
     image: "/photo/image.png",
     availability: "Available for creative direction",
-    aboutText: "Sudhir is a creative director who specializes in choreography and visual arrangement. He coordinates visual pacing, model movements, and product showcase sequences so that brand videos feel alive, organic, and visually premium.",
+    aboutText: "Sudhir is a creative director and videographer who specializes in visual arrangement. He coordinates visual pacing, camera movements, and product showcase sequences so that brand videos feel alive, organic, and visually premium.",
     philosophy: "Visual flow is the secret language of screen retention. The physical rhythm, camera angles, and structural pacing must align to create high emotional resonance.",
     skills: [
       { name: "Creative Direction", level: 94, category: "UI/UX" },
-      { name: "Performance Choreography", level: 96, category: "UI/UX" },
+      { name: "Video Production", level: 96, category: "UI/UX" },
       { name: "Motion & Blocking", level: 90, category: "UI/UX" },
       { name: "Visual Pacing", level: 92, category: "UI/UX" },
       { name: "Campaign Storytelling", level: 88, category: "Marketing" }

@@ -53,8 +53,8 @@ const TEAM = [
   },
   {
     name: "Sudhir Swami",
-    role: "Choreographer",
-    bio: "Creative visual director choreographing video sequences, motion aesthetics, and dynamic screen performance styling.",
+    role: "Videographer",
+    bio: "Creative visual director capturing high-quality video sequences, camera movements, and premium screen productions.",
     image: "/photo/image.png"
   }
 ];
