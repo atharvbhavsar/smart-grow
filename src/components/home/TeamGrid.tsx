@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const TEAM = [
   { name: "Ashish Jumle", role: "Founder", image: "/photo/founder.png" },
-  { name: "Janhavi", role: "Co-Founder", image: "/photo/cofunder.jpeg" },
+  { name: "Janhavi", role: "Co-Founder", image: "/photo/janhavi-new.jpg" },
   { name: "Sajan Bhoyar", role: "App Lead", image: "/photo/app lead.png" },
   { name: "Atharv Bhavsar", role: "Web Lead", image: "/photo/website lead.jpeg" },
   { name: "Hemant Bhoyar", role: "AI Lead", image: "/photo/ai  lead.png" },

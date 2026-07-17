@@ -25,7 +25,7 @@ const TEAM = [
     name: "Janhavi",
     role: "Co-Founder",
     bio: "Product design lead focused on creating premium interfaces, design systems, and cohesive branding architectures.",
-    image: "/photo/cofunder.jpeg"
+    image: "/photo/janhavi-new.jpg"
   },
   {
     name: "Sajan Bhoyar",

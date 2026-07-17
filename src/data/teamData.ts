@@ -193,7 +193,7 @@ export const teamProfiles: Record<string, TeamMemberProfile> = {
     introduce: "Janhavi is the product design lead, driving premium UI/UX interfaces, responsive design systems, and cohesive branding architectures that represent client values.",
     introText: "Creating pixel-perfect interfaces and unified design tokens that scale brands.",
     experienceYears: 5,
-    image: "/photo/cofunder.jpeg",
+    image: "/photo/janhavi-new.jpg",
     availability: "Available for design reviews",
     aboutText: "Janhavi combines visual aesthetics with logical layout hierarchies. Specializing in Figma tokenization, design system scalability, and interaction flows, she translates abstract business concepts into stunning, interactive digital prototypes that developers can build cleanly.",
     philosophy: "Great design is not just what it looks like; it is how it feels to interact with. Spacing grids, color contrast, and micro-interactions should work harmoniously to guide users seamlessly.",
