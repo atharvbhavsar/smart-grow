@@ -24,8 +24,8 @@ const SERVICES = [
   { icon: Sparkles,   prefix: "Fast Delivery. ",     highlight: "Premium Results.", suffix: "",                         iconColor: "text-blue-600" },
 ];
 
-const TYPING_SPEED = 3;   // Hyper-fast character typing (3ms)
-const PAUSE_AFTER  = 650;  // Pause duration before sliding to next (650ms)
+const TYPING_SPEED = 45;   // Industry-standard smooth typing speed (45ms/char)
+const PAUSE_AFTER  = 2000;  // Industry-standard reading pause (2.0s)
 
 export function Hero() {
   const [textIndex, setTextIndex] = useState(0);
@@ -123,7 +123,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.14 }}
+              transition={{ duration: 0.35, ease: "easeOut" }}
               className="flex items-center gap-3 sm:gap-4 w-full"
             >
               {/* Icon */}
