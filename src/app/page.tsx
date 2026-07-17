@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
 import { Trust } from "@/components/home/Trust";
 import { ServicesGrid } from "@/components/home/ServicesGrid";
-import { DarkVideoBanner } from "@/components/home/DarkVideoBanner";
+// import { DarkVideoBanner } from "@/components/home/DarkVideoBanner";
 import { PortfolioPreview } from "@/components/home/PortfolioPreview";
 // import { TestimonialsCarousel } from "@/components/home/TestimonialsCarousel";
 import { TeamGrid } from "@/components/home/TeamGrid";
@@ -137,7 +137,7 @@ export default function Home() {
       <Hero />
       <Trust />
       <ServicesGrid />
-      <DarkVideoBanner />
+      {/* <DarkVideoBanner /> */}
       <PortfolioPreview />
       <SocialPresence />
       {/* <TestimonialsCarousel /> */}

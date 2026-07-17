@@ -37,7 +37,7 @@ export function SocialPresence() {
         </div>
 
         {/* Fan Cards */}
-        <div className="relative flex items-end justify-center" style={{ height: 380 }}>
+        <div className="relative flex items-end justify-center h-[450px] xs:h-[490px] sm:h-[380px]">
 
           {/* Left card */}
           <motion.div
@@ -75,8 +75,7 @@ export function SocialPresence() {
           >
             <div
               onClick={() => setActiveReelId(VIDEOS[current].reelId)}
-              className="relative overflow-hidden shadow-2xl border border-slate-200 bg-slate-100 cursor-pointer group"
-              style={{ width: 200, height: 340, borderRadius: 24 }}
+              className="relative overflow-hidden shadow-2xl border border-slate-200 bg-slate-100 cursor-pointer group rounded-[24px] w-[260px] xs:w-[285px] sm:w-[200px] h-[430px] xs:h-[470px] sm:h-[340px] transition-all duration-300"
             >
               <video
                 src={VIDEOS[current].src}
