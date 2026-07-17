@@ -229,17 +229,28 @@ export function ServicesGrid() {
               <Link href={`/services/${category.slug}`} key={idx} className="flex flex-col">
                 <motion.div
                   variants={cardVariants}
-                  className="group relative bg-white border border-slate-100/90 rounded-[32px] p-8 sm:p-9 shadow-xs hover:shadow-2xl hover:shadow-blue-500/5 hover:border-blue-500/25 transition-all duration-300 flex flex-col justify-between cursor-pointer overflow-hidden h-full"
+                  whileHover={{ y: -6 }}
+                  className="group relative bg-white border border-slate-200/80 hover:border-blue-500/40 rounded-[32px] p-8 sm:p-9 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col justify-between cursor-pointer overflow-hidden h-full"
                 >
+                  {/* Subtle Top Accent Glow on Hover */}
+                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
                   <div>
-                    {/* Category Icon */}
-                    <div className={`inline-flex items-center justify-center p-3.5 rounded-2xl shadow-sm mb-6 ${category.iconClass}`}>
-                      <IconComponent className="h-6 w-6" />
+                    {/* Animated Category Icon Container */}
+                    <div className="relative inline-block mb-6">
+                      {/* Ambient Glowing Aura */}
+                      <div className="absolute -inset-1 rounded-2xl bg-blue-500/20 blur-md opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+                      
+                      {/* Animated Badge */}
+                      <div className={`relative inline-flex items-center justify-center p-4 rounded-2xl shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 ${category.iconClass}`}>
+                        <IconComponent className="h-6 w-6 transform group-hover:scale-110 transition-transform duration-300" />
+                      </div>
                     </div>
 
                     {/* Category Title */}
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors duration-200 mb-3">
-                      {category.title}
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors duration-200 mb-3 flex items-center justify-between">
+                      <span>{category.title}</span>
+                      <Sparkles className="h-4 w-4 text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </h3>
 
                     {/* Description */}
@@ -260,18 +271,26 @@ export function ServicesGrid() {
                             key={sidx} 
                             className="flex items-start gap-3.5 text-xs font-semibold text-slate-700 group-hover:text-slate-900 transition-colors"
                           >
-                            <CheckCircle2 className="h-5 w-5 text-blue-600 shrink-0 stroke-[2] mt-0.5" />
+                            <CheckCircle2 className="h-5 w-5 text-blue-600 shrink-0 stroke-[2] mt-0.5 group-hover:scale-110 transition-transform duration-200" />
                             <span className="leading-normal">{service}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    {/* Call to Action Button */}
+                    {/* Highly Interactive Click-Compelling CTA Button */}
                     <div className="mt-auto">
-                      <div className={`flex items-center justify-between w-full px-6 py-3.5 rounded-2xl font-bold text-sm tracking-wide transition-all duration-300 group-hover:opacity-95 ${category.buttonClass}`}>
-                        <span>{category.buttonText}</span>
-                        <ArrowRight className="h-4.5 w-4.5 transition-transform duration-200 group-hover:translate-x-1" />
+                      <div className={`relative overflow-hidden flex items-center justify-between w-full px-6 py-4 rounded-2xl font-extrabold text-sm tracking-wide transition-all duration-300 group-hover:scale-[1.02] active:scale-[0.98] shadow-md group-hover:shadow-xl ${category.buttonClass}`}>
+                        {/* Shimmer Light Beam Effect */}
+                        <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 animate-shimmer-sweep pointer-events-none" />
+
+                        <span className="relative z-10 flex items-center gap-2">
+                          {category.buttonText}
+                        </span>
+
+                        <div className="relative z-10 p-1 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
+                          <ArrowRight className="h-4.5 w-4.5 transition-transform duration-300 group-hover:translate-x-1.5" />
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -12,14 +12,14 @@ import { SocialPresence } from "@/components/home/SocialPresence";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "SmartlyGrow | AI Powered Business Growth Company",
-  description: "SmartlyGrow helps startups, creators, and local businesses in Pune, India scale operations and claim digital authority using premium websites, AI workflow automations, and custom AI agents.",
+  title: "Best Web Development Company in Pune | SmartlyGrow AI & Growth Studio",
+  description: "SmartlyGrow is a top-rated Web Development & AI Automation Company in Pune, India. We engineer Next.js websites, AI agents, SEO rank systems, and custom web applications.",
   alternates: {
     canonical: "https://smartlygrow.in",
   },
   openGraph: {
-    title: "SmartlyGrow | AI Powered Business Growth Company",
-    description: "Scale operations and attract customers using custom Next.js systems and intelligent AI agents.",
+    title: "Best Web Development Company in Pune | SmartlyGrow",
+    description: "SmartlyGrow helps Pune businesses scale using custom Next.js web applications, AI automation, Google Business Profile optimization, and SEO systems.",
     url: "https://smartlygrow.in",
     siteName: "SmartlyGrow",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/logo-new.png",
         width: 1200,
         height: 630,
-        alt: "SmartlyGrow Logo",
+        alt: "SmartlyGrow Web Development Company Pune",
       },
     ],
     locale: "en_IN",
@@ -58,11 +58,12 @@ export default function Home() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "SmartlyGrow",
+    "name": "SmartlyGrow - Best Web Development & AI Company in Pune",
     "image": "https://smartlygrow.in/logo-new.png",
     "@id": "https://smartlygrow.in/#localbusiness",
     "url": "https://smartlygrow.in",
     "telephone": "+917020951401",
+    "email": "aashish@smartlygrow.com",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -77,6 +78,18 @@ export default function Home() {
       "latitude": 18.5362,
       "longitude": 73.8930
     },
+    "areaServed": [
+      { "@type": "City", "name": "Pune" },
+      { "@type": "State", "name": "Maharashtra" },
+      { "@type": "Country", "name": "India" }
+    ],
+    "knowsAbout": [
+      "Web Development Company Pune",
+      "AI Automation Company Pune",
+      "SEO Company Pune",
+      "Google Business Profile Optimization Pune",
+      "App Development Company Pune"
+    ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
@@ -110,10 +123,18 @@ export default function Home() {
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "Why is SmartlyGrow the best web development company in Pune?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SmartlyGrow builds custom Next.js platforms engineered for sub-second load speeds, modern SEO architecture, custom AI automation agents, and conversion-focused UI/UX design."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "How does SmartlyGrow use AI to help my business grow?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Unlike traditional agencies that only design graphics or write static pages, we integrate advanced artificial intelligence directly into your digital platforms. This means building sites that load in sub-seconds, setting up AI automation pipelines that handle manual admin work, and configuring custom AI agents that qualify leads and answer support queries 24/7."
+          "text": "We integrate advanced artificial intelligence directly into your digital platforms: sub-second Next.js sites, automated CRM pipelines, lead qualifying bots, and 24/7 AI customer support agents."
         }
       },
       {

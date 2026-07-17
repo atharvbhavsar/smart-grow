@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Outfit, Instrument_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
@@ -27,33 +27,48 @@ const montserrat = Montserrat({
   weight: ["100", "200"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://smartlygrow.in"),
   title: {
-    default: "SmartlyGrow | AI Powered Business Growth Company",
+    default: "Best Web Development Company in Pune | SmartlyGrow AI & Growth Studio",
     template: "%s | SmartlyGrow"
   },
-  description: "SmartlyGrow helps businesses grow with AI Automation, Website Development, Branding, SEO, Digital Marketing, and Business Intelligence.",
+  description: "SmartlyGrow is Pune's leading AI automation & web development company. We build high-performance Next.js websites, AI agents, SEO rank systems, and custom web applications for B2B growth.",
   keywords: [
-    "AI Website Development",
-    "AI Business Automation",
-    "Business Growth Company",
+    "Best Web Development Company in Pune",
     "Website Development Company Pune",
-    "AI Startup Pune",
-    "AI Integration Services",
-    "Digital Growth Startup Pune",
-    "AI Automation Company India",
-    "AI Marketing Startup"
+    "Web Design Company Pune",
+    "AI Automation Company Pune",
+    "AI Development Company Pune",
+    "Digital Marketing Agency Pune",
+    "SEO Company Pune",
+    "Google Business Profile Optimization Pune",
+    "Website Design Services Pune",
+    "Professional Website Developer Pune",
+    "Software Development Company Pune",
+    "App Development Company Pune",
+    "Branding Agency Pune",
+    "UI UX Design Company Pune",
+    "Custom Website Development Pune",
+    "AI Agents Pune",
+    "B2B Growth Studio Pune"
   ],
   authors: [{ name: "SmartlyGrow Team", url: "https://smartlygrow.in" }],
   creator: "SmartlyGrow",
   publisher: "SmartlyGrow",
   alternates: {
-    canonical: "/",
+    canonical: "https://smartlygrow.in",
   },
   openGraph: {
-    title: "SmartlyGrow | AI Powered Business Growth Company",
-    description: "SmartlyGrow helps businesses grow with AI Automation, Website Development, Branding, SEO, Digital Marketing, and Business Intelligence.",
+    title: "Best Web Development Company in Pune | SmartlyGrow",
+    description: "SmartlyGrow builds high-performance Next.js web applications, custom AI automation workflows, and SEO platforms engineered for rapid business scaling.",
     url: "https://smartlygrow.in",
     siteName: "SmartlyGrow",
     images: [
@@ -61,7 +76,7 @@ export const metadata: Metadata = {
         url: "/logo-new.png",
         width: 1200,
         height: 630,
-        alt: "SmartlyGrow Logo",
+        alt: "SmartlyGrow - AI Powered Business Growth Studio",
       },
     ],
     locale: "en_IN",
@@ -69,8 +84,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SmartlyGrow | AI Powered Business Growth Company",
-    description: "SmartlyGrow helps businesses grow with AI Automation, Website Development, Branding, SEO, Digital Marketing, and Business Intelligence.",
+    title: "Best Web Development Company in Pune | SmartlyGrow",
+    description: "SmartlyGrow builds high-performance Next.js web applications, custom AI automation workflows, and SEO platforms engineered for rapid business scaling.",
     images: ["/logo-new.png"],
   },
   robots: {

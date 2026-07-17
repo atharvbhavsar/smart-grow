@@ -76,16 +76,20 @@ export function InstagramIcon({ className = "h-7 w-7" }: { className?: string })
 // Floating Instagram widget (Left side)
 export function FloatingInstagram() {
   return (
-    <div className="fixed bottom-6 left-6 z-50">
-      <a
-        href="https://www.instagram.com/smartlygrow.in?utm_source=qr&igsh=MXh0Mm50OWc2Nms3aA=="
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center h-14 w-14 rounded-full drop-shadow-[0_8px_25px_rgba(232,67,147,0.45)] hover:drop-shadow-[0_12px_30px_rgba(232,67,147,0.65)] transition-all duration-300 hover:scale-110 cursor-pointer group bg-transparent p-0"
-        aria-label="Follow us on Instagram"
-      >
-        <InstagramIcon className="h-14 w-14" />
-      </a>
+    <div className="fixed bottom-6 left-6 z-50 animate-float-gentle">
+      <div className="relative group">
+        {/* Radar Pulse Ring */}
+        <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-purple-500 via-pink-500 to-amber-400 opacity-40 blur-md animate-pulse-ring pointer-events-none" />
+        <a
+          href="https://www.instagram.com/smartlygrow.in?utm_source=qr&igsh=MXh0Mm50OWc2Nms3aA=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative flex items-center justify-center h-14 w-14 rounded-full drop-shadow-[0_8px_25px_rgba(232,67,147,0.5)] hover:drop-shadow-[0_14px_35px_rgba(232,67,147,0.8)] transition-all duration-300 hover:scale-115 active:scale-95 cursor-pointer bg-transparent p-0"
+          aria-label="Follow us on Instagram"
+        >
+          <InstagramIcon className="h-14 w-14 transform group-hover:rotate-6 transition-transform duration-300" />
+        </a>
+      </div>
     </div>
   );
 }
@@ -116,16 +120,20 @@ export function WhatsAppIcon({ className = "h-7 w-7" }: { className?: string }) 
 // Floating WhatsApp widget (Right side)
 export function FloatingWhatsApp() {
   return (
-    <div className="fixed bottom-6 right-6 z-50">
-      <a
-        href="https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20a%20project%20with%20SmartlyGrow!"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center h-14 w-14 rounded-full drop-shadow-[0_8px_25px_rgba(37,211,102,0.45)] hover:drop-shadow-[0_12px_30px_rgba(37,211,102,0.65)] transition-all duration-300 hover:scale-110 cursor-pointer group bg-transparent p-0"
-        aria-label="Chat on WhatsApp"
-      >
-        <WhatsAppIcon className="h-14 w-14" />
-      </a>
+    <div className="fixed bottom-6 right-6 z-50 animate-float-gentle">
+      <div className="relative group">
+        {/* Radar Pulse Ring */}
+        <div className="absolute -inset-2 rounded-full bg-emerald-500/30 blur-md animate-pulse-ring pointer-events-none" />
+        <a
+          href="https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20a%20project%20with%20SmartlyGrow!"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative flex items-center justify-center h-14 w-14 rounded-full drop-shadow-[0_8px_25px_rgba(37,211,102,0.5)] hover:drop-shadow-[0_14px_35px_rgba(37,211,102,0.8)] transition-all duration-300 hover:scale-115 active:scale-95 cursor-pointer bg-transparent p-0"
+          aria-label="Chat on WhatsApp"
+        >
+          <WhatsAppIcon className="h-14 w-14 transform group-hover:-rotate-6 transition-transform duration-300" />
+        </a>
+      </div>
     </div>
   );
 }
