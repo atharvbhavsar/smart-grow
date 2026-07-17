@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const TEAM = [
   {
-    name: "Aashish Jhumle",
+    name: "Ashish Jumle",
     role: "Founder",
     bio: "Visionary growth strategist specializing in AI deployment, conversion funnel design, and scaling digital brands.",
     image: "/photo/founder.png"

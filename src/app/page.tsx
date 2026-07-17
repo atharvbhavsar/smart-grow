@@ -51,7 +51,7 @@ export default function Home() {
     ],
     "founder": {
       "@type": "Person",
-      "name": "Aashish Jhumle"
+      "name": "Ashish Jumle"
     }
   };
 

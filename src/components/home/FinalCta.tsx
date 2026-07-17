@@ -53,6 +53,26 @@ export function FinalCta() {
   );
 }
 
+export function InstagramIcon({ className = "h-7 w-7" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="ig-grad" cx="0.3" cy="1.05" r="1.2">
+          <stop offset="0" stopColor="#ffdb5c" />
+          <stop offset="0.25" stopColor="#ff9f43" />
+          <stop offset="0.5" stopColor="#e84393" />
+          <stop offset="0.75" stopColor="#d63031" />
+          <stop offset="1" stopColor="#6c5ce7" />
+        </radialGradient>
+      </defs>
+      <rect x="0" y="0" width="512" height="512" rx="128" fill="url(#ig-grad)" />
+      <rect x="96" y="96" width="320" height="320" rx="90" fill="none" stroke="#ffffff" strokeWidth="36" />
+      <circle cx="256" cy="256" r="76" fill="none" stroke="#ffffff" strokeWidth="36" />
+      <circle cx="344" cy="168" r="22" fill="#ffffff" />
+    </svg>
+  );
+}
+
 // Floating Instagram widget (Left side)
 export function FloatingInstagram() {
   return (
@@ -61,21 +81,10 @@ export function FloatingInstagram() {
         href="https://www.instagram.com/smartlygrow.in?utm_source=qr&igsh=MXh0Mm50OWc2Nms3aA=="
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white h-12 w-12 rounded-[12px] shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-110 cursor-pointer group"
+        className="flex items-center justify-center h-14 w-14 rounded-full drop-shadow-[0_8px_25px_rgba(232,67,147,0.45)] hover:drop-shadow-[0_12px_30px_rgba(232,67,147,0.65)] transition-all duration-300 hover:scale-110 cursor-pointer group bg-transparent p-0"
         aria-label="Follow us on Instagram"
       >
-        <svg
-          className="h-6 w-6 fill-none stroke-white"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-        </svg>
+        <InstagramIcon className="h-14 w-14" />
       </a>
     </div>
   );

@@ -81,14 +81,14 @@ export interface TeamMemberProfile {
 export const teamProfiles: Record<string, TeamMemberProfile> = {
   "aashish-jhumle": {
     slug: "aashish-jhumle",
-    name: "Aashish Jhumle",
+    name: "Ashish Jumle",
     role: "Founder",
-    introduce: "Aashish is a visionary growth strategist and system architect who leads SmartlyGrow's overall business scaling pipelines, client consulting, and strategic AI integrations.",
+    introduce: "Ashish is a visionary growth strategist and system architect who leads SmartlyGrow's overall business scaling pipelines, client consulting, and strategic AI integrations.",
     introText: "Scaling businesses through AI-first automation structures and high-performance digital platforms.",
     experienceYears: 6,
     image: "/photo/founder.png",
     availability: "Available for growth consulting",
-    aboutText: "With over half a decade of experience in digital acquisition, system analysis, and software workflows, Aashish builds business infrastructures engineered for rapid scaling. He focuses on removing overhead, integrating modern analytics dashboards, and establishing authoritative web channels that turn random traffic into loyal corporate buyers.",
+    aboutText: "With over half a decade of experience in digital acquisition, system analysis, and software workflows, Ashish builds business infrastructures engineered for rapid scaling. He focuses on removing overhead, integrating modern analytics dashboards, and establishing authoritative web channels that turn random traffic into loyal corporate buyers.",
     philosophy: "Eliminate administrative bottlenecks using intelligent triggers. Let digital systems do the busywork so human talent can focus exclusively on creative scaling and strategic product iteration.",
     skills: [
       { name: "AI Automation", level: 92, category: "AI & Automation" },
