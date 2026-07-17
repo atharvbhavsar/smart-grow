@@ -28,7 +28,7 @@ export default function SmoothScrollProvider({
       touchMultiplier: 1.5,
     });
 
-    lenisRef.current = lenis;
+    lenisRef.current=lenis;
 
     function raf(time: number) {
       lenis.raf(time);

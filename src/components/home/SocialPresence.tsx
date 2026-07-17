@@ -1,18 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight, Play, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const VIDEOS = [
-  { id: 1, src: "/video/video1.mp4", label: "EP - 4", title: "Road to\n7 Figure Agency" },
-  { id: 2, src: "/video/video2.mp4", label: "EP - 5", title: "Learning\nto Earning" },
-  { id: 3, src: "/video/video3.mp4", label: "EP - 6", title: "learning\nto\nearning" },
-  { id: 4, src: "/video/video4.mp4", label: "EP - 7", title: "Our Growth\nJourney" },
+  { id: 1, src: "/video/reel1.mp4", label: "EP - 4", title: "Road to\n7 Figure Agency", reelId: "Dap0janNhiT" },
+  { id: 2, src: "/video/reel2.mp4", label: "EP - 5", title: "Learning\nto Earning", reelId: "Daxg-UhNFZ4" },
+  { id: 3, src: "/video/reel1.mp4", label: "EP - 6", title: "learning\nto\nearning", reelId: "Dap0janNhiT" },
+  { id: 4, src: "/video/reel2.mp4", label: "EP - 7", title: "Our Growth\nJourney", reelId: "Daxg-UhNFZ4" },
 ];
 
 export function SocialPresence() {
   const [current, setCurrent] = useState(1); // start at EP-5 like reference
+  const [activeReelId, setActiveReelId] = useState<string | null>(null);
   const total = VIDEOS.length;
 
   const prev = () => setCurrent((c) => (c - 1 + total) % total);
@@ -31,7 +32,7 @@ export function SocialPresence() {
             Social Presence
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
-            Trusted by  Many People
+            Trusted by Many People
           </h2>
         </div>
 
@@ -73,7 +74,8 @@ export function SocialPresence() {
             style={{ bottom: 0, position: "relative" }}
           >
             <div
-              className="relative overflow-hidden shadow-2xl border border-slate-200 bg-slate-100"
+              onClick={() => setActiveReelId(VIDEOS[current].reelId)}
+              className="relative overflow-hidden shadow-2xl border border-slate-200 bg-slate-100 cursor-pointer group"
               style={{ width: 200, height: 340, borderRadius: 24 }}
             >
               <video
@@ -82,6 +84,16 @@ export function SocialPresence() {
                 muted loop playsInline autoPlay
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent pointer-events-none" />
+              
+              {/* Play button overlay */}
+              <div className="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2">
+                <div className="bg-white p-3.5 rounded-full text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                  <Play className="h-6 w-6 fill-slate-900 stroke-slate-900 ml-0.5" />
+                </div>
+                <span className="text-[11px] font-semibold text-white tracking-wider uppercase drop-shadow-md">
+                  Watch Reel
+                </span>
+              </div>
             </div>
           </motion.div>
 
@@ -144,6 +156,48 @@ export function SocialPresence() {
         </div>
 
       </div>
+
+      {/* Premium Video Modal */}
+      <AnimatePresence>
+        {activeReelId && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setActiveReelId(null)}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/80 backdrop-blur-md p-4"
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-[360px] max-h-[90vh] bg-black rounded-3xl overflow-hidden shadow-2xl border border-slate-800 flex flex-col"
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setActiveReelId(null)}
+                className="absolute top-4 right-4 z-50 p-2.5 rounded-full bg-black/60 text-white hover:bg-black/80 hover:scale-105 active:scale-95 transition-all cursor-pointer border border-white/15"
+                aria-label="Close modal"
+              >
+                <X className="h-5 w-5" />
+              </button>
+
+              {/* Instagram Reel Iframe Container */}
+              <div className="w-full aspect-[9/16] bg-black flex items-center justify-center overflow-hidden">
+                <iframe
+                  src={`https://www.instagram.com/reel/${activeReelId}/embed/`}
+                  className="w-full h-full border-0"
+                  allowFullScreen
+                  scrolling="no"
+                  allow="encrypted-media"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
