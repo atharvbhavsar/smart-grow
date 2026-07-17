@@ -143,7 +143,7 @@ export default function TeamMemberPage({ params }: PageProps) {
                 </div>
                 <div>
                   <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block mb-1">
-                    Agency Capacity
+                    Startup Capacity
                   </span>
                   <span className="text-slate-800 text-sm font-extrabold uppercase tracking-wide">
                     {profile.role}

@@ -7,7 +7,7 @@ import { Logo } from "@/components/Logo";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "About Us | SmartlyGrow AI & Web Agency",
+  title: "About Us | SmartlyGrow AI & Web Startup",
   description: "Learn more about SmartlyGrow. We are a lean technology studio in Pune, India building high-performance Next.js websites, workflow automations, and custom AI agents.",
   alternates: {
     canonical: "https://smartlygrow.in/about",

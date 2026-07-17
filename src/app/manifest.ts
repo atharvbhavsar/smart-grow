@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "SmartlyGrow",
     short_name: "SmartlyGrow",
-    description: "SmartlyGrow is an AI-powered business growth agency building custom Next.js platforms, CRM systems, and AI agents.",
+    description: "SmartlyGrow is an AI-powered business growth startup building custom Next.js platforms, CRM systems, and AI agents.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

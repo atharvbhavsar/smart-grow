@@ -39,11 +39,11 @@ export const metadata: Metadata = {
     "AI Business Automation",
     "Business Growth Company",
     "Website Development Company Pune",
-    "AI Agency Pune",
+    "AI Startup Pune",
     "AI Integration Services",
-    "Digital Growth Agency Pune",
+    "Digital Growth Startup Pune",
     "AI Automation Company India",
-    "AI Marketing Agency"
+    "AI Marketing Startup"
   ],
   authors: [{ name: "SmartlyGrow Team", url: "https://smartlygrow.in" }],
   creator: "SmartlyGrow",

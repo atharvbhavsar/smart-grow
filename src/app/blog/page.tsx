@@ -5,7 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Blog & Insights | AI, Web Development & Business Growth | SmartlyGrow",
   description:
-    "Expert guides on AI automation, Next.js performance, SEO strategy, and B2B business growth. Published by SmartlyGrow — India's leading AI & web agency.",
+    "Expert guides on AI automation, Next.js performance, SEO strategy, and B2B business growth. Published by SmartlyGrow — India's leading AI & web startup.",
   keywords: [
     "AI Automation Blog",
     "Next.js Tips India",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Our Services | SmartlyGrow AI & Web Agency",
+  title: "Our Services | SmartlyGrow AI & Web Startup",
   description: "Explore our AI solutions, creative services, and business growth services designed to automate tasks and drive B2B revenue.",
   alternates: {
     canonical: "https://smartlygrow.in/services",
@@ -19,7 +19,7 @@ export default function ServicesLayout({
     "@type": "WebPage",
     "@id": "https://smartlygrow.in/services/#webpage",
     "url": "https://smartlygrow.in/services",
-    "name": "Our Services | SmartlyGrow AI & Web Agency",
+    "name": "Our Services | SmartlyGrow AI & Web Startup",
     "description": "Explore our AI solutions, creative services, and business growth services designed to automate tasks and drive B2B revenue.",
     "breadcrumb": {
       "@type": "BreadcrumbList",

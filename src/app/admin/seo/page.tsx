@@ -43,17 +43,17 @@ export default function AdminSeoPage() {
       keywords: "AI Website Development, AI Business Automation, Business Growth Company, Pune"
     },
     "/about": {
-      title: "About Us | SmartlyGrow AI & Web Agency",
+      title: "About Us | SmartlyGrow AI & Web Startup",
       description: "Learn more about SmartlyGrow. We are a lean technology studio in Pune, India building high-performance Next.js websites, workflow automations, and custom AI agents.",
-      keywords: "About SmartlyGrow, Web Agency Pune, Tech Studio"
+      keywords: "About SmartlyGrow, Web Startup Pune, Tech Studio"
     },
     "/services": {
-      title: "Our Services | SmartlyGrow AI & Web Agency",
+      title: "Our Services | SmartlyGrow AI & Web Startup",
       description: "Explore our AI solutions, creative services, and business growth services designed to automate tasks and drive B2B revenue.",
-      keywords: "AI Automation, Web Development, Creative Services, Pune"
+      keywords: "AI Automation Pune, Web Development India, Local SEO Services"
     },
     "/portfolio": {
-      title: "Case Studies & Portfolio | SmartlyGrow AI & Web Agency",
+      title: "Case Studies & Portfolio | SmartlyGrow AI & Web Startup",
       description: "Explore our software engineering and AI workflow projects, outlining actual bottom-line growth achievements and conversion statistics.",
       keywords: "SmartlyGrow Portfolio, Next.js Case Studies, AI Projects"
     }

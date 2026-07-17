@@ -1119,8 +1119,8 @@ export const testimonials: Testimonial[] = [
 
 export const faqData = [
   {
-    question: "What exactly is an 'AI-powered business growth agency'?",
-    answer: "Unlike traditional agencies that only design graphics or write static pages, we integrate advanced artificial intelligence directly into your digital platforms. This means building sites that load in sub-seconds, setting up AI automation pipelines that handle manual admin work, and configuring custom AI agents that qualify leads and answer support queries 24/7."
+    question: "What exactly is an 'AI-powered business growth startup'?",
+    answer: "Unlike traditional firms that only design graphics or write static pages, we integrate advanced artificial intelligence directly into your digital platforms. This means building sites that load in sub-seconds, setting up AI automation pipelines that handle manual admin work, and configuring custom AI agents that qualify leads and answer support queries 24/7."
   },
   {
     question: "Do you offer custom pricing and package iterations?",
