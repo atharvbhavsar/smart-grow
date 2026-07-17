@@ -2,3 +2,10 @@ node_modules
 .next
 .git
 *.log
+/photo
+/photot
+/projects
+/thumbnail
+/video
+/*.png
+/*.mp4
