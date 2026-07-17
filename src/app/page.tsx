@@ -5,7 +5,7 @@ import { Trust } from "@/components/home/Trust";
 import { ServicesGrid } from "@/components/home/ServicesGrid";
 import { DarkVideoBanner } from "@/components/home/DarkVideoBanner";
 import { PortfolioPreview } from "@/components/home/PortfolioPreview";
-import { TestimonialsCarousel } from "@/components/home/TestimonialsCarousel";
+// import { TestimonialsCarousel } from "@/components/home/TestimonialsCarousel";
 import { TeamGrid } from "@/components/home/TeamGrid";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { SocialPresence } from "@/components/home/SocialPresence";
@@ -140,7 +140,7 @@ export default function Home() {
       <DarkVideoBanner />
       <PortfolioPreview />
       <SocialPresence />
-      <TestimonialsCarousel />
+      {/* <TestimonialsCarousel /> */}
       <TeamGrid />
       <FaqAccordion />
     </main>
