@@ -11,7 +11,8 @@ import {
   ArrowRight,
   Sparkles,
   X,
-  ChevronRight
+  ChevronRight,
+  CheckCircle2
 } from "lucide-react";
 
 // Types
@@ -21,9 +22,12 @@ interface ServiceCategory {
   description: string;
   icon: React.ComponentType<{ className?: string }>;
   services: string[];
+  buttonText: string;
+  buttonClass: string;
+  iconClass: string;
 }
 
-// 3-Category Data Structure matching PRD
+// 3-Category Data Structure matching PRD and screenshot design
 const categoriesData: ServiceCategory[] = [
   {
     title: "Business Growth",
@@ -34,21 +38,25 @@ const categoriesData: ServiceCategory[] = [
       "Website Design & Development",
       "Strong Online Presence",
       "Social Media Growth",
-      "Social Media Management",
-      "Content Creation",
-      "UGC Videos"
-    ]
+      "Social Media Management"
+    ],
+    buttonText: "Get Started",
+    buttonClass: "bg-slate-950 text-white hover:bg-slate-900 shadow-md shadow-slate-950/10",
+    iconClass: "bg-blue-50/80 text-blue-600 border border-blue-100/50"
   },
   {
     title: "Creative Services",
     slug: "creative-services",
-    description: "Capture attention with high-retention visual assets and storytelling that elevates your brand premium.",
+    description: "Capture attention with high-retention visual assets and storytelling that elevates your brand to a premium status.",
     icon: Palette,
     services: [
       "Video Editing",
       "Thumbnail Design",
       "Graphic Design"
-    ]
+    ],
+    buttonText: "View Creative Portfolio",
+    buttonClass: "bg-blue-600 text-white hover:bg-blue-700 shadow-md shadow-blue-500/20",
+    iconClass: "bg-blue-600 text-white"
   },
   {
     title: "AI Solutions",
@@ -59,7 +67,10 @@ const categoriesData: ServiceCategory[] = [
       "AI Automation",
       "AI Agents",
       "Data Analytics"
-    ]
+    ],
+    buttonText: "Explore AI Power",
+    buttonClass: "bg-slate-950 text-white hover:bg-slate-900 shadow-md shadow-slate-950/10",
+    iconClass: "bg-slate-950 text-white"
   }
 ];
 
@@ -218,21 +229,18 @@ export function ServicesGrid() {
               <Link href={`/services/${category.slug}`} key={idx} className="flex flex-col">
                 <motion.div
                   variants={cardVariants}
-                  className="group relative bg-gradient-to-b from-white to-slate-50/40 border border-slate-200/80 rounded-3xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 hover:border-blue-500/35 transition-all duration-300 ease-out flex flex-col justify-between cursor-pointer overflow-hidden h-full"
+                  className="group relative bg-white border border-slate-100/90 rounded-[32px] p-8 sm:p-9 shadow-xs hover:shadow-2xl hover:shadow-blue-500/5 hover:border-blue-500/25 transition-all duration-300 flex flex-col justify-between cursor-pointer overflow-hidden h-full"
                 >
-                  {/* Top accent glow line on hover */}
-                  <div className="absolute top-0 left-0 right-0 h-[5px] bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
                   <div>
-                    {/* Category Header */}
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="p-3.5 bg-blue-50/80 text-blue-600 rounded-2xl border border-blue-100/50 shadow-sm group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 group-hover:shadow-lg group-hover:shadow-blue-500/20 transition-all duration-300">
-                        <IconComponent className="h-6 w-6" />
-                      </div>
-                      <h3 className="text-xl sm:text-2xl font-extrabold text-slate-950 group-hover:text-blue-600 transition-colors duration-200">
-                        {category.title}
-                      </h3>
+                    {/* Category Icon */}
+                    <div className={`inline-flex items-center justify-center p-3.5 rounded-2xl shadow-sm mb-6 ${category.iconClass}`}>
+                      <IconComponent className="h-6 w-6" />
                     </div>
+
+                    {/* Category Title */}
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors duration-200 mb-3">
+                      {category.title}
+                    </h3>
 
                     {/* Description */}
                     <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
@@ -252,20 +260,18 @@ export function ServicesGrid() {
                             key={sidx} 
                             className="flex items-start gap-3.5 text-xs font-semibold text-slate-700 group-hover:text-slate-900 transition-colors"
                           >
-                            <div className="h-5 w-5 rounded-full bg-blue-50 border border-blue-100/40 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300 shrink-0 mt-0.5">
-                              <ChevronRight className="h-3.5 w-3.5 stroke-[3]" />
-                            </div>
+                            <CheckCircle2 className="h-5 w-5 text-blue-600 shrink-0 stroke-[2] mt-0.5" />
                             <span className="leading-normal">{service}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    {/* Explore Indicator */}
-                    <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-extrabold text-blue-600 group-hover:text-blue-700 transition-colors">
-                      <span>View Projects</span>
-                      <div className="p-2 rounded-xl bg-blue-50 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-                        <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+                    {/* Call to Action Button */}
+                    <div className="mt-auto">
+                      <div className={`flex items-center justify-between w-full px-6 py-3.5 rounded-2xl font-bold text-sm tracking-wide transition-all duration-300 group-hover:opacity-95 ${category.buttonClass}`}>
+                        <span>{category.buttonText}</span>
+                        <ArrowRight className="h-4.5 w-4.5 transition-transform duration-200 group-hover:translate-x-1" />
                       </div>
                     </div>
                   </div>
