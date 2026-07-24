@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | SmartlyGrow",
   description: "Read the Privacy Policy of SmartlyGrow to understand how we protect and manage your data.",
+  alternates: {
+    canonical: "https://smartlygrow.in/privacy",
+  },
 };
 
 export default function PrivacyPage() {

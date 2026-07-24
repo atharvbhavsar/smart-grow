@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms & Conditions | SmartlyGrow",
   description: "Read the Terms & Conditions of SmartlyGrow to understand our project delivery pipelines, SLA commitments, and terms of service.",
+  alternates: {
+    canonical: "https://smartlygrow.in/terms",
+  },
 };
 
 export default function TermsPage() {

@@ -8,6 +8,9 @@ import { Check, X, Sparkles, HelpCircle, PhoneCall } from "lucide-react";
 export const metadata: Metadata = {
   title: "Packages & Pricing | SmartlyGrow",
   description: "Review our transparent pricing packages for website development, Custom SaaS development, and AI workflow automation integrations.",
+  alternates: {
+    canonical: "https://smartlygrow.in/packages",
+  },
 };
 
 const COMPARISON_ROWS = [
