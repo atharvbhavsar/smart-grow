@@ -9,23 +9,21 @@ import { Search, ArrowRight, ExternalLink, Play } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const SUB_SERVICES_BY_CATEGORY: Record<string, string[]> = {
-  "Business Growth": [
+  "Website Development": [
     "Website Design & Development",
-    "Strong Online Presence",
-    "Social Media Growth",
-    "Social Media Management",
-    "Content Creation",
-    "UGC Videos"
+    "Website Design",
+    "Web Development",
+    "Performance Optimization",
+    "UI/UX Design",
+    "SEO"
   ],
-  "Creative Services": [
-    "Video Editing",
-    "Thumbnail Design",
+  "Social Media Growth": [
+    "Social Media Growth",
     "Graphic Design"
   ],
-  "AI Solutions": [
-    "AI Automation",
-    "AI Agents",
-    "Data Analytics"
+  "Video Editing": [
+    "Video Editing",
+    "Thumbnail Design"
   ]
 };
 
@@ -35,21 +33,21 @@ function PortfolioContent() {
   const subParam = searchParams.get("filter") || searchParams.get("subservice");
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("Business Growth");
-  const [selectedSubService, setSelectedSubService] = useState("Website Design & Development");
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedSubService, setSelectedSubService] = useState("");
 
-  const categories = ["All", "Business Growth", "Creative Services", "AI Solutions"];
+  const categories = ["All", "Website Development", "Social Media Growth", "Video Editing"];
   const currentSubServices = SUB_SERVICES_BY_CATEGORY[selectedCategory] || [];
 
   useEffect(() => {
     if (catParam) {
       const slugMap: Record<string, string> = {
-        "business-growth": "Business Growth",
-        "creative-services": "Creative Services",
-        "ai-solutions": "AI Solutions",
-        "Business Growth": "Business Growth",
-        "Creative Services": "Creative Services",
-        "AI Solutions": "AI Solutions"
+        "website-development": "Website Development",
+        "social-media-growth": "Social Media Growth",
+        "video-editing": "Video Editing",
+        "Website Development": "Website Development",
+        "Social Media Growth": "Social Media Growth",
+        "Video Editing": "Video Editing"
       };
       const resolvedCat = slugMap[catParam];
       if (resolvedCat) {
@@ -70,25 +68,29 @@ function PortfolioContent() {
     }
   }, [selectedCategory, subParam]);
 
-  const filteredProjects = projects.filter((project) => {
-    const matchesSearch = 
-      project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      project.tagline.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      (project.servicesBuilt && project.servicesBuilt.some((t) => t.toLowerCase().includes(searchTerm.toLowerCase())));
-    
-    const matchesCategory = selectedCategory === "All" || project.category === selectedCategory;
+  const CORE_CATEGORIES = ["Website Development", "Social Media Growth", "Video Editing"];
 
-    const matchesSubService = 
-      !selectedSubService || 
-      selectedSubService === "All" || 
-      (project.servicesBuilt && project.servicesBuilt.some((s) => {
-        const sLower = s.toLowerCase();
-        const filterLower = selectedSubService.toLowerCase();
-        return sLower.includes(filterLower) || filterLower.includes(sLower);
-      }));
+  const filteredProjects = projects
+    .filter((p) => CORE_CATEGORIES.includes(p.category))
+    .filter((project) => {
+      const matchesSearch = 
+        project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        project.tagline.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (project.servicesBuilt && project.servicesBuilt.some((t) => t.toLowerCase().includes(searchTerm.toLowerCase())));
+      
+      const matchesCategory = selectedCategory === "All" || project.category === selectedCategory;
 
-    return matchesSearch && matchesCategory && matchesSubService;
-  });
+      const matchesSubService = 
+        !selectedSubService || 
+        selectedSubService === "All" || 
+        (project.servicesBuilt && project.servicesBuilt.some((s) => {
+          const sLower = s.toLowerCase();
+          const filterLower = selectedSubService.toLowerCase();
+          return sLower.includes(filterLower) || filterLower.includes(sLower);
+        }));
+
+      return matchesSearch && matchesCategory && matchesSubService;
+    });
 
   return (
     <main className="flex-1 bg-white font-sans text-left pt-20">

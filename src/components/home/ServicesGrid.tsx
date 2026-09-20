@@ -36,6 +36,7 @@ const categoriesData: ServiceCategory[] = [
     icon: TrendingUp,
     services: [
       "Website Design & Development",
+      "Performance Marketing",
       "Strong Online Presence",
       "Social Media Growth",
       "Social Media Management"
@@ -87,6 +88,11 @@ const categoryDetails: {
       title: "Website Design & Development",
       description: "Stunning, high-performance marketing websites built with Next.js and Tailwind CSS to convert visitors into customers.",
       features: ["Custom UI/UX Design", "Next.js App Router", "Full SEO Integration"]
+    },
+    {
+      title: "Performance Marketing",
+      description: "High-ROI Meta Ads and paid advertising campaigns engineered for precision audience targeting, scalable lead generation, and continuous campaign optimization.",
+      features: ["Meta Ads (Facebook & Instagram)", "Paid Ad Campaigns", "Audience Targeting & Retargeting", "Lead Gen & ROAS Optimization"]
     },
     {
       title: "Strong Online Presence",
