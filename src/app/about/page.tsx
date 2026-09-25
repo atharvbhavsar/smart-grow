@@ -14,7 +14,50 @@ export const metadata: Metadata = {
   },
 };
 
-
+const TEAM = [
+  {
+    name: "Ashish Jumle",
+    role: "Founder",
+    bio: "Visionary growth strategist specializing in AI deployment, conversion funnel design, and scaling digital brands.",
+    image: "/photo/founder.png"
+  },
+  {
+    name: "Janhavi",
+    role: "Co-Founder",
+    bio: "Product design lead focused on creating premium interfaces, design systems, and cohesive branding architectures.",
+    image: "/photo/janhavi-new.jpg"
+  },
+  {
+    name: "Sajan Bhoyar",
+    role: "App Lead",
+    bio: "Full stack engineer building lightning-fast Next.js systems, serverless database layers, and vector DB logic.",
+    image: "/photo/app lead.png"
+  },
+  {
+    name: "Atharv Bhavsar",
+    role: "Web Lead",
+    bio: "Operations architect managing technical pipelines, client deployments, and quality control systems.",
+    image: "/photo/website lead.jpeg"
+  },
+  {
+    name: "Hemant Bhoyar",
+    role: "AI Lead",
+    bio: "AI deployment expert building context-aware automation workflows, autonomous agents, and intelligence integrations.",
+    image: "/photo/ai  lead.png"
+  },
+  {
+    name: "Aryan Deshmukh",
+    role: "Video Editor",
+    bio: "Creative storytelling specialist crafting high-retention video edits, viral Reels, and high-converting ads.",
+    image: "/photo/video.png"
+  },
+  {
+    name: "Sudhir Swami",
+    role: "Videographer",
+    bio: "Creative visual director capturing high-quality video sequences, camera movements, and premium screen productions.",
+    image: "/photo/image.png"
+  }
+];
 
 const VALUES = [
   {
@@ -171,6 +214,60 @@ export default function About() {
                     {val.desc}
                   </p>
                 </div>
+              );
+            })}
+          </div>
+
+        </div>
+      </section>
+
+      {/* Team Grid Section */}
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center max-w-xl mx-auto mb-16">
+            <span className="text-blue-600 text-xs font-bold uppercase tracking-widest bg-blue-50 px-3 py-1.5 rounded-full">
+              Meet The Founders
+            </span>
+            <h2 className="text-3xl font-extrabold text-slate-900 mt-4 tracking-tight leading-tight">
+              Behind SmartlyGrow
+            </h2>
+            <p className="text-slate-500 mt-3 text-sm sm:text-base">
+              A lean team of system architects and designers building premium digital systems.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {TEAM.map((member) => {
+              const slug = member.name.toLowerCase().replace(/\s+/g, "-");
+              return (
+                <Link 
+                  href={`/team/${slug}`}
+                  key={member.name}
+                  className="bg-white border border-slate-100 hover:border-blue-500/30 rounded-2xl p-6 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-center md:text-left flex flex-col md:flex-row items-center md:items-start gap-6 group cursor-pointer"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-20 w-20 rounded-2xl object-cover border border-slate-100 shadow-2xs shrink-0 group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h3 className="text-base font-bold text-slate-900 leading-tight group-hover:text-blue-600 transition-colors">
+                      {member.name}
+                    </h3>
+                    <span className="text-xs font-bold text-blue-600 uppercase tracking-wider block mt-0.5 mb-3">
+                      {member.role}
+                    </span>
+                    <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
+                      {member.bio}
+                    </p>
+                    <span className="inline-flex items-center gap-1 text-[10px] font-extrabold text-blue-600 uppercase tracking-widest mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                      View Profile →
+                    </span>
+                  </div>
+                </Link>
               );
             })}
           </div>

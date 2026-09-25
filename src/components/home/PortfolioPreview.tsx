@@ -5,9 +5,8 @@ import { Button } from "../ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 export function PortfolioPreview() {
-  // Show core projects for the home page preview
-  const CORE_CATEGORIES = ["Website Development", "Social Media Growth", "Video Editing"];
-  const previewProjects = projects.filter((p) => CORE_CATEGORIES.includes(p.category)).slice(0, 4);
+  // Show first 4 projects for the home page preview
+  const previewProjects = projects.slice(0, 4);
 
   return (
     <section className="py-12 lg:py-16 bg-slate-50/50 border-y border-slate-100 font-sans">

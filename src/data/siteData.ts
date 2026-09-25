@@ -15,8 +15,8 @@ export interface Service {
 export interface Project {
   id: string;
   title: string;
-  category: 'Website Development' | 'Social Media Growth' | 'Video Editing' | 'Business Growth' | 'Creative Services' | 'AI Solutions';
-  categorySlug: 'website-development' | 'social-media-growth' | 'video-editing' | 'business-growth' | 'creative-services' | 'ai-solutions';
+  category: 'Business Growth' | 'Creative Services' | 'AI Solutions';
+  categorySlug: 'business-growth' | 'creative-services' | 'ai-solutions';
   companyName: string;
   industry: string;
   tagline: string;
@@ -85,39 +85,6 @@ export interface Testimonial {
 }
 
 export const services: Service[] = [
-  {
-    id: "performance-marketing",
-    title: "Performance Marketing",
-    category: "growth-services",
-    icon: "Target",
-    shortDesc: "High-ROI Meta Ads and paid advertising campaigns engineered for precision audience targeting, scalable lead generation, and campaign optimization.",
-    longDesc: "Turn advertising spend into predictable revenue with data-backed Meta Ads (Facebook & Instagram) and multi-channel paid acquisition campaigns. We architect full-funnel advertising strategies — from custom high-converting ad creatives and laser-focused audience targeting to continuous A/B testing, lead generation pipelines, and campaign optimization. Every campaign is engineered to maximize Return on Ad Spend (ROAS) and lower Customer Acquisition Costs (CAC).",
-    features: [
-      "Meta Ads Management (Facebook & Instagram)",
-      "High-Intent Audience Targeting & Custom Lookalikes",
-      "Paid Campaign Strategy & Funnel Architecture",
-      "A/B Creative, Hook & Copy Optimization",
-      "Lead Generation & Automated Pipeline Routing",
-      "Continuous ROAS & Conversion Rate Optimization"
-    ],
-    benefits: [
-      "Generate predictable, high-intent inbound customer leads at scale.",
-      "Lower Customer Acquisition Costs (CAC) through automated bid & audience tuning.",
-      "Maximize Return on Ad Spend (ROAS) with continuous ad creative and hook iteration.",
-      "Track every rupee spent with transparent attribution and conversion reporting."
-    ],
-    technologies: ["Meta Ads Manager", "Facebook Pixel & CAPI", "Google Ads", "Google Analytics 4", "Zapier"],
-    process: [
-      { title: "Targeting & Funnel Strategy", description: "Analyzing buyer personas, competitor ad creative, and formulating high-converting offer hooks." },
-      { title: "Creative & Copy Production", description: "Designing scroll-stopping ad creatives, writing persuasive copy, and configuring tracking pixels." },
-      { title: "Campaign Launch & Split Testing", description: "Deploying multi-variant audience and creative tests to establish winning baselines." },
-      { title: "Scaling & ROAS Optimization", description: "Scaling budget into top-performing ad sets while continuously driving down Cost Per Lead." }
-    ],
-    faqs: [
-      { question: "What platforms do you manage for performance marketing?", answer: "We specialize primarily in Meta Ads (Facebook & Instagram) alongside Google Search and YouTube advertising depending on your target customer profile." },
-      { question: "How quickly do Meta Ads start producing leads?", answer: "Paid campaigns launch within 3-5 business days after creative approval and begin driving qualified traffic and leads almost immediately." }
-    ]
-  },
   {
     id: "website-development",
     title: "Website Development",
@@ -453,12 +420,12 @@ export const services: Service[] = [
 
 
 export const projects: Project[] = [
-  // WEBSITE DEVELOPMENT
+  // BUSINESS GROWTH - WEBSITE DESIGN & DEVELOPMENT
   {
     id: "cafe-peter-delight",
     title: "11 East Street Cafe - Digital Ordering & QR Portal",
-    category: "Website Development",
-    categorySlug: "website-development",
+    category: "Business Growth",
+    categorySlug: "business-growth",
     companyName: "11 East Street Cafe",
     industry: "Food & Hospitality (Pune)",
     tagline: "High-converting cafe web portal & table QR digital menu system",
@@ -516,8 +483,8 @@ export const projects: Project[] = [
   {
     id: "aniket-tours-travels",
     title: "Aniket Tours & Travels - Direct Booking & Fleet Showcase",
-    category: "Website Development",
-    categorySlug: "website-development",
+    category: "Business Growth",
+    categorySlug: "business-growth",
     companyName: "Aniket Tours & Travels",
     industry: "Travel & Logistics (Pune/Nagpur)",
     tagline: "Direct travel booking portal & WhatsApp instant quote system",
@@ -575,8 +542,8 @@ export const projects: Project[] = [
   {
     id: "good-willa-education",
     title: "Good Willa Education - EdTech Portal & Admission Engine",
-    category: "Website Development",
-    categorySlug: "website-development",
+    category: "Business Growth",
+    categorySlug: "business-growth",
     companyName: "Good Willa Education",
     industry: "Education & EdTech (Nagpur)",
     tagline: "Next-Gen Student Portal & Instant Course Admission Engine",
@@ -635,8 +602,8 @@ export const projects: Project[] = [
   {
     id: "shree-ganesha-enterprises",
     title: "Shree Ganesha Enterprises - B2B Industrial Catalog & RFQ Engine",
-    category: "Website Development",
-    categorySlug: "website-development",
+    category: "Business Growth",
+    categorySlug: "business-growth",
     companyName: "Shree Ganesha Enterprises",
     industry: "Industrial Supply (Nagpur)",
     tagline: "High-performance B2B equipment catalog & RFQ inquiry engine",
@@ -692,12 +659,12 @@ export const projects: Project[] = [
     }
   },
 
-  // VIDEO EDITING
+  // CREATIVE SERVICES - VIDEO EDITING
   {
     id: "video-editing-showcase",
     title: "Commercial Video & Reel Production",
-    category: "Video Editing",
-    categorySlug: "video-editing",
+    category: "Creative Services",
+    categorySlug: "creative-services",
     companyName: "Commercial Video & Reel Production",
     industry: "Video Editing & Content Creation",
     tagline: "High-retention reel edits, commercial color grading & motion graphics",
@@ -745,11 +712,12 @@ export const projects: Project[] = [
       photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
     }
   },
+  // CREATIVE SERVICES - THUMBNAIL DESIGN
   {
     id: "thumbnail-design-showcase",
     title: "High-CTR YouTube & Campaign Thumbnail Design",
-    category: "Video Editing",
-    categorySlug: "video-editing",
+    category: "Creative Services",
+    categorySlug: "creative-services",
     companyName: "Thumbnail Design Studio",
     industry: "Graphic Art & Thumbnail Design",
     tagline: "High-converting visual hooks & viral thumbnail art",
@@ -770,7 +738,6 @@ export const projects: Project[] = [
       ]
     },
     servicesBuilt: [
-      "Video Editing",
       "Thumbnail Design"
     ],
     beforeAfterMetrics: {
@@ -798,34 +765,32 @@ export const projects: Project[] = [
       photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
     }
   },
-
-  // SOCIAL MEDIA GROWTH
+  // CREATIVE SERVICES - GRAPHIC DESIGN
   {
     id: "graphic-design-showcase",
-    title: "Social Media Growth & Visual Identity Systems",
-    category: "Social Media Growth",
-    categorySlug: "social-media-growth",
-    companyName: "Social Media Growth & Visual Studio",
-    industry: "Social Media Growth & Branding",
-    tagline: "Viral social content templates, audience growth & visual assets",
-    description: "End-to-end social media growth design systems including viral carousel templates, custom graphic assets, brand typography, and audience growth assets.",
+    title: "Brand Visual Identity & Graphic Asset Systems",
+    category: "Creative Services",
+    categorySlug: "creative-services",
+    companyName: "Brand Visual Identity Studio",
+    industry: "Branding & Graphic Design",
+    tagline: "Custom graphic assets, social kits & marketing collateral",
+    description: "End-to-end graphic design systems including vector brand logos, social media templates, print collateral, and marketing asset suites.",
     image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format&fit=crop",
     companyOverview: {
-      about: "SmartlyGrow Social Studio creates high-engagement social media campaigns and viral visual systems for growing digital companies.",
+      about: "SmartlyGrow Graphic Studio creates modern, cohesive visual branding assets for high-growth digital companies.",
       requirements: [
-        "Social media template kits for Instagram, LinkedIn, and Twitter.",
         "Vector logo design with full brand color palette & typography hierarchy.",
-        "High-retention carousel graphics for follower growth.",
-        "Comprehensive social brand style guide documentation."
+        "Social media template kits for Instagram, LinkedIn, and Twitter.",
+        "Print-ready marketing collateral (brochures, banners, business cards).",
+        "Comprehensive brand style guide documentation."
       ],
       challenges: [
-        "Low follower growth and inconsistent social media posting.",
-        "Inconsistent graphic assets across social channels.",
-        "Lack of reusable high-converting graphic templates."
+        "Outdated visual branding disconnected from modern audience expectations.",
+        "Inconsistent graphic assets across marketing channels.",
+        "Lack of reusable graphic templates for internal teams."
       ]
     },
     servicesBuilt: [
-      "Social Media Growth",
       "Graphic Design"
     ],
     beforeAfterMetrics: {
