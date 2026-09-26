@@ -576,9 +576,9 @@ export const BRANDING_CREATIVE_DATA = {
       title: "NIBM Luxury Property Model Reel",
       client: "Ideal Property",
       type: "Model Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456668/smartlygrow/video_editing/IMG_1863_MOV.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456668/smartlygrow/video_editing/IMG_1863_MOV.jpg",
-      duration: "0:35",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461885/smartlygrow/video_editing/video_3373.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461887/smartlygrow/video_editing/video_3373_thumb.jpg",
+      duration: "0:39",
       description: "Cinematic model-led property walkthrough reel with on-screen hook and high-energy pacing."
     },
     {
@@ -586,9 +586,9 @@ export const BRANDING_CREATIVE_DATA = {
       title: "Pune Property Market Model Reel",
       client: "Ideal Property",
       type: "Model Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456725/smartlygrow/video_editing/IMG_1868_MOV.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456725/smartlygrow/video_editing/IMG_1868_MOV.jpg",
-      duration: "0:30",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461784/smartlygrow/video_editing/video_2556.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461786/smartlygrow/video_editing/video_2556_thumb.jpg",
+      duration: "0:31",
       description: "High-retention model presenter reel engaging social viewers with direct market questions and calls-to-action."
     },
     {
@@ -596,9 +596,9 @@ export const BRANDING_CREATIVE_DATA = {
       title: "Real Estate Property Tour · Clip 01",
       client: "Ideal Property",
       type: "Clips / One-Take Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456418/smartlygrow/public/video/video-01.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456418/smartlygrow/public/video/video-01.jpg",
-      duration: "0:37",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457624/smartlygrow/videos/IMG_2065__3__MOV.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/so_1/smartlygrow/videos/IMG_2065__3__MOV.jpg",
+      duration: "0:42",
       description: "Seamless single-take continuous walkthrough highlighting property architecture, space flow, and ambient interiors."
     },
     {
@@ -606,29 +606,19 @@ export const BRANDING_CREATIVE_DATA = {
       title: "Real Estate Property Tour · Clip 02",
       client: "Ideal Property",
       type: "Clips / One-Take Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456505/smartlygrow/public/video/video-02.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456505/smartlygrow/public/video/video-02.jpg",
-      duration: "0:36",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457422/smartlygrow/videos/IMG_1966__1__MOV.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/so_1/smartlygrow/videos/IMG_1966__1__MOV.jpg",
+      duration: "0:41",
       description: "Dynamic one-take indoor presentation capturing luxury fittings, natural lighting, and prime room aesthetics."
-    },
-    {
-      id: "bv-5",
-      title: "Real Estate Property Tour · Clip 03",
-      client: "Ideal Property",
-      type: "Clips / One-Take Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457152/smartlygrow/videos/IMG_1863__1__MOV.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457152/smartlygrow/videos/IMG_1863__1__MOV.jpg",
-      duration: "0:47",
-      description: "Full single-shot perspective showcase emphasizing layout spaciousness, design craftsmanship, and key highlights."
     },
     {
       id: "bv-6",
       title: "Real Estate Buyer Advisory & Insights",
       client: "Ideal Property",
       type: "Broker Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461670/smartlygrow/video_editing/video_1868.mp4",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461671/smartlygrow/video_editing/video_1868_thumb.jpg",
-      duration: "0:36",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462601/smartlygrow/real_estate/video_1997.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462604/smartlygrow/real_estate/video_1997_thumb.jpg",
+      duration: "0:49",
       description: "Founder & broker advisory video giving transparent advice on high-ticket real estate purchases."
     },
     {
@@ -636,9 +626,9 @@ export const BRANDING_CREATIVE_DATA = {
       title: "20+ Years Market Experience Authority",
       client: "Ideal Property",
       type: "Broker Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461784/smartlygrow/video_editing/video_2556.mp4",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461786/smartlygrow/video_editing/video_2556_thumb.jpg",
-      duration: "0:31",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462665/smartlygrow/real_estate/video_1962.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462667/smartlygrow/real_estate/video_1962_thumb.jpg",
+      duration: "0:28",
       description: "Authority-building broker presentation highlighting 20+ years in the Pune property market."
     }
   ],
