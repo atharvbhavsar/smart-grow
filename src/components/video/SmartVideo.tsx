@@ -235,9 +235,8 @@ export default function SmartVideo({
       ref={containerRef}
       onMouseMove={customControls ? handleMouseMove : undefined}
       onMouseLeave={customControls ? () => isPlaying && setShowControls(false) : undefined}
-      className={`relative overflow-hidden bg-slate-950 rounded-2xl select-none group w-full ${className}`}
+      className={`relative overflow-hidden bg-slate-950 rounded-2xl group w-full ${className}`}
       style={{ aspectRatio }}
-      onContextMenu={(e) => e.preventDefault()}
     >
       {/* Video Element */}
       <video
@@ -248,7 +247,6 @@ export default function SmartVideo({
         loop={loop}
         playsInline
         controls={controls && !customControls}
-        controlsList="nodownload noremoteplayback"
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
         onTimeUpdate={() => {
@@ -262,7 +260,6 @@ export default function SmartVideo({
           if (onEnded) onEnded();
         }}
         className="w-full h-full object-contain pointer-events-auto cursor-pointer"
-        onContextMenu={(e) => e.preventDefault()}
       />
 
       {/* Loading Spinner */}

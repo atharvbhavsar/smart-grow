@@ -69,10 +69,7 @@ function RealEstateReelCard({
             playsInline
             preload="metadata"
             controls={false}
-            disablePictureInPicture
-            controlsList="nodownload nofullscreen noremoteplayback"
-            onContextMenu={(e) => e.preventDefault()}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none select-none"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
           />
         )}
 
@@ -507,8 +504,7 @@ export function RealEstateShowcase() {
 
               {/* Video Player */}
               <div 
-                className="relative bg-black flex items-center justify-center max-h-[75vh] select-none overflow-hidden"
-                onContextMenu={(e) => e.preventDefault()}
+                className="relative bg-black flex items-center justify-center max-h-[75vh] overflow-hidden"
               >
                 <video
                   src={selectedVideo.videoUrl}
@@ -516,9 +512,7 @@ export function RealEstateShowcase() {
                   controls
                   autoPlay
                   playsInline
-                  controlsList="nodownload noremoteplayback"
-                  onContextMenu={(e) => e.preventDefault()}
-                  className="w-full h-auto max-h-[75vh] object-contain select-none"
+                  className="w-full h-auto max-h-[75vh] object-contain"
                 />
               </div>
             </motion.div>

@@ -145,17 +145,14 @@ export function VideoEditingShowcase() {
 
               {/* Video Player */}
               <div 
-                className="relative aspect-video w-full bg-black flex items-center justify-center select-none overflow-hidden"
-                onContextMenu={(e) => e.preventDefault()}
+                className="relative aspect-video w-full bg-black flex items-center justify-center overflow-hidden"
               >
                 <video
                   src={selectedVideo.videoUrl}
                   controls
                   autoPlay
                   playsInline
-                  controlsList="nodownload noremoteplayback"
-                  onContextMenu={(e) => e.preventDefault()}
-                  className="w-full h-full max-h-[75vh] object-contain select-none"
+                  className="w-full h-full max-h-[75vh] object-contain"
                 />
               </div>
             </motion.div>
@@ -214,10 +211,7 @@ function HorizontalVideoCard({
           playsInline
           loop
           controls={false}
-          disablePictureInPicture
-          controlsList="nodownload nofullscreen noremoteplayback"
-          onContextMenu={(e) => e.preventDefault()}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out pointer-events-none select-none"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out pointer-events-none"
         />
 
         {/* Subtle dark overlay */}

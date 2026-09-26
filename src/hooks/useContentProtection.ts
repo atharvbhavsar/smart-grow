@@ -97,7 +97,7 @@ export function useContentProtection(
     [preventDrag, isFormElement]
   );
 
-  const isShieldActive = sensitive && (!isWindowFocused || !isTabVisible);
+  const isShieldActive = false;
 
   return {
     isShieldActive,

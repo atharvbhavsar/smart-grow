@@ -10,8 +10,7 @@ export default function LogoAnimationVideo() {
       
       {/* Video Container Card */}
       <div 
-        className="relative w-full h-full rounded-3xl overflow-hidden bg-white border border-slate-100 flex items-center justify-center p-4 hover:shadow-md hover:border-slate-200 transition-all duration-300 select-none"
-        onContextMenu={(e) => e.preventDefault()}
+        className="relative w-full h-full rounded-3xl overflow-hidden bg-white border border-slate-100 flex items-center justify-center p-4 hover:shadow-md hover:border-slate-200 transition-all duration-300"
       >
         <video 
           src="https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457643/smartlygrow/videos/SmartlyGrow_logo_animation_20260927005338.mp4" 
@@ -21,16 +20,7 @@ export default function LogoAnimationVideo() {
           playsInline 
           preload="metadata"
           controls={false}
-          disablePictureInPicture
-          controlsList="nodownload nofullscreen noremoteplayback"
-          className="w-full h-full object-contain pointer-events-none select-none rounded-2xl"
-          onContextMenu={(e) => e.preventDefault()}
-        />
-
-        {/* Transparent top overlay to completely block interaction, downloading, or right-clicks */}
-        <div 
-          className="absolute inset-0 z-20 cursor-default" 
-          onContextMenu={(e) => e.preventDefault()}
+          className="w-full h-full object-contain rounded-2xl"
         />
       </div>
     </div>

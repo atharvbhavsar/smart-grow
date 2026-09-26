@@ -121,17 +121,14 @@ export function MediaLightbox({
           <div className="relative w-full flex-1 min-h-[300px] sm:min-h-[420px] max-h-[70vh] bg-slate-50 flex items-center justify-center p-3 sm:p-6 overflow-hidden">
             {currentItem.type === "video" ? (
               <div 
-                className="relative w-full h-full flex items-center justify-center select-none overflow-hidden"
-                onContextMenu={(e) => e.preventDefault()}
+                className="relative w-full h-full flex items-center justify-center overflow-hidden"
               >
                 <video
                   src={currentItem.url}
                   controls
                   autoPlay
                   playsInline
-                  controlsList="nodownload noremoteplayback"
-                  onContextMenu={(e) => e.preventDefault()}
-                  className="max-h-[65vh] max-w-full rounded-2xl object-contain shadow-md select-none"
+                  className="max-h-[65vh] max-w-full rounded-2xl object-contain shadow-md"
                 />
               </div>
             ) : (

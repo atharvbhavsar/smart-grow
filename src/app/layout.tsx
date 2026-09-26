@@ -8,7 +8,6 @@ import SmoothScrollProvider from "@/components/SmoothScroll";
 import { FloatingInstagram, FloatingWhatsApp } from "@/components/home/FinalCta";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
-import GlobalContentProtection from "@/components/security/GlobalContentProtection";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -196,7 +195,6 @@ export default function RootLayout({
           <Footer />
           <FloatingInstagram />
           <FloatingWhatsApp />
-          <GlobalContentProtection />
           <Analytics />
         </SmoothScrollProvider>
       </body>
