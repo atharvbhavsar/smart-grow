@@ -517,9 +517,9 @@ export const REAL_ESTATE_DATA = {
       title: "Modern Interior & Flat Walkthrough Tour",
       client: "Ideal Property",
       subcategory: "social-media" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455455/smartlygrow/public/video/re-reel-2.mp4",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455455/smartlygrow/public/video/re-reel-2.jpg",
-      duration: "0:30",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462601/smartlygrow/real_estate/video_1997.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462604/smartlygrow/real_estate/video_1997_thumb.jpg",
+      duration: "0:49",
       description: "Engaging indoor walkthrough showcasing luxury flat specifications, natural lighting, and modern finishes."
     },
     {
@@ -527,9 +527,9 @@ export const REAL_ESTATE_DATA = {
       title: "Real Estate Buyer Advisory & Market Guidance",
       client: "Ideal Property",
       subcategory: "social-media" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461670/smartlygrow/video_editing/video_1868.mp4",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461671/smartlygrow/video_editing/video_1868_thumb.jpg",
-      duration: "0:36",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462665/smartlygrow/real_estate/video_1962.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462667/smartlygrow/real_estate/video_1962_thumb.jpg",
+      duration: "0:28",
       description: "Founder-led advisory reel giving direct, transparent real estate buying tips and market insights for Pune property seekers."
     },
     {
@@ -537,9 +537,9 @@ export const REAL_ESTATE_DATA = {
       title: "20+ Years Market Experience & Trust",
       client: "Ideal Property",
       subcategory: "social-media" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461784/smartlygrow/video_editing/video_2556.mp4",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461786/smartlygrow/video_editing/video_2556_thumb.jpg",
-      duration: "0:31",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462724/smartlygrow/real_estate/video_1959.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462727/smartlygrow/real_estate/video_1959_thumb.jpg",
+      duration: "0:34",
       description: "Authority-building reel highlighting two decades of real estate advisory, trust, and proven client satisfaction."
     }
   ]
