@@ -616,9 +616,9 @@ export const BRANDING_CREATIVE_DATA = {
       title: "Real Estate Buyer Advisory & Insights",
       client: "Ideal Property",
       type: "Broker Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462601/smartlygrow/real_estate/video_1997.mp4",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462604/smartlygrow/real_estate/video_1997_thumb.jpg",
-      duration: "0:49",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462665/smartlygrow/real_estate/video_1962.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462667/smartlygrow/real_estate/video_1962_thumb.jpg",
+      duration: "0:28",
       description: "Founder & broker advisory video giving transparent advice on high-ticket real estate purchases."
     },
     {
@@ -626,9 +626,9 @@ export const BRANDING_CREATIVE_DATA = {
       title: "20+ Years Market Experience Authority",
       client: "Ideal Property",
       type: "Broker Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462665/smartlygrow/real_estate/video_1962.mp4",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462667/smartlygrow/real_estate/video_1962_thumb.jpg",
-      duration: "0:28",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790462724/smartlygrow/real_estate/video_1959.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790462727/smartlygrow/real_estate/video_1959_thumb.jpg",
+      duration: "0:34",
       description: "Authority-building broker presentation highlighting 20+ years in the Pune property market."
     }
   ],
