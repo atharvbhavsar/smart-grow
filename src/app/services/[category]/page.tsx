@@ -109,10 +109,10 @@ export default async function ServiceCategoryPage({ params }: Props) {
       "telephone": "+917020951401",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Koregaon Park",
+        "streetAddress": "Bibewadi",
         "addressLocality": "Pune",
         "addressRegion": "Maharashtra",
-        "postalCode": "411001",
+        "postalCode": "411037",
         "addressCountry": "IN"
       }
     },

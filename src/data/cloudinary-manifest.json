@@ -1,0 +1,2754 @@
+[
+  {
+    "publicId": "smartlygrow/public/aniket-tours",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454399/smartlygrow/public/aniket-tours.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1793935,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454399/smartlygrow/public/aniket-tours.png",
+    "folder": "smartlygrow/public",
+    "altText": "aniket-tours.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/apple-touch-icon",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454401/smartlygrow/public/apple-touch-icon.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 180,
+    "height": 180,
+    "bytes": 21153,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454401/smartlygrow/public/apple-touch-icon.png",
+    "folder": "smartlygrow/public",
+    "altText": "apple-touch-icon.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/cafe-thumbnail",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454403/smartlygrow/public/cafe-thumbnail.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2029249,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454403/smartlygrow/public/cafe-thumbnail.png",
+    "folder": "smartlygrow/public",
+    "altText": "cafe-thumbnail.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/favicon-16x16",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454404/smartlygrow/public/favicon-16x16.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 16,
+    "height": 16,
+    "bytes": 537,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454404/smartlygrow/public/favicon-16x16.png",
+    "folder": "smartlygrow/public",
+    "altText": "favicon-16x16.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/favicon-32x32",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454405/smartlygrow/public/favicon-32x32.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 32,
+    "height": 32,
+    "bytes": 1285,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454405/smartlygrow/public/favicon-32x32.png",
+    "folder": "smartlygrow/public",
+    "altText": "favicon-32x32.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/favicon",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454406/smartlygrow/public/favicon.ico",
+    "resourceType": "image",
+    "format": "ico",
+    "width": 16,
+    "height": 16,
+    "bytes": 1857,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454406/smartlygrow/public/favicon.ico",
+    "folder": "smartlygrow/public",
+    "altText": "favicon.ico",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/file",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454407/smartlygrow/public/file.svg",
+    "resourceType": "image",
+    "format": "svg",
+    "width": 16,
+    "height": 16,
+    "bytes": 391,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454407/smartlygrow/public/file.svg",
+    "folder": "smartlygrow/public",
+    "altText": "file.svg",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/globe",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454410/smartlygrow/public/globe.svg",
+    "resourceType": "image",
+    "format": "svg",
+    "width": 16,
+    "height": 16,
+    "bytes": 1035,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454410/smartlygrow/public/globe.svg",
+    "folder": "smartlygrow/public",
+    "altText": "globe.svg",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/good-willa",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454413/smartlygrow/public/good-willa.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1666454,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454413/smartlygrow/public/good-willa.png",
+    "folder": "smartlygrow/public",
+    "altText": "good-willa.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/ideal-property-banner",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454414/smartlygrow/public/ideal-property-banner.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1600,
+    "height": 900,
+    "bytes": 1061299,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454414/smartlygrow/public/ideal-property-banner.png",
+    "folder": "smartlygrow/public",
+    "altText": "ideal-property-banner.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/ideal-property-card",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454415/smartlygrow/public/ideal-property-card.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1600,
+    "height": 593,
+    "bytes": 666781,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454415/smartlygrow/public/ideal-property-card.png",
+    "folder": "smartlygrow/public",
+    "altText": "ideal-property-card.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/ideal-property-gmb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454417/smartlygrow/public/ideal-property-gmb.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 904,
+    "height": 1600,
+    "bytes": 807664,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454417/smartlygrow/public/ideal-property-gmb.png",
+    "folder": "smartlygrow/public",
+    "altText": "ideal-property-gmb.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/ideal-property-logo",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454419/smartlygrow/public/ideal-property-logo.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 260901,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454419/smartlygrow/public/ideal-property-logo.png",
+    "folder": "smartlygrow/public",
+    "altText": "ideal-property-logo.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/ideal-property-website",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454420/smartlygrow/public/ideal-property-website.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 275832,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454420/smartlygrow/public/ideal-property-website.png",
+    "folder": "smartlygrow/public",
+    "altText": "ideal-property-website.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/ideal-property",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454423/smartlygrow/public/ideal-property.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1966995,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454423/smartlygrow/public/ideal-property.png",
+    "folder": "smartlygrow/public",
+    "altText": "ideal-property.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/images/pkg1",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454425/smartlygrow/public/images/pkg1.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1917,
+    "height": 962,
+    "bytes": 548484,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454425/smartlygrow/public/images/pkg1.png",
+    "folder": "smartlygrow/public/images",
+    "altText": "pkg1.png",
+    "tags": [
+      "public/images"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/images/pkg2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454426/smartlygrow/public/images/pkg2.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 362601,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454426/smartlygrow/public/images/pkg2.png",
+    "folder": "smartlygrow/public/images",
+    "altText": "pkg2.png",
+    "tags": [
+      "public/images"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/images/pkg3",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454428/smartlygrow/public/images/pkg3.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 1303575,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454428/smartlygrow/public/images/pkg3.png",
+    "folder": "smartlygrow/public/images",
+    "altText": "pkg3.png",
+    "tags": [
+      "public/images"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/images/pkg4",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454432/smartlygrow/public/images/pkg4.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 2297661,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454432/smartlygrow/public/images/pkg4.png",
+    "folder": "smartlygrow/public/images",
+    "altText": "pkg4.png",
+    "tags": [
+      "public/images"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/logo-about",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454433/smartlygrow/public/logo-about.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1148,
+    "height": 1148,
+    "bytes": 406551,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454433/smartlygrow/public/logo-about.png",
+    "folder": "smartlygrow/public",
+    "altText": "logo-about.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/logo-new",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454434/smartlygrow/public/logo-new.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1148,
+    "height": 1148,
+    "bytes": 406551,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454434/smartlygrow/public/logo-new.png",
+    "folder": "smartlygrow/public",
+    "altText": "logo-new.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/main-pic",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454438/smartlygrow/public/main-pic.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 2797,
+    "height": 2606,
+    "bytes": 4157081,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454438/smartlygrow/public/main-pic.png",
+    "folder": "smartlygrow/public",
+    "altText": "main-pic.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/next",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454439/smartlygrow/public/next.svg",
+    "resourceType": "image",
+    "format": "svg",
+    "width": 394,
+    "height": 80,
+    "bytes": 1375,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454439/smartlygrow/public/next.svg",
+    "folder": "smartlygrow/public",
+    "altText": "next.svg",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/performance/meta-ads-leads-report",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454441/smartlygrow/public/performance/meta-ads-leads-report.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 851,
+    "height": 1849,
+    "bytes": 1490928,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454441/smartlygrow/public/performance/meta-ads-leads-report.png",
+    "folder": "smartlygrow/public/performance",
+    "altText": "meta-ads-leads-report.png",
+    "tags": [
+      "public/performance"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/performance/performance-report-1",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454443/smartlygrow/public/performance/performance-report-1.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 851,
+    "height": 1847,
+    "bytes": 1640692,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454443/smartlygrow/public/performance/performance-report-1.png",
+    "folder": "smartlygrow/public/performance",
+    "altText": "performance-report-1.png",
+    "tags": [
+      "public/performance"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/performance/performance-report-2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454445/smartlygrow/public/performance/performance-report-2.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 853,
+    "height": 1844,
+    "bytes": 1693180,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454445/smartlygrow/public/performance/performance-report-2.png",
+    "folder": "smartlygrow/public/performance",
+    "altText": "performance-report-2.png",
+    "tags": [
+      "public/performance"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/performance/performance-report-3",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454446/smartlygrow/public/performance/performance-report-3.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 851,
+    "height": 1849,
+    "bytes": 1490928,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454446/smartlygrow/public/performance/performance-report-3.png",
+    "folder": "smartlygrow/public/performance",
+    "altText": "performance-report-3.png",
+    "tags": [
+      "public/performance"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/ai__lead",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454448/smartlygrow/public/photo/ai__lead.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1086,
+    "height": 1448,
+    "bytes": 1921378,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454448/smartlygrow/public/photo/ai__lead.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "ai  lead.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/app_lead",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454450/smartlygrow/public/photo/app_lead.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 1862057,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454450/smartlygrow/public/photo/app_lead.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "app lead.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/cofunder",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454451/smartlygrow/public/photo/cofunder.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 925,
+    "height": 1600,
+    "bytes": 71586,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454451/smartlygrow/public/photo/cofunder.jpg",
+    "folder": "smartlygrow/public/photo",
+    "altText": "cofunder.jpeg",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/founder",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454453/smartlygrow/public/photo/founder.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 645106,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454453/smartlygrow/public/photo/founder.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "founder.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/image",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454454/smartlygrow/public/photo/image.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1080,
+    "height": 1113,
+    "bytes": 1063949,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454454/smartlygrow/public/photo/image.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "image.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/janhavi-new",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454456/smartlygrow/public/photo/janhavi-new.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 925,
+    "height": 1600,
+    "bytes": 71586,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454456/smartlygrow/public/photo/janhavi-new.jpg",
+    "folder": "smartlygrow/public/photo",
+    "altText": "janhavi-new.jpg",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_005845",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454457/smartlygrow/public/photo/Screenshot_2026-06-28_005845.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1917,
+    "height": 962,
+    "bytes": 548484,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454457/smartlygrow/public/photo/Screenshot_2026-06-28_005845.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 005845.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_005854",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454458/smartlygrow/public/photo/Screenshot_2026-06-28_005854.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 362601,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454458/smartlygrow/public/photo/Screenshot_2026-06-28_005854.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 005854.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_005900",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454459/smartlygrow/public/photo/Screenshot_2026-06-28_005900.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 1303575,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454459/smartlygrow/public/photo/Screenshot_2026-06-28_005900.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 005900.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_005908",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454461/smartlygrow/public/photo/Screenshot_2026-06-28_005908.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 2297661,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454461/smartlygrow/public/photo/Screenshot_2026-06-28_005908.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 005908.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_005915",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454462/smartlygrow/public/photo/Screenshot_2026-06-28_005915.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1907,
+    "height": 1068,
+    "bytes": 1027565,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454462/smartlygrow/public/photo/Screenshot_2026-06-28_005915.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 005915.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_005922",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454463/smartlygrow/public/photo/Screenshot_2026-06-28_005922.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1917,
+    "height": 1078,
+    "bytes": 748103,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454463/smartlygrow/public/photo/Screenshot_2026-06-28_005922.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 005922.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_005927",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454464/smartlygrow/public/photo/Screenshot_2026-06-28_005927.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1901,
+    "height": 1077,
+    "bytes": 780608,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454464/smartlygrow/public/photo/Screenshot_2026-06-28_005927.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 005927.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_005936",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454466/smartlygrow/public/photo/Screenshot_2026-06-28_005936.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 1485953,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454466/smartlygrow/public/photo/Screenshot_2026-06-28_005936.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 005936.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_010029",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454467/smartlygrow/public/photo/Screenshot_2026-06-28_010029.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1907,
+    "height": 1077,
+    "bytes": 811747,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454467/smartlygrow/public/photo/Screenshot_2026-06-28_010029.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 010029.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/Screenshot_2026-06-28_010033",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454468/smartlygrow/public/photo/Screenshot_2026-06-28_010033.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1917,
+    "height": 1077,
+    "bytes": 549880,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454468/smartlygrow/public/photo/Screenshot_2026-06-28_010033.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "Screenshot 2026-06-28 010033.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/video",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454469/smartlygrow/public/photo/video.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 900,
+    "height": 1600,
+    "bytes": 1416812,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454469/smartlygrow/public/photo/video.png",
+    "folder": "smartlygrow/public/photo",
+    "altText": "video.png",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/photo/website_lead",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454470/smartlygrow/public/photo/website_lead.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1086,
+    "height": 1448,
+    "bytes": 83418,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454470/smartlygrow/public/photo/website_lead.jpg",
+    "folder": "smartlygrow/public/photo",
+    "altText": "website lead.jpeg",
+    "tags": [
+      "public/photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/poster-01",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454472/smartlygrow/public/poster-01.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1131,
+    "height": 1600,
+    "bytes": 1638597,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454472/smartlygrow/public/poster-01.png",
+    "folder": "smartlygrow/public",
+    "altText": "poster-01.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/poster-02",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454473/smartlygrow/public/poster-02.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1131,
+    "height": 1600,
+    "bytes": 1499139,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454473/smartlygrow/public/poster-02.png",
+    "folder": "smartlygrow/public",
+    "altText": "poster-02.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/poster-03",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454474/smartlygrow/public/poster-03.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1131,
+    "height": 1600,
+    "bytes": 1486993,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454474/smartlygrow/public/poster-03.png",
+    "folder": "smartlygrow/public",
+    "altText": "poster-03.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/poster-04",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454476/smartlygrow/public/poster-04.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1131,
+    "height": 1600,
+    "bytes": 1421546,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454476/smartlygrow/public/poster-04.png",
+    "folder": "smartlygrow/public",
+    "altText": "poster-04.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/shree-ganesha",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454479/smartlygrow/public/shree-ganesha.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1725366,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454479/smartlygrow/public/shree-ganesha.png",
+    "folder": "smartlygrow/public",
+    "altText": "shree-ganesha.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/smartlygrow-logo-animation",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790454493/smartlygrow/public/smartlygrow-logo-animation.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1042350,
+    "duration": 8,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790454493/smartlygrow/public/smartlygrow-logo-animation.jpg",
+    "folder": "smartlygrow/public",
+    "altText": "smartlygrow-logo-animation.mp4",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/acharya-insta-single",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454480/smartlygrow/public/social/acharya-insta-single.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 755673,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454480/smartlygrow/public/social/acharya-insta-single.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "acharya-insta-single.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/acharya-insta",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454483/smartlygrow/public/social/acharya-insta.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2523230,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454483/smartlygrow/public/social/acharya-insta.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "acharya-insta.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/acharya-profile",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454484/smartlygrow/public/social/acharya-profile.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 755673,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454484/smartlygrow/public/social/acharya-profile.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "acharya-profile.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/acharya-reels",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454485/smartlygrow/public/social/acharya-reels.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 1364037,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454485/smartlygrow/public/social/acharya-reels.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "acharya-reels.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/ideal-property-insta-single",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454487/smartlygrow/public/social/ideal-property-insta-single.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 568162,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454487/smartlygrow/public/social/ideal-property-insta-single.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "ideal-property-insta-single.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/ideal-property-insta",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454490/smartlygrow/public/social/ideal-property-insta.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2394551,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454490/smartlygrow/public/social/ideal-property-insta.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "ideal-property-insta.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/ideal-property-profile",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454491/smartlygrow/public/social/ideal-property-profile.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 568162,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454491/smartlygrow/public/social/ideal-property-profile.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "ideal-property-profile.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/ideal-property-reels",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454493/smartlygrow/public/social/ideal-property-reels.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 953086,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454493/smartlygrow/public/social/ideal-property-reels.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "ideal-property-reels.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/lc-fitness-insta-single",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454494/smartlygrow/public/social/lc-fitness-insta-single.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 603412,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454494/smartlygrow/public/social/lc-fitness-insta-single.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "lc-fitness-insta-single.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/lc-fitness-insta",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454495/smartlygrow/public/social/lc-fitness-insta.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 940,
+    "bytes": 2489807,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454495/smartlygrow/public/social/lc-fitness-insta.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "lc-fitness-insta.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/lc-fitness-profile",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454497/smartlygrow/public/social/lc-fitness-profile.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 603412,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454497/smartlygrow/public/social/lc-fitness-profile.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "lc-fitness-profile.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/lc-fitness-reels",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454498/smartlygrow/public/social/lc-fitness-reels.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 720,
+    "height": 1600,
+    "bytes": 1514072,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454498/smartlygrow/public/social/lc-fitness-reels.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "lc-fitness-reels.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/umed-insta-single",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454499/smartlygrow/public/social/umed-insta-single.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 1029223,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454499/smartlygrow/public/social/umed-insta-single.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "umed-insta-single.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/umed-insta",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454500/smartlygrow/public/social/umed-insta.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2611778,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454500/smartlygrow/public/social/umed-insta.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "umed-insta.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/umed-profile",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454502/smartlygrow/public/social/umed-profile.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 1029223,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454502/smartlygrow/public/social/umed-profile.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "umed-profile.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/social/umed-reels",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454503/smartlygrow/public/social/umed-reels.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 1088664,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454503/smartlygrow/public/social/umed-reels.png",
+    "folder": "smartlygrow/public/social",
+    "altText": "umed-reels.png",
+    "tags": [
+      "public/social"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/team-hero",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454504/smartlygrow/public/team-hero.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 454990,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454504/smartlygrow/public/team-hero.jpg",
+    "folder": "smartlygrow/public",
+    "altText": "team-hero.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/trust-1",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455852/smartlygrow/public/trust-1.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 540,
+    "height": 360,
+    "bytes": 22163,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455852/smartlygrow/public/trust-1.jpg",
+    "folder": "smartlygrow/public",
+    "altText": "trust-1.jpg",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/trust-1",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455853/smartlygrow/public/trust-1.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 400,
+    "height": 400,
+    "bytes": 87237,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455853/smartlygrow/public/trust-1.png",
+    "folder": "smartlygrow/public",
+    "altText": "trust-1.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/trust-2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455854/smartlygrow/public/trust-2.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 520,
+    "height": 780,
+    "bytes": 41625,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455854/smartlygrow/public/trust-2.jpg",
+    "folder": "smartlygrow/public",
+    "altText": "trust-2.jpg",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/trust-2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455856/smartlygrow/public/trust-2.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 400,
+    "height": 400,
+    "bytes": 41502,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455856/smartlygrow/public/trust-2.png",
+    "folder": "smartlygrow/public",
+    "altText": "trust-2.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/trust-3",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455857/smartlygrow/public/trust-3.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 408,
+    "height": 612,
+    "bytes": 31050,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455857/smartlygrow/public/trust-3.jpg",
+    "folder": "smartlygrow/public",
+    "altText": "trust-3.jpg",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/trust-3",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455858/smartlygrow/public/trust-3.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 400,
+    "height": 400,
+    "bytes": 96588,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455858/smartlygrow/public/trust-3.png",
+    "folder": "smartlygrow/public",
+    "altText": "trust-3.png",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/vercel",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454511/smartlygrow/public/vercel.svg",
+    "resourceType": "image",
+    "format": "svg",
+    "width": 1155,
+    "height": 1000,
+    "bytes": 128,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454511/smartlygrow/public/vercel.svg",
+    "folder": "smartlygrow/public",
+    "altText": "vercel.svg",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/model-video-01-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454513/smartlygrow/public/video/model-video-01-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 436285,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454513/smartlygrow/public/video/model-video-01-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "model-video-01-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/model-video-02-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454514/smartlygrow/public/video/model-video-02-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 348745,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454514/smartlygrow/public/video/model-video-02-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "model-video-02-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/onetake-video-01-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454515/smartlygrow/public/video/onetake-video-01-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 236529,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454515/smartlygrow/public/video/onetake-video-01-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "onetake-video-01-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/onetake-video-01",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455038/smartlygrow/public/video/onetake-video-01.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 60308450,
+    "duration": 37.466667,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455038/smartlygrow/public/video/onetake-video-01.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "onetake-video-01.mov",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/onetake-video-02-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454515/smartlygrow/public/video/onetake-video-02-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 265680,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454515/smartlygrow/public/video/onetake-video-02-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "onetake-video-02-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/onetake-video-02",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455124/smartlygrow/public/video/onetake-video-02.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 57797996,
+    "duration": 36.033333,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455124/smartlygrow/public/video/onetake-video-02.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "onetake-video-02.mov",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/onetake-video-03-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454517/smartlygrow/public/video/onetake-video-03-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 244822,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790454517/smartlygrow/public/video/onetake-video-03-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "onetake-video-03-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/onetake-video-03",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455261/smartlygrow/public/video/onetake-video-03.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 76003302,
+    "duration": 47.4,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455261/smartlygrow/public/video/onetake-video-03.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "onetake-video-03.mov",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/re-reel-1-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455268/smartlygrow/public/video/re-reel-1-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 436285,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455268/smartlygrow/public/video/re-reel-1-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "re-reel-1-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/re-reel-2-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455389/smartlygrow/public/video/re-reel-2-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 164464,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455389/smartlygrow/public/video/re-reel-2-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "re-reel-2-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/re-reel-2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455455/smartlygrow/public/video/re-reel-2.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 87031060,
+    "duration": 49.295011,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455455/smartlygrow/public/video/re-reel-2.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "re-reel-2.mov",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/re-reel-3-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455461/smartlygrow/public/video/re-reel-3-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 263169,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455461/smartlygrow/public/video/re-reel-3-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "re-reel-3-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/re-reel-4-thumb",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455575/smartlygrow/public/video/re-reel-4-thumb.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 289836,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790455575/smartlygrow/public/video/re-reel-4-thumb.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "re-reel-4-thumb.jpg",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/reel1",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456312/smartlygrow/public/video/reel1.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 716,
+    "height": 1274,
+    "bytes": 9987803,
+    "duration": 51.006708,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456312/smartlygrow/public/video/reel1.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "reel1.mp4",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/reel2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456327/smartlygrow/public/video/reel2.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 716,
+    "height": 1274,
+    "bytes": 7862382,
+    "duration": 32.574708,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456327/smartlygrow/public/video/reel2.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "reel2.mp4",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/video-01",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456418/smartlygrow/public/video/video-01.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 60308450,
+    "duration": 37.466667,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456418/smartlygrow/public/video/video-01.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "video-01.mp4",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video/video-02",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456505/smartlygrow/public/video/video-02.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 57797996,
+    "duration": 36.033333,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456505/smartlygrow/public/video/video-02.jpg",
+    "folder": "smartlygrow/public/video",
+    "altText": "video-02.mp4",
+    "tags": [
+      "public/video"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/video-editing-showcase",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456519/smartlygrow/public/video-editing-showcase.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 480,
+    "height": 864,
+    "bytes": 7147018,
+    "duration": 31.382667,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456519/smartlygrow/public/video-editing-showcase.jpg",
+    "folder": "smartlygrow/public",
+    "altText": "video-editing-showcase.mp4",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/public/window",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456522/smartlygrow/public/window.svg",
+    "resourceType": "image",
+    "format": "svg",
+    "width": 16,
+    "height": 16,
+    "bytes": 385,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456522/smartlygrow/public/window.svg",
+    "folder": "smartlygrow/public",
+    "altText": "window.svg",
+    "tags": [
+      "public"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/ai__lead",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456525/smartlygrow/photo/ai__lead.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1086,
+    "height": 1448,
+    "bytes": 1921378,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456525/smartlygrow/photo/ai__lead.png",
+    "folder": "smartlygrow/photo",
+    "altText": "ai  lead.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/app_lead",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456531/smartlygrow/photo/app_lead.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 1862057,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456531/smartlygrow/photo/app_lead.png",
+    "folder": "smartlygrow/photo",
+    "altText": "app lead.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/cofunder",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456534/smartlygrow/photo/cofunder.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 3071,
+    "height": 1745,
+    "bytes": 2336423,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456534/smartlygrow/photo/cofunder.jpg",
+    "folder": "smartlygrow/photo",
+    "altText": "cofunder.jpeg",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/founder",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456535/smartlygrow/photo/founder.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 645106,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456535/smartlygrow/photo/founder.png",
+    "folder": "smartlygrow/photo",
+    "altText": "founder.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/image",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456537/smartlygrow/photo/image.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1080,
+    "height": 1113,
+    "bytes": 1063949,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456537/smartlygrow/photo/image.png",
+    "folder": "smartlygrow/photo",
+    "altText": "image.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_005845",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456539/smartlygrow/photo/Screenshot_2026-06-28_005845.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1917,
+    "height": 962,
+    "bytes": 548484,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456539/smartlygrow/photo/Screenshot_2026-06-28_005845.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 005845.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_005854",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456540/smartlygrow/photo/Screenshot_2026-06-28_005854.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 362601,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456540/smartlygrow/photo/Screenshot_2026-06-28_005854.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 005854.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_005900",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456542/smartlygrow/photo/Screenshot_2026-06-28_005900.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 1303575,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456542/smartlygrow/photo/Screenshot_2026-06-28_005900.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 005900.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_005908",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456547/smartlygrow/photo/Screenshot_2026-06-28_005908.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 2297661,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456547/smartlygrow/photo/Screenshot_2026-06-28_005908.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 005908.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_005915",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456549/smartlygrow/photo/Screenshot_2026-06-28_005915.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1907,
+    "height": 1068,
+    "bytes": 1027565,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456549/smartlygrow/photo/Screenshot_2026-06-28_005915.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 005915.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_005922",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456550/smartlygrow/photo/Screenshot_2026-06-28_005922.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1917,
+    "height": 1078,
+    "bytes": 748103,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456550/smartlygrow/photo/Screenshot_2026-06-28_005922.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 005922.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_005927",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456552/smartlygrow/photo/Screenshot_2026-06-28_005927.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1901,
+    "height": 1077,
+    "bytes": 780608,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456552/smartlygrow/photo/Screenshot_2026-06-28_005927.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 005927.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_005936",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456554/smartlygrow/photo/Screenshot_2026-06-28_005936.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1918,
+    "height": 1078,
+    "bytes": 1485953,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456554/smartlygrow/photo/Screenshot_2026-06-28_005936.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 005936.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_010029",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456555/smartlygrow/photo/Screenshot_2026-06-28_010029.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1907,
+    "height": 1077,
+    "bytes": 811747,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456555/smartlygrow/photo/Screenshot_2026-06-28_010029.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 010029.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/Screenshot_2026-06-28_010033",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456557/smartlygrow/photo/Screenshot_2026-06-28_010033.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1917,
+    "height": 1077,
+    "bytes": 549880,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456557/smartlygrow/photo/Screenshot_2026-06-28_010033.png",
+    "folder": "smartlygrow/photo",
+    "altText": "Screenshot 2026-06-28 010033.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/video",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456559/smartlygrow/photo/video.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 900,
+    "height": 1600,
+    "bytes": 1416812,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456559/smartlygrow/photo/video.png",
+    "folder": "smartlygrow/photo",
+    "altText": "video.png",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photo/website_lead",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456560/smartlygrow/photo/website_lead.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 1086,
+    "height": 1448,
+    "bytes": 83418,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456560/smartlygrow/photo/website_lead.jpg",
+    "folder": "smartlygrow/photo",
+    "altText": "website lead.jpeg",
+    "tags": [
+      "photo"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photot/photo-1",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456561/smartlygrow/photot/photo-1.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 540,
+    "height": 360,
+    "bytes": 22163,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456561/smartlygrow/photot/photo-1.jpg",
+    "folder": "smartlygrow/photot",
+    "altText": "photo-1.jpg",
+    "tags": [
+      "photot"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photot/photot_3",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456562/smartlygrow/photot/photot_3.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 408,
+    "height": 612,
+    "bytes": 31050,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456562/smartlygrow/photot/photot_3.jpg",
+    "folder": "smartlygrow/photot",
+    "altText": "photot 3.jpg",
+    "tags": [
+      "photot"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/photot/phtot_2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456563/smartlygrow/photot/phtot_2.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 520,
+    "height": 780,
+    "bytes": 41625,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456563/smartlygrow/photot/phtot_2.jpg",
+    "folder": "smartlygrow/photot",
+    "altText": "phtot 2.jpg",
+    "tags": [
+      "photot"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/image_copy",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456565/smartlygrow/social_media/ideal_pr/image_copy.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 953086,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456565/smartlygrow/social_media/ideal_pr/image_copy.png",
+    "folder": "smartlygrow/social_media/ideal_pr",
+    "altText": "image copy.png",
+    "tags": [
+      "social_media/ideal_pr"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/image",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456567/smartlygrow/social_media/ideal_pr/image.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 568162,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456567/smartlygrow/social_media/ideal_pr/image.png",
+    "folder": "smartlygrow/social_media/ideal_pr",
+    "altText": "image.png",
+    "tags": [
+      "social_media/ideal_pr"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/lc_fitness/archrya/image_copy",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456570/smartlygrow/social_media/ideal_pr/lc_fitness/archrya/image_copy.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 1364037,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456570/smartlygrow/social_media/ideal_pr/lc_fitness/archrya/image_copy.png",
+    "folder": "smartlygrow/social_media/ideal_pr/lc_fitness/archrya",
+    "altText": "image copy.png",
+    "tags": [
+      "social_media/ideal_pr/lc_fitness/archrya"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/lc_fitness/archrya/image",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456572/smartlygrow/social_media/ideal_pr/lc_fitness/archrya/image.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 755673,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456572/smartlygrow/social_media/ideal_pr/lc_fitness/archrya/image.png",
+    "folder": "smartlygrow/social_media/ideal_pr/lc_fitness/archrya",
+    "altText": "image.png",
+    "tags": [
+      "social_media/ideal_pr/lc_fitness/archrya"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/lc_fitness/archrya/unmed/image_copy",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456574/smartlygrow/social_media/ideal_pr/lc_fitness/archrya/unmed/image_copy.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 1088664,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456574/smartlygrow/social_media/ideal_pr/lc_fitness/archrya/unmed/image_copy.png",
+    "folder": "smartlygrow/social_media/ideal_pr/lc_fitness/archrya/unmed",
+    "altText": "image copy.png",
+    "tags": [
+      "social_media/ideal_pr/lc_fitness/archrya/unmed"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/lc_fitness/archrya/unmed/image",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456576/smartlygrow/social_media/ideal_pr/lc_fitness/archrya/unmed/image.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 1029223,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456576/smartlygrow/social_media/ideal_pr/lc_fitness/archrya/unmed/image.png",
+    "folder": "smartlygrow/social_media/ideal_pr/lc_fitness/archrya/unmed",
+    "altText": "image.png",
+    "tags": [
+      "social_media/ideal_pr/lc_fitness/archrya/unmed"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/lc_fitness/image_copy_2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456583/smartlygrow/social_media/ideal_pr/lc_fitness/image_copy_2.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 940,
+    "bytes": 2489807,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456583/smartlygrow/social_media/ideal_pr/lc_fitness/image_copy_2.png",
+    "folder": "smartlygrow/social_media/ideal_pr/lc_fitness",
+    "altText": "image copy 2.png",
+    "tags": [
+      "social_media/ideal_pr/lc_fitness"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/lc_fitness/image_copy",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456586/smartlygrow/social_media/ideal_pr/lc_fitness/image_copy.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 720,
+    "height": 1600,
+    "bytes": 1514072,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456586/smartlygrow/social_media/ideal_pr/lc_fitness/image_copy.png",
+    "folder": "smartlygrow/social_media/ideal_pr/lc_fitness",
+    "altText": "image copy.png",
+    "tags": [
+      "social_media/ideal_pr/lc_fitness"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/social_media/ideal_pr/lc_fitness/image",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456588/smartlygrow/social_media/ideal_pr/lc_fitness/image.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 603412,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456588/smartlygrow/social_media/ideal_pr/lc_fitness/image.png",
+    "folder": "smartlygrow/social_media/ideal_pr/lc_fitness",
+    "altText": "image.png",
+    "tags": [
+      "social_media/ideal_pr/lc_fitness"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/thumbnail/cafe_thubmbnail",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456592/smartlygrow/thumbnail/cafe_thubmbnail.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2029249,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456592/smartlygrow/thumbnail/cafe_thubmbnail.png",
+    "folder": "smartlygrow/thumbnail",
+    "altText": "cafe thubmbnail.png",
+    "tags": [
+      "thumbnail"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/thumbnail/godiwll",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456602/smartlygrow/thumbnail/godiwll.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1666454,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456602/smartlygrow/thumbnail/godiwll.png",
+    "folder": "smartlygrow/thumbnail",
+    "altText": "godiwll.png",
+    "tags": [
+      "thumbnail"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/thumbnail/shree_ganesh_thubmial",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456605/smartlygrow/thumbnail/shree_ganesh_thubmial.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1725366,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456605/smartlygrow/thumbnail/shree_ganesh_thubmial.png",
+    "folder": "smartlygrow/thumbnail",
+    "altText": "shree ganesh thubmial.png",
+    "tags": [
+      "thumbnail"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/thumbnail/travels",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456609/smartlygrow/thumbnail/travels.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1793935,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790456609/smartlygrow/thumbnail/travels.png",
+    "folder": "smartlygrow/thumbnail",
+    "altText": "travels.png",
+    "tags": [
+      "thumbnail"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/video_editing/IMG_1863_MOV",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456668/smartlygrow/video_editing/IMG_1863_MOV.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 60308450,
+    "duration": 37.466667,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456668/smartlygrow/video_editing/IMG_1863_MOV.jpg",
+    "folder": "smartlygrow/video_editing",
+    "altText": "IMG_1863.MOV",
+    "tags": [
+      "video_editing"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/video_editing/IMG_1868_MOV",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456725/smartlygrow/video_editing/IMG_1868_MOV.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 57797996,
+    "duration": 36.033333,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456725/smartlygrow/video_editing/IMG_1868_MOV.jpg",
+    "folder": "smartlygrow/video_editing",
+    "altText": "IMG_1868.MOV",
+    "tags": [
+      "video_editing"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_37_AM__1_",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456777/smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_37_AM__1_.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 1080,
+    "height": 1918,
+    "bytes": 25737000,
+    "duration": 29.1,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456777/smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_37_AM__1_.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "WhatsApp Video 2026-06-28 at 1.49.37 AM (1).mp4",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_37_AM",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456913/smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_37_AM.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 71742562,
+    "duration": 34.116667,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456913/smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_37_AM.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "WhatsApp Video 2026-06-28 at 1.49.37 AM.mp4",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_43_AM__1_",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456965/smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_43_AM__1_.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 1440,
+    "height": 2560,
+    "bytes": 73201346,
+    "duration": 27.120998,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790456965/smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_43_AM__1_.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "WhatsApp Video 2026-06-28 at 1.49.43 AM (1).mp4",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_43_AM",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457031/smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_43_AM.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 1440,
+    "height": 2588,
+    "bytes": 79959925,
+    "duration": 30.185986,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457031/smartlygrow/videos/WhatsApp_Video_2026-06-28_at_1_49_43_AM.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "WhatsApp Video 2026-06-28 at 1.49.43 AM.mp4",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/team_circle/logo_one_people_circle/image_copy_2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457038/smartlygrow/team_circle/logo_one_people_circle/image_copy_2.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 385,
+    "height": 398,
+    "bytes": 282331,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457038/smartlygrow/team_circle/logo_one_people_circle/image_copy_2.png",
+    "folder": "smartlygrow/team_circle/logo_one_people_circle",
+    "altText": "image copy 2.png",
+    "tags": [
+      "team_circle/logo_one_people_circle"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/team_circle/logo_one_people_circle/image_copy",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457040/smartlygrow/team_circle/logo_one_people_circle/image_copy.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1029,
+    "height": 1280,
+    "bytes": 1940275,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457040/smartlygrow/team_circle/logo_one_people_circle/image_copy.png",
+    "folder": "smartlygrow/team_circle/logo_one_people_circle",
+    "altText": "image copy.png",
+    "tags": [
+      "team_circle/logo_one_people_circle"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/team_circle/logo_one_people_circle/image",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457042/smartlygrow/team_circle/logo_one_people_circle/image.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1200,
+    "height": 1600,
+    "bytes": 1433720,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457042/smartlygrow/team_circle/logo_one_people_circle/image.png",
+    "folder": "smartlygrow/team_circle/logo_one_people_circle",
+    "altText": "image.png",
+    "tags": [
+      "team_circle/logo_one_people_circle"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/Anikit_Tours___Traverls",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457044/smartlygrow/media/Anikit_Tours___Traverls.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 1737559,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457044/smartlygrow/media/Anikit_Tours___Traverls.png",
+    "folder": "smartlygrow/media",
+    "altText": "Anikit Tours & Traverls.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/cafe_thumbnail",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457048/smartlygrow/media/cafe_thumbnail.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1826351,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457048/smartlygrow/media/cafe_thumbnail.png",
+    "folder": "smartlygrow/media",
+    "altText": "cafe thumbnail.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/Good_Willa_Education",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457050/smartlygrow/media/Good_Willa_Education.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 1778844,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457050/smartlygrow/media/Good_Willa_Education.png",
+    "folder": "smartlygrow/media",
+    "altText": "Good Willa Education.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_10",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457051/smartlygrow/media/image_copy_10.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 260901,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457051/smartlygrow/media/image_copy_10.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 10.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_11",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457053/smartlygrow/media/image_copy_11.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1600,
+    "height": 593,
+    "bytes": 666781,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457053/smartlygrow/media/image_copy_11.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 11.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_12",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457055/smartlygrow/media/image_copy_12.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1600,
+    "height": 900,
+    "bytes": 1061299,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457055/smartlygrow/media/image_copy_12.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 12.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_13",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457058/smartlygrow/media/image_copy_13.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1131,
+    "height": 1600,
+    "bytes": 1638597,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457058/smartlygrow/media/image_copy_13.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 13.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_14",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457060/smartlygrow/media/image_copy_14.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1131,
+    "height": 1600,
+    "bytes": 1499139,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457060/smartlygrow/media/image_copy_14.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 14.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_15",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457063/smartlygrow/media/image_copy_15.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1131,
+    "height": 1600,
+    "bytes": 1486993,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457063/smartlygrow/media/image_copy_15.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 15.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_16",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457065/smartlygrow/media/image_copy_16.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1131,
+    "height": 1600,
+    "bytes": 1421546,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457065/smartlygrow/media/image_copy_16.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 16.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_17",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457067/smartlygrow/media/image_copy_17.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 739,
+    "height": 1600,
+    "bytes": 496588,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457067/smartlygrow/media/image_copy_17.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 17.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_18",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457068/smartlygrow/media/image_copy_18.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 739,
+    "height": 1600,
+    "bytes": 493964,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457068/smartlygrow/media/image_copy_18.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 18.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_19",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457070/smartlygrow/media/image_copy_19.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 851,
+    "height": 1847,
+    "bytes": 1640692,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457070/smartlygrow/media/image_copy_19.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 19.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_2",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457076/smartlygrow/media/image_copy_2.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1966995,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457076/smartlygrow/media/image_copy_2.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 2.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_20",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457078/smartlygrow/media/image_copy_20.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 853,
+    "height": 1844,
+    "bytes": 1693180,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457078/smartlygrow/media/image_copy_20.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 20.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_3",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457082/smartlygrow/media/image_copy_3.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2394551,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457082/smartlygrow/media/image_copy_3.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 3.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_4",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457084/smartlygrow/media/image_copy_4.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2523230,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457084/smartlygrow/media/image_copy_4.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 4.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_5",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457086/smartlygrow/media/image_copy_5.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 2611778,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457086/smartlygrow/media/image_copy_5.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 5.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_6",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457089/smartlygrow/media/image_copy_6.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 851,
+    "height": 1849,
+    "bytes": 1490928,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457089/smartlygrow/media/image_copy_6.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 6.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_7",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457090/smartlygrow/media/image_copy_7.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 904,
+    "height": 1600,
+    "bytes": 807664,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457090/smartlygrow/media/image_copy_7.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 7.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_8",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457091/smartlygrow/media/image_copy_8.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 589,
+    "height": 1280,
+    "bytes": 275832,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457091/smartlygrow/media/image_copy_8.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 8.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy_9",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457093/smartlygrow/media/image_copy_9.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 736,
+    "height": 1600,
+    "bytes": 479283,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457093/smartlygrow/media/image_copy_9.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy 9.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image_copy",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457094/smartlygrow/media/image_copy.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 260901,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457094/smartlygrow/media/image_copy.png",
+    "folder": "smartlygrow/media",
+    "altText": "image copy.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/image",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457095/smartlygrow/media/image.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1148,
+    "height": 1148,
+    "bytes": 406551,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457095/smartlygrow/media/image.png",
+    "folder": "smartlygrow/media",
+    "altText": "image.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/IMG_1863__1__MOV",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457152/smartlygrow/videos/IMG_1863__1__MOV.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 60308450,
+    "duration": 37.466667,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457152/smartlygrow/videos/IMG_1863__1__MOV.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "IMG_1863 (1).MOV",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/IMG_1868__1__MOV",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457202/smartlygrow/videos/IMG_1868__1__MOV.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 57797996,
+    "duration": 36.033333,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457202/smartlygrow/videos/IMG_1868__1__MOV.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "IMG_1868 (1).MOV",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/IMG_1895__1__MOV",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457299/smartlygrow/videos/IMG_1895__1__MOV.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 76003302,
+    "duration": 47.4,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457299/smartlygrow/videos/IMG_1895__1__MOV.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "IMG_1895 (1).MOV",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/IMG_1966__1__MOV",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457422/smartlygrow/videos/IMG_1966__1__MOV.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 86751717,
+    "duration": 49.295011,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457422/smartlygrow/videos/IMG_1966__1__MOV.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "IMG_1966 (1).MOV",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/IMG_1997_MOV",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457519/smartlygrow/videos/IMG_1997_MOV.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 87031060,
+    "duration": 49.295011,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457519/smartlygrow/videos/IMG_1997_MOV.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "IMG_1997.MOV",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/IMG_2065__3__MOV",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457624/smartlygrow/videos/IMG_2065__3__MOV.mov",
+    "resourceType": "video",
+    "format": "mov",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 88794486,
+    "duration": 22.406009,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457624/smartlygrow/videos/IMG_2065__3__MOV.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "IMG_2065 (3).MOV",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/main__",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457635/smartlygrow/media/main__.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 3464,
+    "height": 3464,
+    "bytes": 4178787,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457635/smartlygrow/media/main__.png",
+    "folder": "smartlygrow/media",
+    "altText": "main  .png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/main_pic",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457638/smartlygrow/media/main_pic.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1510,
+    "height": 1042,
+    "bytes": 1643906,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457638/smartlygrow/media/main_pic.png",
+    "folder": "smartlygrow/media",
+    "altText": "main=pic.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/Shree_Ganesha_Enterprises_123",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457641/smartlygrow/media/Shree_Ganesha_Enterprises_123.png",
+    "resourceType": "image",
+    "format": "png",
+    "width": 1672,
+    "height": 941,
+    "bytes": 1837710,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457641/smartlygrow/media/Shree_Ganesha_Enterprises_123.png",
+    "folder": "smartlygrow/media",
+    "altText": "Shree Ganesha Enterprises 123.png",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/SmartlyGrow_logo_animation_20260927005338",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457643/smartlygrow/videos/SmartlyGrow_logo_animation_20260927005338.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1042350,
+    "duration": 8,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457643/smartlygrow/videos/SmartlyGrow_logo_animation_20260927005338.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "SmartlyGrow_logo_animation_20260927005338.mp4",
+    "tags": [
+      "videos"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/media/WhatsApp_Image_2026-07-17_at_6_44_04_PM",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457644/smartlygrow/media/WhatsApp_Image_2026-07-17_at_6_44_04_PM.jpg",
+    "resourceType": "image",
+    "format": "jpg",
+    "width": 925,
+    "height": 1600,
+    "bytes": 71586,
+    "duration": 0,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790457644/smartlygrow/media/WhatsApp_Image_2026-07-17_at_6_44_04_PM.jpg",
+    "folder": "smartlygrow/media",
+    "altText": "WhatsApp Image 2026-07-17 at 6.44.04 PM.jpeg",
+    "tags": [
+      "media"
+    ]
+  },
+  {
+    "publicId": "smartlygrow/videos/WhatsApp_Video_2026-07-05_at_4_05_53_PM",
+    "secureUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457655/smartlygrow/videos/WhatsApp_Video_2026-07-05_at_4_05_53_PM.mp4",
+    "resourceType": "video",
+    "format": "mp4",
+    "width": 480,
+    "height": 864,
+    "bytes": 7147018,
+    "duration": 31.382667,
+    "thumbnailUrl": "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457655/smartlygrow/videos/WhatsApp_Video_2026-07-05_at_4_05_53_PM.jpg",
+    "folder": "smartlygrow/videos",
+    "altText": "WhatsApp Video 2026-07-05 at 4.05.53 PM.mp4",
+    "tags": [
+      "videos"
+    ]
+  }
+]

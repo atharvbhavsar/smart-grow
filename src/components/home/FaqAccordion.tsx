@@ -11,7 +11,7 @@ import {
 
 export function FaqAccordion() {
   return (
-    <section className="py-12 lg:py-16 bg-slate-50/30 border-t border-slate-100 font-sans" id="faq">
+    <section className="py-12 lg:py-16 bg-transparent border-t border-slate-100 font-sans" id="faq">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         
         {/* 2-Column Grid Layout */}

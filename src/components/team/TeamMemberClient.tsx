@@ -88,7 +88,7 @@ export default function TeamMemberClient({
       {/* Header Navigation Back */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
         <Link 
-          href="/about" 
+          href="/team" 
           className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-slate-500 hover:text-blue-600 bg-slate-50 hover:bg-blue-50 px-4 py-2 rounded-full transition-all border border-slate-200/60"
         >
           <ArrowLeft className="h-3.5 w-3.5" /> Back to Team Directory

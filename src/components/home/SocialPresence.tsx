@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Play, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -14,7 +14,24 @@ const VIDEOS = [
 export function SocialPresence() {
   const [current, setCurrent] = useState(1); // start at EP-5 like reference
   const [activeReelId, setActiveReelId] = useState<string | null>(null);
+  const [isInView, setIsInView] = useState(false);
+  const sectionRef = React.useRef<HTMLElement>(null);
   const total = VIDEOS.length;
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   const prev = () => setCurrent((c) => (c - 1 + total) % total);
   const next = () => setCurrent((c) => (c + 1) % total);
@@ -23,7 +40,7 @@ export function SocialPresence() {
   const rightIdx = (current + 1) % total;
 
   return (
-    <section className="pt-6 pb-14 bg-white overflow-hidden">
+    <section ref={sectionRef} className="pt-6 pb-14 bg-white overflow-hidden">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
 
         {/* Badge + Heading */}
@@ -46,7 +63,7 @@ export function SocialPresence() {
             initial={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.35 }}
             onClick={prev}
-            className="absolute cursor-pointer z-10 hidden sm:block"
+            className="absolute cursor-pointer z-10 hidden sm:block select-none"
             style={{
               left: "50%",
               marginLeft: -230,
@@ -55,12 +72,22 @@ export function SocialPresence() {
               transformOrigin: "bottom center",
             }}
           >
-            <div className="w-[140px] sm:w-[160px] h-[240px] sm:h-[270px] rounded-[20px] overflow-hidden shadow-lg border border-slate-100 bg-slate-100">
-              <video
-                src={VIDEOS[leftIdx].src}
-                className="w-full h-full object-cover"
-                muted loop playsInline autoPlay
-              />
+            <div 
+              className="w-[140px] sm:w-[160px] h-[240px] sm:h-[270px] rounded-[20px] overflow-hidden shadow-lg border border-slate-100 bg-slate-100"
+              onContextMenu={(e) => e.preventDefault()}
+            >
+              {isInView && (
+                <video
+                  src={VIDEOS[leftIdx].src}
+                  className="w-full h-full object-cover pointer-events-none select-none"
+                  muted loop playsInline autoPlay
+                  preload="metadata"
+                  controls={false}
+                  disablePictureInPicture
+                  controlsList="nodownload nofullscreen noremoteplayback"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              )}
             </div>
           </motion.div>
 
@@ -70,18 +97,26 @@ export function SocialPresence() {
             animate={{ opacity: 1, scale: 1 }}
             initial={{ opacity: 0, scale: 0.96 }}
             transition={{ duration: 0.35 }}
-            className="relative z-20"
+            className="relative z-20 select-none"
             style={{ bottom: 0, position: "relative" }}
           >
             <div
               onClick={() => setActiveReelId(VIDEOS[current].reelId)}
+              onContextMenu={(e) => e.preventDefault()}
               className="relative overflow-hidden shadow-2xl border border-slate-200 bg-slate-100 cursor-pointer group rounded-[24px] w-[260px] xs:w-[285px] sm:w-[200px] h-[430px] xs:h-[470px] sm:h-[340px] transition-all duration-300"
             >
-              <video
-                src={VIDEOS[current].src}
-                className="w-full h-full object-cover"
-                muted loop playsInline autoPlay
-              />
+              {isInView && (
+                <video
+                  src={VIDEOS[current].src}
+                  className="w-full h-full object-cover pointer-events-none select-none"
+                  muted loop playsInline autoPlay
+                  preload="metadata"
+                  controls={false}
+                  disablePictureInPicture
+                  controlsList="nodownload nofullscreen noremoteplayback"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent pointer-events-none" />
               
               {/* Play button overlay */}
@@ -103,7 +138,7 @@ export function SocialPresence() {
             initial={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.35 }}
             onClick={next}
-            className="absolute cursor-pointer z-10 hidden sm:block"
+            className="absolute cursor-pointer z-10 hidden sm:block select-none"
             style={{
               left: "50%",
               marginLeft: 90,
@@ -112,12 +147,22 @@ export function SocialPresence() {
               transformOrigin: "bottom center",
             }}
           >
-            <div className="w-[140px] sm:w-[160px] h-[240px] sm:h-[270px] rounded-[20px] overflow-hidden shadow-lg border border-slate-100 bg-slate-100">
-              <video
-                src={VIDEOS[rightIdx].src}
-                className="w-full h-full object-cover"
-                muted loop playsInline autoPlay
-              />
+            <div 
+              className="w-[140px] sm:w-[160px] h-[240px] sm:h-[270px] rounded-[20px] overflow-hidden shadow-lg border border-slate-100 bg-slate-100"
+              onContextMenu={(e) => e.preventDefault()}
+            >
+              {isInView && (
+                <video
+                  src={VIDEOS[rightIdx].src}
+                  className="w-full h-full object-cover pointer-events-none select-none"
+                  muted loop playsInline autoPlay
+                  preload="metadata"
+                  controls={false}
+                  disablePictureInPicture
+                  controlsList="nodownload nofullscreen noremoteplayback"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              )}
             </div>
           </motion.div>
 

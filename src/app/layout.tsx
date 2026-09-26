@@ -8,6 +8,7 @@ import SmoothScrollProvider from "@/components/SmoothScroll";
 import { FloatingInstagram, FloatingWhatsApp } from "@/components/home/FinalCta";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import GlobalContentProtection from "@/components/security/GlobalContentProtection";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -123,7 +124,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${instrumentSans.variable} ${montserrat.variable} h-full antialiased scroll-smooth`}
+      className={`${outfit.variable} ${instrumentSans.variable} ${montserrat.variable} h-full antialiased`}
     >
       <head>
         {/* Google Analytics 4 */}
@@ -175,14 +176,27 @@ export default function RootLayout({
           />
         </noscript>
         <SmoothScrollProvider>
+          {/* Global Continuous Subtle Tech Grid Background */}
+          <div
+            aria-hidden="true"
+            className="fixed inset-0 pointer-events-none -z-50 opacity-60"
+            style={{
+              backgroundImage: `
+                linear-gradient(to right, rgba(59, 130, 246, 0.055) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(59, 130, 246, 0.055) 1px, transparent 1px)
+              `,
+              backgroundSize: "28px 28px",
+            }}
+          />
           <Header />
-          <div className="flex-1 flex flex-col w-full bg-tech-grid pt-16">
+          <div className="flex-1 flex flex-col w-full max-w-full pt-16">
             {children}
           </div>
           <MarqueeTicker />
           <Footer />
           <FloatingInstagram />
           <FloatingWhatsApp />
+          <GlobalContentProtection />
           <Analytics />
         </SmoothScrollProvider>
       </body>

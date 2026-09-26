@@ -54,7 +54,15 @@ AGENT.md
 # raw assets in root
 /*.png
 /*.mp4
+/*.MOV
+/*.mov
 /photo/
 /photot/
 /thumbnail/
 /video/
+/social media/
+/vide edititng/
+/team circle/
+/public/video/*.mov
+/public/video/*.MOV
+/public/video/*.mp4

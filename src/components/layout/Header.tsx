@@ -13,15 +13,15 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full pt-4 sm:pt-6 px-3 sm:px-4 pointer-events-none transition-all duration-300 font-sans">
-      <div className="mx-auto max-w-5xl w-full pointer-events-auto">
-        <div className="flex items-center justify-between border border-slate-200/80 bg-white px-4 sm:px-8 md:px-14 py-3 sm:py-5 rounded-full shadow-[0_10px_35px_rgba(0,0,0,0.03)]">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full max-w-[100vw] box-border pt-3 sm:pt-6 px-2.5 sm:px-4 pointer-events-none transition-all duration-300 font-sans">
+      <div className="mx-auto max-w-5xl w-full pointer-events-auto box-border">
+        <div className="flex items-center justify-between border border-slate-200/80 bg-white px-3 sm:px-8 md:px-10 lg:px-14 py-2.5 sm:py-5 rounded-full shadow-[0_10px_35px_rgba(0,0,0,0.03)]">
           
           {/* Desktop Left Nav Links */}
-          <div className="hidden md:flex items-center gap-16 flex-1 justify-end pr-14">
+          <div className="hidden md:flex items-center gap-6 lg:gap-14 flex-1 justify-end pr-6 lg:pr-14">
             <Link
               href="/portfolio"
-              className={`text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
+              className={`text-[15px] lg:text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
                 pathname === "/portfolio" ? "text-blue-600" : "text-slate-900"
               }`}
             >
@@ -29,7 +29,7 @@ export function Header() {
             </Link>
             <Link
               href="/services"
-              className={`text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
+              className={`text-[15px] lg:text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
                 pathname.startsWith("/services") ? "text-blue-600" : "text-slate-900"
               }`}
             >
@@ -38,15 +38,15 @@ export function Header() {
           </div>
           
           {/* Centered Logo */}
-          <Link href="/" className="flex-shrink-0 mx-2">
-            <Logo showText={true} />
+          <Link href="/" className="flex-shrink-0 mx-1 sm:mx-2 min-w-0">
+            <Logo showText={true} textSizeClass="text-xl sm:text-2xl" />
           </Link>
 
           {/* Desktop Right Nav Links */}
-          <div className="hidden md:flex items-center gap-16 flex-1 pl-14">
+          <div className="hidden md:flex items-center gap-6 lg:gap-14 flex-1 pl-6 lg:pl-14">
             <Link
               href="/about"
-              className={`text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
+              className={`text-[15px] lg:text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
                 pathname === "/about" ? "text-blue-600" : "text-slate-900"
               }`}
             >
@@ -54,7 +54,7 @@ export function Header() {
             </Link>
             <Link
               href="/contact"
-              className={`text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
+              className={`text-[15px] lg:text-[17px] font-bold tracking-tight transition-colors hover:text-blue-600 ${
                 pathname === "/contact" ? "text-blue-600" : "text-slate-900"
               }`}
             >

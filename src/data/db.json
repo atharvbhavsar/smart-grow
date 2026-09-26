@@ -5,8 +5,8 @@
     "faviconUrl": "/icon.svg",
     "email": "smartlygrow.in@gmail.com",
     "phone": "+917020951401",
-    "location": "Pune, India",
-    "address": "Pune, Maharashtra, India",
+    "location": "Bibewadi, Pune, India",
+    "address": "Bibewadi, Pune, Maharashtra, India",
     "hours": "Mon - Sat: 9:00 AM - 6:00 PM",
     "socials": {
       "linkedin": "https://linkedin.com/company/smartlygrow",
@@ -40,30 +40,30 @@
     "introduction": "We are a dedicated team of systems architects, creative developers, and product designers building high-performance operational infrastructures.",
     "mission": "We help fast-growing startups and enterprises eliminate operational bottlenecks and command digital authority through lightning-fast Next.js portals, custom workflow integrations, and autonomous AI agents.",
     "vision": "By integrating clean custom branding, modern visual systems, and structured codebases, we ensure your business remains highly-scalable, responsive, and positioned for measurable revenue expansion.",
-    "valuesTitle": "Why Choose SmartlyGrow",
+    "valuesTitle": "Why Choose SmartlyGrow?",
     "values": [
       {
-        "title": "AI-First Operations",
-        "desc": "We look for intelligence triggers. We replace copy-paste admin tasks with autonomous LLM loops so humans can focus on deep strategy.",
-        "icon": "Brain",
+        "title": "1. We Understand Before We Build",
+        "desc": "We first understand your business, goals, customers, and challenges. Then we create a solution that fits your needs.",
+        "icon": "Compass",
         "color": "bg-blue-50 text-blue-600"
       },
       {
-        "title": "Measurable Growth Only",
-        "desc": "We do not sell vanity stats. We focus on conversion rates, load speeds, pipeline values, and hours saved.",
-        "icon": "Target",
+        "title": "2. Fast & Direct Support",
+        "desc": "Reach us directly through calls, WhatsApp, or in person. We aim to respond to queries within 30 minutes during support hours.",
+        "icon": "Zap",
         "color": "bg-emerald-50 text-emerald-600"
       },
       {
-        "title": "Radical Transparency",
-        "desc": "Weekly video logs, live dev staging servers, and shared Figma canvases. We run projects with zero hidden back-channels.",
-        "icon": "Compass",
+        "title": "3. From Local Business to Growing Brand",
+        "desc": "Whether you're starting from scratch or already established, we help you build your online presence, reach more customers, and grow from a local business into a stronger brand.",
+        "icon": "TrendingUp",
         "color": "bg-amber-50 text-amber-600"
       },
       {
-        "title": "Obsessive Craftsmanship",
-        "desc": "Sub-second LCP scores, strict semantic layouts, and pixel-perfect design grids. Our standard is Vercel and Stripe visual levels.",
-        "icon": "Award",
+        "title": "4. Complete Support at a Fair Price",
+        "desc": "From planning and development to launch and ongoing support, we handle the complete journey with clear timelines and pricing designed for businesses of different sizes.",
+        "icon": "ShieldCheck",
         "color": "bg-rose-50 text-rose-600"
       }
     ]

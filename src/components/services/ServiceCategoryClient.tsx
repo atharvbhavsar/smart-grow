@@ -259,11 +259,18 @@ function ServiceCategoryContent({ categorySlug }: { categorySlug: string }) {
                   <X className="h-5 w-5" />
                 </button>
               </div>
-              <div className="relative aspect-video w-full bg-slate-950">
+              <div 
+                className="relative aspect-video w-full bg-slate-950 select-none"
+                onContextMenu={(e) => e.preventDefault()}
+              >
                 <video
                   src={activeVideoModal.src}
-                  className="w-full h-full object-contain"
-                  controls autoPlay
+                  className="w-full h-full object-contain select-none"
+                  controls
+                  autoPlay
+                  playsInline
+                  controlsList="nodownload noremoteplayback"
+                  onContextMenu={(e) => e.preventDefault()}
                 />
               </div>
             </motion.div>

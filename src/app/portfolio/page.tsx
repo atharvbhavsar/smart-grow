@@ -4,22 +4,22 @@ import PortfolioClient from "@/components/portfolio/PortfolioClient";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Case Studies & Portfolio | Web Development & AI Projects Pune | SmartlyGrow",
-  description: "Explore SmartlyGrow's proven case studies in Next.js web development, AI workflow automation pipelines, SEO rank platforms, and custom SaaS software.",
+  title: "Our Work & Portfolio | Websites, Social Growth, Ads & Real Estate | SmartlyGrow",
+  description: "Explore SmartlyGrow's visual portfolio showcasing custom Next.js websites, high-growth social media campaigns, performance marketing ads, cinematic video edits, and dedicated real estate solutions.",
   alternates: {
     canonical: "https://smartlygrow.in/portfolio",
   },
   openGraph: {
-    title: "Case Studies & Portfolio | SmartlyGrow Pune",
-    description: "Explore SmartlyGrow's proven case studies in Next.js web development, AI workflow automation pipelines, and custom SaaS software.",
+    title: "Portfolio — Work That Speaks For Itself | SmartlyGrow",
+    description: "Explore SmartlyGrow's curated work: Websites, Social Media Growth, Performance Ads, Video Editing & Real Estate Systems.",
     url: "https://smartlygrow.in/portfolio",
     siteName: "SmartlyGrow",
     images: [
       {
-        url: "/logo-new.png",
+        url: "/shree-ganesha.png",
         width: 1200,
         height: 630,
-        alt: "SmartlyGrow Portfolio Case Studies",
+        alt: "SmartlyGrow Portfolio Work",
       },
     ],
   },
@@ -29,9 +29,9 @@ export default function PortfolioPage() {
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "SmartlyGrow Portfolio & Case Studies",
+    "name": "SmartlyGrow Portfolio — Work That Speaks For Itself",
     "url": "https://smartlygrow.in/portfolio",
-    "description": "Verified case studies, web engineering deliverables, and AI automations built for clients by SmartlyGrow Pune.",
+    "description": "Visual portfolio of websites, social media management, performance marketing, video editing, and real estate marketing engineered by SmartlyGrow.",
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [

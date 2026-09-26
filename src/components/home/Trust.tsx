@@ -5,31 +5,29 @@ import React from "react";
 
 export function Trust() {
   const CLIENTS_ROW1 = [
-    { name: "Blue Tokai", style: "font-sans tracking-widest font-bold uppercase" },
-    { name: "Chitale Bandhu", style: "font-serif tracking-normal font-bold" },
-    { name: "Corridor Seven", style: "font-sans tracking-tight font-extrabold uppercase" },
-    { name: "FirstCry", style: "font-sans tracking-tighter font-black text-blue-600/70" },
-    { name: "Naivedhyam", style: "font-serif italic tracking-wide font-medium" },
-    { name: "OneCard", style: "font-sans tracking-[0.15em] font-light uppercase" },
-    { name: "Irani Cafe", style: "font-serif tracking-widest font-semibold uppercase" },
+    { name: "Ideal Property", style: "font-sans tracking-tight font-extrabold" },
+    { name: "LC Fitness Club", style: "font-sans tracking-wider font-black text-blue-600/80" },
+    { name: "Umed Care Center", style: "font-serif tracking-normal font-bold" },
+    { name: "Acharya Gurukulam", style: "font-serif italic tracking-wide font-semibold" },
+    { name: "ONE CARD", style: "font-sans tracking-[0.18em] font-light" },
+    { name: "Blue Tokai", style: "font-sans tracking-widest font-bold" },
     { name: "Smilekraft Clinic", style: "font-sans tracking-normal font-medium" },
-    { name: "XpressBees", style: "font-sans italic tracking-tighter font-extrabold uppercase" },
+    { name: "XpressBees", style: "font-sans italic tracking-tighter font-extrabold" },
   ];
 
   const CLIENTS_ROW2 = [
-    { name: "Third Wave Coffee", style: "font-sans tracking-wider font-extrabold uppercase" },
-    { name: "Haldiram's", style: "font-serif tracking-tight font-black" },
-    { name: "11 East Street Cafe", style: "font-serif italic tracking-normal font-medium" },
-    { name: "Malaka Spice", style: "font-serif tracking-wide font-semibold" },
-    { name: "Easebuzz", style: "font-sans tracking-tighter font-extrabold" },
-    { name: "DeepTek AI", style: "font-sans tracking-[0.05em] font-semibold uppercase" },
-    { name: "Vaishali", style: "font-serif tracking-tight font-bold uppercase" },
-    { name: "Talentica", style: "font-sans tracking-[0.2em] font-light uppercase" },
+    { name: "ONE CARD", style: "font-sans tracking-[0.2em] font-medium text-blue-600/70" },
+    { name: "Ideal Property", style: "font-sans tracking-tight font-extrabold" },
+    { name: "LC Fitness Club", style: "font-sans tracking-wide font-black" },
+    { name: "Acharya Gurukulam", style: "font-serif italic tracking-wider font-bold" },
+    { name: "Umed Care Center", style: "font-serif tracking-normal font-semibold" },
     { name: "VSPM Dental", style: "font-sans tracking-normal font-bold" },
+    { name: "Talentica", style: "font-sans tracking-[0.2em] font-light" },
+    { name: "Third Wave Coffee", style: "font-sans tracking-wider font-extrabold" },
   ];
 
   return (
-    <section className="pt-4 sm:pt-6 pb-12 sm:pb-16 bg-white border-y border-slate-100 bg-grid-pattern font-sans relative">
+    <section className="pt-4 sm:pt-6 pb-12 sm:pb-16 bg-transparent border-y border-slate-100 font-sans relative overflow-hidden w-full max-w-full">
       <style dangerouslySetInnerHTML={{
         __html: `
         @keyframes marquee-left {

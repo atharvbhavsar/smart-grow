@@ -2,18 +2,17 @@
 
 import React from "react";
 import Link from "next/link";
-import { Newsletter } from "../Newsletter";
 
 export function Footer() {
   return (
-    <footer className="bg-white border-t border-slate-150/80 mt-auto pt-12 sm:pt-20 pb-8 font-sans overflow-hidden relative">
+    <footer id="footer" className="bg-white border-t border-slate-150/80 mt-auto pt-12 sm:pt-20 pb-8 font-sans overflow-hidden relative scroll-mt-10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-16 border-b border-slate-100">
           
-          {/* Left: Contact info & Subscription */}
-          <div className="md:col-span-6 flex flex-col items-start justify-between gap-8 w-full">
+          {/* Left: Contact info */}
+          <div className="md:col-span-6 flex flex-col items-start justify-center gap-4 w-full">
             <div>
               <p className="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-2">
                 Contact us at
@@ -25,9 +24,9 @@ export function Footer() {
                 smartlygrow.in@gmail.com
               </a>
             </div>
-
-            {/* Production Newsletter component */}
-            <Newsletter variant="minimal" />
+            <p className="text-sm text-slate-500 max-w-sm leading-relaxed">
+              Empowering ambitious brands with modern digital experiences, video marketing, and scalable AI solutions.
+            </p>
           </div>
 
           {/* Right: Link grids */}

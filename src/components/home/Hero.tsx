@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "../ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -27,7 +28,7 @@ const SERVICES = [
 const TYPING_SPEED = 45;   // Industry-standard smooth typing speed (45ms/char)
 const PAUSE_AFTER  = 2000;  // Industry-standard reading pause (2.0s)
 
-export function Hero() {
+function TypingShowcase() {
   const [textIndex, setTextIndex] = useState(0);
   const [subIndex, setSubIndex]   = useState(0);
   const [mounted, setMounted]     = useState(false);
@@ -35,7 +36,9 @@ export function Hero() {
 
   useEffect(() => {
     setMounted(true);
-    return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current); };
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, []);
 
   useEffect(() => {
@@ -46,14 +49,15 @@ export function Hero() {
     if (subIndex < fullText.length) {
       timeoutRef.current = setTimeout(() => setSubIndex(s => s + 1), TYPING_SPEED);
     } else {
-      // Once fully typed, pause briefly then directly switch to next text via smooth slide
       timeoutRef.current = setTimeout(() => {
         setSubIndex(0);
         setTextIndex(i => (i + 1) % SERVICES.length);
       }, PAUSE_AFTER);
     }
 
-    return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current); };
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, [mounted, subIndex, textIndex]);
 
   const currentService = SERVICES[textIndex];
@@ -70,7 +74,59 @@ export function Hero() {
   const Icon = currentService.icon;
 
   return (
-    <section className="relative min-h-[80vh] sm:min-h-[85vh] flex flex-col justify-center items-center text-center pt-24 sm:pt-32 pb-12 bg-white bg-grid-pattern overflow-hidden font-sans px-4">
+    <div
+      className="typing-container typing-box relative flex items-center justify-center gap-3 sm:gap-4 px-4 sm:px-8 py-4 sm:py-6 rounded-[20px] transition-all duration-300"
+      style={{
+        background: "rgba(255,255,255,0.72)",
+        backdropFilter: "blur(12px)",
+        WebkitBackdropFilter: "blur(12px)",
+        border: "1.5px solid rgba(148,163,184,0.28)",
+        boxShadow: "0 4px 32px rgba(15,23,42,0.06), 0 1px 4px rgba(15,23,42,0.04)",
+      }}
+    >
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={textIndex}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.25, ease: "easeOut" }}
+          className="flex items-center gap-3 sm:gap-4 w-full min-w-0"
+        >
+          {/* Icon */}
+          <div className={`shrink-0 ${currentService.iconColor} flex items-center justify-center`}>
+            <Icon size={24} strokeWidth={2.2} className="w-6 h-6 sm:w-7 sm:h-7" />
+          </div>
+
+          {/* Typed Text */}
+          <div
+            className="flex-1 min-w-0 text-left text-[clamp(1.15rem,3.4vw,2.15rem)] font-bold tracking-tight leading-[1.22] sm:leading-[1.25] text-slate-900"
+            style={{
+              fontWeight: 800,
+              overflowWrap: "break-word",
+              wordBreak: "normal",
+            }}
+          >
+            <span className="text-slate-700">{renderedPrefix}</span>
+            <span className="text-blue-600">{renderedHighlight}</span>
+            <span className="text-slate-700">{renderedSuffix}</span>
+            <span className="hero-cursor inline-block w-[2.5px] sm:w-[3px] h-[0.9em] bg-blue-500 ml-[3px] align-middle rounded-full shrink-0" />
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </div>
+  );
+}
+
+export function Hero() {
+  return (
+    <section className="relative min-h-[80vh] sm:min-h-[85vh] flex flex-col justify-center items-center text-center pt-24 sm:pt-32 pb-12 bg-transparent overflow-hidden font-sans px-4 sm:px-5 lg:px-6 w-full max-w-full box-border">
+
+      {/* Contained Background Grid */}
+      <div
+        className="absolute inset-0 w-full max-w-full bg-grid-pattern pointer-events-none"
+        style={{ position: "absolute", inset: 0, width: "100%", maxWidth: "100%", pointerEvents: "none" }}
+      />
 
       <style dangerouslySetInnerHTML={{ __html: `
         @keyframes cursor-blink {
@@ -87,6 +143,29 @@ export function Hero() {
         .typing-container {
           animation: container-glow 3s ease-in-out infinite;
         }
+        .typing-box {
+          width: calc(100vw - 32px);
+          max-width: 900px;
+          min-height: 120px;
+          margin-left: auto;
+          margin-right: auto;
+          box-sizing: border-box;
+          overflow-wrap: break-word;
+          word-break: normal;
+        }
+        @media (min-width: 640px) {
+          .typing-box {
+            width: calc(100vw - 40px);
+            min-height: 140px;
+          }
+        }
+        @media (min-width: 1024px) {
+          .typing-box {
+            width: min(900px, calc(100vw - 48px));
+            max-width: 900px;
+            min-height: 170px;
+          }
+        }
       ` }} />
 
       {/* Main Headline */}
@@ -94,7 +173,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 22 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55, delay: 0.05 }}
-        className="text-[2.15rem] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter text-slate-950 leading-[1.06] max-w-5xl select-none z-10 px-2 text-center"
+        className="text-[clamp(1.85rem,6vw,4.5rem)] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter text-slate-950 leading-[1.08] max-w-5xl select-none z-10 px-2 text-center break-words"
       >
         Scale your Business <br />
         with <span className="text-blue-600">SmartlyGrow</span>
@@ -105,45 +184,9 @@ export function Hero() {
         initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55, delay: 0.18 }}
-        className="mt-8 mb-4 z-10 w-full max-w-2xl px-2 min-h-[84px] sm:min-h-[96px] flex items-center justify-center"
+        className="mt-8 mb-4 z-10 w-full flex items-center justify-center"
       >
-        <div
-          className="typing-container relative flex items-center gap-3 sm:gap-4 px-5 sm:px-8 py-4 sm:py-6 rounded-[20px] w-full mx-auto transition-all duration-300"
-          style={{
-            background: "rgba(255,255,255,0.72)",
-            backdropFilter: "blur(12px)",
-            WebkitBackdropFilter: "blur(12px)",
-            border: "1.5px solid rgba(148,163,184,0.28)",
-            boxShadow: "0 4px 32px rgba(15,23,42,0.06), 0 1px 4px rgba(15,23,42,0.04)",
-          }}
-        >
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={textIndex}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.35, ease: "easeOut" }}
-              className="flex items-center gap-3 sm:gap-4 w-full"
-            >
-              {/* Icon */}
-              <div className={`shrink-0 ${currentService.iconColor}`}>
-                <Icon size={24} strokeWidth={2.2} className="sm:w-7 sm:h-7" />
-              </div>
-
-              {/* Typed Text */}
-              <div
-                className="flex-1 text-left text-[1.3rem] sm:text-[1.75rem] md:text-[2.15rem] font-bold tracking-[-0.01em] leading-[1.2] text-slate-900"
-                style={{ fontWeight: 800 }}
-              >
-                <span className="text-slate-700">{renderedPrefix}</span>
-                <span className="text-blue-600">{renderedHighlight}</span>
-                <span className="text-slate-700">{renderedSuffix}</span>
-                <span className="hero-cursor inline-block w-[2.5px] sm:w-[3px] h-[0.9em] bg-blue-500 ml-[3px] align-middle rounded-full" />
-              </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
+        <TypingShowcase />
       </motion.div>
 
       {/* CTA buttons */}
@@ -151,14 +194,14 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55, delay: 0.3 }}
-        className="flex flex-col xs:flex-row gap-3.5 mt-7 z-10 w-full max-w-xs sm:max-w-none sm:w-auto justify-center"
+        className="flex flex-col sm:flex-row gap-3.5 mt-7 z-10 w-full max-w-full justify-center items-center px-4"
       >
-        <Link href="/portfolio" className="w-full sm:w-auto">
+        <Link href="/portfolio" className="w-[min(100%,240px)] sm:w-auto">
           <Button className="bg-slate-950 text-white hover:bg-slate-900 w-full sm:w-auto px-8 py-6 rounded-full text-[13px] font-extrabold tracking-widest uppercase transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer min-h-[48px]">
             Let&apos;s Explore
           </Button>
         </Link>
-        <Link href="/contact" className="w-full sm:w-auto">
+        <Link href="/contact" className="w-[min(100%,240px)] sm:w-auto">
           <Button variant="outline" className="border-slate-200 bg-white hover:bg-slate-50 text-slate-800 w-full sm:w-auto px-8 py-6 rounded-full text-[13px] font-extrabold tracking-widest uppercase transition-all duration-300 cursor-pointer shadow-xs min-h-[48px]">
             Contact Us
           </Button>
@@ -173,12 +216,39 @@ export function Hero() {
         className="flex items-center gap-3.5 mt-10 z-10 py-2 px-3 rounded-full select-none"
       >
         <div className="flex -space-x-3.5 items-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/trust-1.jpg" alt="Client 1" className="h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-white object-cover shadow-md bg-slate-900" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/trust-2.jpg" alt="Client 2" className="h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-white object-cover shadow-md bg-slate-900" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/trust-3.jpg" alt="Client 3" className="h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-white object-cover shadow-md bg-slate-900" />
+          <div className="relative h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-white shadow-md bg-slate-900 overflow-hidden shrink-0">
+            <Image
+              src="/trust-1.png"
+              alt="Client 1"
+              width={48}
+              height={48}
+              quality={95}
+              priority
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div className="relative h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-white shadow-md bg-slate-900 overflow-hidden shrink-0">
+            <Image
+              src="/trust-2.png"
+              alt="Client 2"
+              width={48}
+              height={48}
+              quality={95}
+              priority
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div className="relative h-10 w-10 sm:h-11 sm:w-11 rounded-full border-[2.5px] border-white shadow-md bg-slate-900 overflow-hidden shrink-0">
+            <Image
+              src="/trust-3.png"
+              alt="Client 3"
+              width={48}
+              height={48}
+              quality={95}
+              priority
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
         </div>
         <p className="text-base sm:text-lg font-medium text-slate-800 tracking-tight">
           Trusted by <span className="font-extrabold text-blue-600">20+</span> Businesses

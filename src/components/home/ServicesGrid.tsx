@@ -19,6 +19,7 @@ import {
 interface ServiceCategory {
   title: string;
   slug: string;
+  href: string;
   description: string;
   icon: React.ComponentType<{ className?: string }>;
   services: string[];
@@ -32,6 +33,7 @@ const categoriesData: ServiceCategory[] = [
   {
     title: "Business Growth",
     slug: "business-growth",
+    href: "/portfolio?category=website",
     description: "Accelerate your market reach and build a powerful online audience that drives consistent, high-value customer inquiries.",
     icon: TrendingUp,
     services: [
@@ -47,6 +49,7 @@ const categoriesData: ServiceCategory[] = [
   {
     title: "Creative Services",
     slug: "creative-services",
+    href: "/portfolio?category=video-editing",
     description: "Capture attention with high-retention visual assets and storytelling that elevates your brand to a premium status.",
     icon: Palette,
     services: [
@@ -61,6 +64,7 @@ const categoriesData: ServiceCategory[] = [
   {
     title: "AI Solutions",
     slug: "ai-solutions",
+    href: "/#footer",
     description: "Streamline operations, automate customer support, and extract intelligence with autonomous intelligence agents.",
     icon: Cpu,
     services: [
@@ -188,7 +192,7 @@ export function ServicesGrid() {
   };
 
   return (
-    <section className="py-14 lg:py-20 bg-white font-sans overflow-hidden" id="services">
+    <section className="py-14 lg:py-20 bg-transparent font-sans overflow-hidden" id="services">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading: Strictly ONLY "Our Services" with rich visual design accents */}
@@ -226,7 +230,7 @@ export function ServicesGrid() {
           {categoriesData.map((category, idx) => {
             const IconComponent = category.icon;
             return (
-              <Link href={`/services/${category.slug}`} key={idx} className="flex flex-col">
+              <Link href={category.href} key={idx} className="flex flex-col">
                 <motion.div
                   variants={cardVariants}
                   whileHover={{ y: -6 }}
@@ -412,23 +416,42 @@ export function ServicesGrid() {
           )}
         </AnimatePresence>
 
-        {/* Section Call-to-Action matching PRD */}
-        <div className="mt-24 max-w-3xl mx-auto text-center border-t border-slate-100 pt-16">
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
-            Ready to Grow Your Business?
-          </h3>
-          <p className="text-slate-500 mt-3 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-            Let&apos;s discuss your goals and build the right digital solution for your business.
-          </p>
-          <div className="flex justify-center mt-8">
-            <a
-              href="https://wa.me/917020951401?text=Hello,%20I%20want%20to%20book%20a%20free%20growth%20consultation!"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm transition-colors shadow-sm hover:shadow-md cursor-pointer text-center"
-            >
-              Book a Free Consultation
-            </a>
+        {/* Section Call-to-Action with Subtle Premium Grid Background */}
+        <div className="relative mt-20 sm:mt-24 max-w-4xl mx-auto text-center rounded-3xl border border-slate-200/90 bg-white p-8 sm:p-14 overflow-hidden shadow-xs">
+          {/* Subtle Grid Pattern Overlay */}
+          <div
+            className="absolute inset-0 pointer-events-none opacity-40"
+            style={{
+              backgroundImage: `
+                linear-gradient(to right, rgba(59, 130, 246, 0.08) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(59, 130, 246, 0.08) 1px, transparent 1px)
+              `,
+              backgroundSize: "24px 24px",
+              maskImage: "radial-gradient(ellipse 75% 75% at 50% 50%, black 30%, transparent 100%)",
+              WebkitMaskImage: "radial-gradient(ellipse 75% 75% at 50% 50%, black 30%, transparent 100%)",
+            }}
+          />
+
+          {/* Subtle Ambient Radial Glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-40 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-indigo-500/10 blur-3xl rounded-full pointer-events-none" />
+
+          <div className="relative z-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-950 tracking-tight">
+              Ready to Grow Your Business?
+            </h3>
+            <p className="text-slate-500 mt-3 text-sm sm:text-base max-w-lg mx-auto leading-relaxed font-medium">
+              Let&apos;s discuss your goals and build the right digital solution for your business.
+            </p>
+            <div className="flex justify-center mt-8">
+              <a
+                href="https://wa.me/917020951401?text=Hello,%20I%20want%20to%20book%20a%20free%20growth%20consultation!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm transition-all shadow-sm hover:shadow-lg hover:shadow-blue-500/25 cursor-pointer text-center"
+              >
+                Book a Free Consultation
+              </a>
+            </div>
           </div>
         </div>
 

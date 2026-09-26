@@ -9,7 +9,7 @@ export function PortfolioPreview() {
   const previewProjects = projects.slice(0, 4);
 
   return (
-    <section className="py-12 lg:py-16 bg-slate-50/50 border-y border-slate-100 font-sans">
+    <section className="py-12 lg:py-16 bg-transparent border-y border-slate-100 font-sans">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

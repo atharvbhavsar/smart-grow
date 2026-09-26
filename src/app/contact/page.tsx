@@ -57,13 +57,13 @@ export default function ContactPage() {
     "name": "SmartlyGrow - Best Web Development & AI Company in Pune",
     "url": "https://smartlygrow.in",
     "telephone": "+917020951401",
-    "email": "aashish@smartlygrow.com",
+    "email": "smartlygrow.in@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Koregaon Park",
+      "streetAddress": "Bibewadi",
       "addressLocality": "Pune",
       "addressRegion": "Maharashtra",
-      "postalCode": "411001",
+      "postalCode": "411037",
       "addressCountry": "IN"
     },
     "geo": {

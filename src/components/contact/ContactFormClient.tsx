@@ -128,7 +128,7 @@ function ContactFormContent() {
                 </a>
 
                 <a
-                  href="mailto:aashish@smartlygrow.com"
+                  href="mailto:smartlygrow.in@gmail.com"
                   className="flex items-center gap-4 p-4 rounded-2xl border border-slate-200/80 bg-white hover:border-blue-600 hover:shadow-md transition-all group"
                 >
                   <div className="p-3 rounded-xl bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
@@ -136,7 +136,7 @@ function ContactFormContent() {
                   </div>
                   <div>
                     <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">Official Email</span>
-                    <span className="text-sm sm:text-base font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors">aashish@smartlygrow.com</span>
+                    <span className="text-sm sm:text-base font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors">smartlygrow.in@gmail.com</span>
                   </div>
                 </a>
 
@@ -146,7 +146,7 @@ function ContactFormContent() {
                   </div>
                   <div>
                     <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">HQ Location</span>
-                    <span className="text-sm sm:text-base font-extrabold text-slate-900">Koregaon Park, Pune, MH, India</span>
+                    <span className="text-sm sm:text-base font-extrabold text-slate-900">Bibewadi, Pune, India</span>
                   </div>
                 </div>
               </div>
@@ -270,11 +270,12 @@ function ContactFormContent() {
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm font-medium focus:outline-none focus:border-blue-600 transition-colors bg-white"
                     >
                       <option value="">Select a service focus...</option>
-                      <option value="Website Development">Website Design & Next.js Development</option>
-                      <option value="AI Automation">AI Workflow Automation & Custom Agents</option>
-                      <option value="SEO & Business Growth">Local SEO & Google Business Profile Optimization</option>
-                      <option value="Creative Services">Video Editing, UGC Content & Branding</option>
-                      <option value="Custom Software">Custom Web Portal / App Engineering</option>
+                      <option value="Web / App Development">Web / App Development</option>
+                      <option value="Video Editing">Video Editing</option>
+                      <option value="Social Marketing & Branding">Social Marketing & Branding</option>
+                      <option value="Real Estate">Real Estate</option>
+                      <option value="Model Videos">Model Videos</option>
+                      <option value="Others">Others</option>
                     </select>
                     {errors.service && (
                       <p className="text-xs text-rose-500 font-bold">{errors.service.message}</p>

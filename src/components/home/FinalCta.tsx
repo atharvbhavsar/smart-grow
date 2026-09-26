@@ -5,34 +5,57 @@ import { ArrowRight, MessageCircle, Instagram } from "lucide-react";
 
 export function FinalCta() {
   return (
-    <section className="py-12 lg:py-16 bg-slate-900 text-white relative overflow-hidden font-sans">
+    <section className="py-10 sm:py-12 lg:py-14 bg-[#0B1120] text-white relative overflow-hidden font-sans border-t border-slate-800/80">
 
-      {/* Background radial shapes */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-3xl -z-10" />
+      {/* Subtle Ambient Glow */}
+      <div 
+        aria-hidden="true" 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] sm:w-[600px] h-[220px] rounded-full bg-blue-600/15 blur-[80px] pointer-events-none -z-10" 
+      />
+      <div 
+        aria-hidden="true" 
+        className="absolute -top-10 right-10 w-[250px] h-[180px] rounded-full bg-indigo-600/10 blur-[70px] pointer-events-none -z-10" 
+      />
 
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      {/* Subtle Dot Pattern Background with Radial Vignette */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none opacity-30 -z-10"
+        style={{
+          backgroundImage: `radial-gradient(rgba(148, 163, 184, 0.3) 1.2px, transparent 1.2px)`,
+          backgroundSize: "20px 20px",
+          maskImage: "radial-gradient(ellipse 75% 75% at 50% 50%, black 35%, transparent 95%)",
+          WebkitMaskImage: "radial-gradient(ellipse 75% 75% at 50% 50%, black 35%, transparent 95%)",
+        }}
+      />
 
-        {/* Sub title */}
-        <span className="text-blue-400 text-xs font-bold uppercase tracking-widest bg-blue-500/10 px-3.5 py-2 rounded-full border border-blue-500/20">
-          Ready To Scale Operations?
-        </span>
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center relative z-10">
 
-        {/* Title */}
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight mt-4 mb-4">
-          Let&apos;s Build Something That Grows Your Business
+        {/* Compact Glass Badge */}
+        <div className="inline-flex items-center gap-1.5 text-blue-400 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider bg-blue-500/10 backdrop-blur-md px-3 py-1 rounded-full border border-blue-400/25 shadow-[0_0_12px_rgba(59,130,246,0.12)] mb-3 sm:mb-4 select-none">
+          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+          <span>Ready To Scale Operations?</span>
+        </div>
+
+        {/* Heading with Blue Accent */}
+        <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-extrabold tracking-tight text-white leading-tight max-w-2xl mx-auto mb-3">
+          Let&apos;s Build Something That{" "}
+          <span className="bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
+            Grows Your Business
+          </span>
         </h2>
 
-        {/* Desc */}
-        <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto mb-6 leading-relaxed">
+        {/* Description */}
+        <p className="text-slate-300 text-xs sm:text-sm lg:text-[15px] max-w-xl mx-auto mb-6 leading-relaxed font-normal">
           Schedule a free 30-minute discovery call to map out a clear technical solution blueprint for your website design, operations audit, or customized AI agents.
         </p>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <Link href="/contact">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-8 py-3.5 rounded-xl flex items-center gap-2 group cursor-pointer shadow-md shadow-blue-500/20 transition-all">
-              Book a Free Consultation
-              <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
+          <Link href="/contact" className="w-full sm:w-auto">
+            <Button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs sm:text-sm px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl flex items-center justify-center gap-2 group cursor-pointer shadow-md shadow-blue-600/25 hover:shadow-lg hover:shadow-blue-500/35 hover:-translate-y-0.5 transition-all duration-300 min-h-[42px] sm:min-h-[44px]">
+              <span>Book a Free Consultation</span>
+              <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
             </Button>
           </Link>
 
@@ -40,11 +63,12 @@ export function FinalCta() {
             href="https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20a%20project%20with%20SmartlyGrow!"
             target="_blank"
             rel="noopener noreferrer"
+            className="w-full sm:w-auto"
           >
-            <Button variant="outline" className="border-slate-800 hover:bg-slate-800 text-slate-200 hover:text-white font-bold text-sm px-8 py-3.5 rounded-xl flex items-center gap-2 transition-all cursor-pointer">
-              <MessageCircle className="h-4.5 w-4.5 text-emerald-500 fill-emerald-500/20" />
-              Chat on WhatsApp
-            </Button>
+            <button className="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs sm:text-sm px-6 py-2.5 sm:py-3 rounded-lg sm:rounded-xl flex items-center justify-center gap-2 border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-pointer min-h-[42px] sm:min-h-[44px]">
+              <WhatsAppIcon className="h-4 w-4 shrink-0" />
+              <span>Chat on WhatsApp</span>
+            </button>
           </a>
         </div>
 
@@ -76,18 +100,16 @@ export function InstagramIcon({ className = "h-7 w-7" }: { className?: string })
 // Floating Instagram widget (Left side)
 export function FloatingInstagram() {
   return (
-    <div className="fixed bottom-6 left-6 z-50 animate-float-gentle">
+    <div className="fixed bottom-6 left-6 z-50">
       <div className="relative group">
-        {/* Radar Pulse Ring */}
-        <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-purple-500 via-pink-500 to-amber-400 opacity-40 blur-md animate-pulse-ring pointer-events-none" />
         <a
           href="https://www.instagram.com/smartlygrow.in?utm_source=qr&igsh=MXh0Mm50OWc2Nms3aA=="
           target="_blank"
           rel="noopener noreferrer"
-          className="relative flex items-center justify-center h-14 w-14 rounded-full drop-shadow-[0_8px_25px_rgba(232,67,147,0.5)] hover:drop-shadow-[0_14px_35px_rgba(232,67,147,0.8)] transition-all duration-300 hover:scale-115 active:scale-95 cursor-pointer bg-transparent p-0"
+          className="relative flex items-center justify-center h-12 w-12 sm:h-13 sm:w-13 rounded-2xl drop-shadow-md hover:drop-shadow-lg transition-all duration-300 hover:scale-108 active:scale-95 cursor-pointer bg-transparent p-0"
           aria-label="Follow us on Instagram"
         >
-          <InstagramIcon className="h-14 w-14 transform group-hover:rotate-6 transition-transform duration-300" />
+          <InstagramIcon className="h-12 w-12 sm:h-13 sm:w-13 transform group-hover:rotate-6 transition-transform duration-300" />
         </a>
       </div>
     </div>
@@ -120,18 +142,16 @@ export function WhatsAppIcon({ className = "h-7 w-7" }: { className?: string }) 
 // Floating WhatsApp widget (Right side)
 export function FloatingWhatsApp() {
   return (
-    <div className="fixed bottom-6 right-6 z-50 animate-float-gentle">
+    <div className="fixed bottom-6 right-6 z-50">
       <div className="relative group">
-        {/* Radar Pulse Ring */}
-        <div className="absolute -inset-2 rounded-full bg-emerald-500/30 blur-md animate-pulse-ring pointer-events-none" />
         <a
           href="https://wa.me/917020951401?text=Hello,%20I'm%20interested%20in%20a%20project%20with%20SmartlyGrow!"
           target="_blank"
           rel="noopener noreferrer"
-          className="relative flex items-center justify-center h-14 w-14 rounded-full drop-shadow-[0_8px_25px_rgba(37,211,102,0.5)] hover:drop-shadow-[0_14px_35px_rgba(37,211,102,0.8)] transition-all duration-300 hover:scale-115 active:scale-95 cursor-pointer bg-transparent p-0"
+          className="relative flex items-center justify-center h-12 w-12 sm:h-13 sm:w-13 rounded-full drop-shadow-md hover:drop-shadow-lg transition-all duration-300 hover:scale-108 active:scale-95 cursor-pointer bg-transparent p-0"
           aria-label="Chat on WhatsApp"
         >
-          <WhatsAppIcon className="h-14 w-14 transform group-hover:-rotate-6 transition-transform duration-300" />
+          <WhatsAppIcon className="h-12 w-12 sm:h-13 sm:w-13 transform group-hover:-rotate-6 transition-transform duration-300" />
         </a>
       </div>
     </div>

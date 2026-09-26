@@ -42,7 +42,7 @@ export default function Home() {
     "name": "SmartlyGrow",
     "url": "https://smartlygrow.in",
     "logo": "https://smartlygrow.in/logo-new.png",
-    "email": "aashish@smartlygrow.com",
+    "email": "smartlygrow.in@gmail.com",
     "telephone": "+917020951401",
     "sameAs": [
       "https://linkedin.com/company/smartlygrow",
@@ -63,14 +63,14 @@ export default function Home() {
     "@id": "https://smartlygrow.in/#localbusiness",
     "url": "https://smartlygrow.in",
     "telephone": "+917020951401",
-    "email": "aashish@smartlygrow.com",
+    "email": "smartlygrow.in@gmail.com",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Koregaon Park",
+      "streetAddress": "Bibewadi",
       "addressLocality": "Pune",
       "addressRegion": "Maharashtra",
-      "postalCode": "411001",
+      "postalCode": "411037",
       "addressCountry": "IN"
     },
     "geo": {
@@ -149,7 +149,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex-1 w-full bg-white">
+    <main className="flex-1 w-full bg-transparent">
       <JsonLd schema={organizationSchema} />
       <JsonLd schema={localBusinessSchema} />
       <JsonLd schema={websiteSchema} />
@@ -160,9 +160,9 @@ export default function Home() {
       <ServicesGrid />
       {/* <DarkVideoBanner /> */}
       <PortfolioPreview />
-      <SocialPresence />
+      {/* <SocialPresence /> */}
       {/* <TestimonialsCarousel /> */}
-      <TeamGrid />
+      {/* <TeamGrid /> */}
       <FaqAccordion />
     </main>
   );

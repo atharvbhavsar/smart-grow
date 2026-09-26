@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { blogPosts, projects, services } from "@/data/siteData";
 import { teamProfiles } from "@/data/teamData";
+import { WEBSITE_PROJECTS } from "@/data/portfolioData";
 
 const BASE_URL = "https://smartlygrow.in";
 
@@ -22,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/about`,
       lastModified: TODAY,
       changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/team`,
+      lastModified: TODAY,
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
@@ -103,12 +110,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   // ─── 3. Dynamic Portfolio / Project Pages ──────────────────────────────────
-  const portfolioUrls: MetadataRoute.Sitemap = projects.map((proj) => ({
-    url: `${BASE_URL}/portfolio/${proj.id}`,
-    lastModified: TODAY,
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
+  const portfolioUrls: MetadataRoute.Sitemap = [
+    ...projects.map((proj) => ({
+      url: `${BASE_URL}/portfolio/${proj.id}`,
+      lastModified: TODAY,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...WEBSITE_PROJECTS.map((proj) => ({
+      url: `${BASE_URL}/portfolio/website/${proj.slug}`,
+      lastModified: TODAY,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    })),
+  ];
 
   // ─── 4. Dynamic Team Member Profile Pages ──────────────────────────────────
   const teamUrls: MetadataRoute.Sitemap = Object.keys(teamProfiles).map(
