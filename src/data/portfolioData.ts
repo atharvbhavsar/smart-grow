@@ -507,9 +507,9 @@ export const REAL_ESTATE_DATA = {
       title: "NIBM Luxury Property Walkthrough Reel",
       client: "Ideal Property",
       subcategory: "social-media" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455326/smartlygrow/public/video/re-reel-1.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455326/smartlygrow/public/video/re-reel-1.jpg",
-      duration: "0:35",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461885/smartlygrow/video_editing/video_3373.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461887/smartlygrow/video_editing/video_3373_thumb.jpg",
+      duration: "0:39",
       description: "High-retention architectural walkthrough reel highlighting prime luxury property layouts, amenities, and location connectivity."
     },
     {
@@ -517,7 +517,7 @@ export const REAL_ESTATE_DATA = {
       title: "Modern Interior & Flat Walkthrough Tour",
       client: "Ideal Property",
       subcategory: "social-media" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455455/smartlygrow/public/video/re-reel-2.mov",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455455/smartlygrow/public/video/re-reel-2.mp4",
       thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455455/smartlygrow/public/video/re-reel-2.jpg",
       duration: "0:30",
       description: "Engaging indoor walkthrough showcasing luxury flat specifications, natural lighting, and modern finishes."
@@ -527,9 +527,9 @@ export const REAL_ESTATE_DATA = {
       title: "Real Estate Buyer Advisory & Market Guidance",
       client: "Ideal Property",
       subcategory: "social-media" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455489/smartlygrow/public/video/re-reel-3.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455489/smartlygrow/public/video/re-reel-3.jpg",
-      duration: "0:45",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461670/smartlygrow/video_editing/video_1868.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461671/smartlygrow/video_editing/video_1868_thumb.jpg",
+      duration: "0:36",
       description: "Founder-led advisory reel giving direct, transparent real estate buying tips and market insights for Pune property seekers."
     },
     {
@@ -537,9 +537,9 @@ export const REAL_ESTATE_DATA = {
       title: "20+ Years Market Experience & Trust",
       client: "Ideal Property",
       subcategory: "social-media" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455555/smartlygrow/public/video/re-reel-4.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455555/smartlygrow/public/video/re-reel-4.jpg",
-      duration: "0:40",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461784/smartlygrow/video_editing/video_2556.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461786/smartlygrow/video_editing/video_2556_thumb.jpg",
+      duration: "0:31",
       description: "Authority-building reel highlighting two decades of real estate advisory, trust, and proven client satisfaction."
     }
   ]
@@ -626,9 +626,9 @@ export const BRANDING_CREATIVE_DATA = {
       title: "Real Estate Buyer Advisory & Insights",
       client: "Ideal Property",
       type: "Broker Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455489/smartlygrow/public/video/re-reel-3.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455489/smartlygrow/public/video/re-reel-3.jpg",
-      duration: "0:45",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461670/smartlygrow/video_editing/video_1868.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461671/smartlygrow/video_editing/video_1868_thumb.jpg",
+      duration: "0:36",
       description: "Founder & broker advisory video giving transparent advice on high-ticket real estate purchases."
     },
     {
@@ -636,9 +636,9 @@ export const BRANDING_CREATIVE_DATA = {
       title: "20+ Years Market Experience Authority",
       client: "Ideal Property",
       type: "Broker Videos" as const,
-      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455555/smartlygrow/public/video/re-reel-4.mov",
-      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790455555/smartlygrow/public/video/re-reel-4.jpg",
-      duration: "0:40",
+      videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461784/smartlygrow/video_editing/video_2556.mp4",
+      thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461786/smartlygrow/video_editing/video_2556_thumb.jpg",
+      duration: "0:31",
       description: "Authority-building broker presentation highlighting 20+ years in the Pune property market."
     }
   ],

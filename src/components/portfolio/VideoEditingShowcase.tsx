@@ -10,40 +10,45 @@ interface VideoProject {
   category: string;
   duration: string;
   videoUrl: string;
+  thumbnailUrl: string;
   description: string;
 }
 
 const VIDEO_PROJECTS: VideoProject[] = [
   {
-    id: "video-01",
+    id: "video-1868",
     title: "Commercial Brand Story",
     category: "Brand Campaign",
-    duration: "0:35",
-    videoUrl: "/video/video-01.mp4",
+    duration: "0:36",
+    videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461670/smartlygrow/video_editing/video_1868.mp4",
+    thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461671/smartlygrow/video_editing/video_1868_thumb.jpg",
     description: "High-impact brand narrative engineered with cinematic color grading, dynamic sound design, and sharp pacing.",
   },
   {
-    id: "video-02",
+    id: "video-1863",
     title: "High-Retention Social Reel",
     category: "Social Media / Reels",
-    duration: "0:30",
-    videoUrl: "/video/video-02.mp4",
+    duration: "0:37",
+    videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461726/smartlygrow/video_editing/video_1863.mp4",
+    thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461728/smartlygrow/video_editing/video_1863_thumb.jpg",
     description: "Fast-paced vertical reel format designed to capture attention in the first 3 seconds and maximize retention.",
   },
   {
-    id: "video-03",
+    id: "video-3373",
     title: "Product & Motion Visuals",
     category: "Commercial Showcase",
-    duration: "0:45",
-    videoUrl: "/video/video-03.mp4",
+    duration: "0:39",
+    videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461885/smartlygrow/video_editing/video_3373.mp4",
+    thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461887/smartlygrow/video_editing/video_3373_thumb.jpg",
     description: "Seamless motion cuts and rhythmic editing highlighting product details and aesthetic features.",
   },
   {
-    id: "video-04",
+    id: "video-2556",
     title: "Cinematic Visual Story",
     category: "Cinematic Production",
-    duration: "0:40",
-    videoUrl: "/video/video-04.mp4",
+    duration: "0:31",
+    videoUrl: "https://res.cloudinary.com/wo9m0q6n/video/upload/v1790461784/smartlygrow/video_editing/video_2556.mp4",
+    thumbnailUrl: "https://res.cloudinary.com/wo9m0q6n/image/upload/v1790461786/smartlygrow/video_editing/video_2556_thumb.jpg",
     description: "Atmospheric visual pacing with professional sound mix, seamless transitions, and high emotional engagement.",
   },
 ];
@@ -73,7 +78,7 @@ export function VideoEditingShowcase() {
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-white font-sans text-slate-900 border-t border-slate-100 relative">
       <div className="mx-auto max-w-6xl px-3.5 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-blue-600 mb-2.5 shadow-xs">
@@ -106,7 +111,7 @@ export function VideoEditingShowcase() {
       <AnimatePresence>
         {selectedVideo && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-6 md:p-10 bg-black/60 backdrop-blur-md">
-            
+
             {/* Backdrop Click Close */}
             <div
               className="absolute inset-0 cursor-pointer"
@@ -144,11 +149,12 @@ export function VideoEditingShowcase() {
               </div>
 
               {/* Video Player */}
-              <div 
+              <div
                 className="relative aspect-video w-full bg-black flex items-center justify-center overflow-hidden"
               >
                 <video
                   src={selectedVideo.videoUrl}
+                  poster={selectedVideo.thumbnailUrl}
                   controls
                   autoPlay
                   playsInline
@@ -183,7 +189,7 @@ function HorizontalVideoCard({
     if (isHovered) {
       const playPromise = video.play();
       if (playPromise !== undefined) {
-        playPromise.catch(() => {});
+        playPromise.catch(() => { });
       }
     } else {
       video.pause();
@@ -206,6 +212,7 @@ function HorizontalVideoCard({
         <video
           ref={videoRef}
           src={project.videoUrl}
+          poster={project.thumbnailUrl}
           preload="metadata"
           muted
           playsInline
