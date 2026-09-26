@@ -14,7 +14,7 @@ export default function LogoAnimationVideo() {
         onContextMenu={(e) => e.preventDefault()}
       >
         <video 
-          src="/smartlygrow-logo-animation.mp4" 
+          src="https://res.cloudinary.com/wo9m0q6n/video/upload/v1790457643/smartlygrow/videos/SmartlyGrow_logo_animation_20260927005338.mp4" 
           autoPlay 
           loop 
           muted 
