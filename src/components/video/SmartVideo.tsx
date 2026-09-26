@@ -124,7 +124,7 @@ export default function SmartVideo({
     let isMounted = true;
 
     async function init() {
-      let streamUrl = src;
+      let streamUrl: string | null | undefined = src;
       if (videoId) {
         streamUrl = await fetchPlaybackUrl();
       }
